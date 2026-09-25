@@ -17,7 +17,7 @@
                 <li><a href="/" <?php if (isActivePage('home')) echo 'aria-current="page"'; ?>>Home</a></li>
 
                 <li class="has-dropdown">
-                    <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                    <button class="dropdown-trigger dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                         Services
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
                     </button>
@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="has-dropdown">
-                    <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                    <button class="dropdown-trigger dropdown-toggle" aria-expanded="false" aria-haspopup="true">
                         Service Areas
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
                     </button>

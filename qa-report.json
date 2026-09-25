@@ -2868,7 +2868,7 @@
     {
       "status": "pass",
       "check": "Hero image \u2264150KB",
-      "detail": "owner-img_8976.jpg: 140KB (largest image (no hero-named file))",
+      "detail": "qa-home.png: 144KB (largest image (no hero-named file))",
       "file": "",
       "severity": "blocker",
       "expected": null,
