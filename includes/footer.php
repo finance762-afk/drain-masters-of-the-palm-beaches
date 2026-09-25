@@ -65,11 +65,11 @@
                         <?php foreach (array_slice($serviceAreas, 0, 5) as $footArea): ?>
                         <?php
                         $areaSlug = getAreaSlug($footArea);
-                        $areaPath = $_SERVER['DOCUMENT_ROOT'] . '/areas/' . $areaSlug;
+                        $areaPath = $_SERVER['DOCUMENT_ROOT'] . '/service-areas/' . $areaSlug;
                         $areaExists = is_dir($areaPath);
                         ?>
                         <li>
-                            <a href="<?php echo $areaExists ? '/areas/' . $areaSlug . '/' : '/service-areas/#' . $areaSlug; ?>">
+                            <a href="<?php echo $areaExists ? '/service-areas/' . $areaSlug . '/' : '/service-areas/#' . $areaSlug; ?>">
                                 <?php echo htmlspecialchars($footArea); ?>
                             </a>
                         </li>

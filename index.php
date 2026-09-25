@@ -99,6 +99,25 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
   .home-estimate .estimate-next { display: grid; gap: var(--space-lg); align-content: start; }
   .home-estimate .area-note { font-size: var(--font-size-sm); color: var(--color-ink-2); margin: 0; }
+
+  /* Blog preview section */
+  .blog-preview { max-width: 800px; margin: var(--space-2xl) auto 0; }
+  .blog-featured-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; transition: var(--transition); display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .blog-featured-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+  .blog-featured-image-link { display: block; overflow: hidden; }
+  .blog-featured-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+  .blog-featured-card:hover .blog-featured-image { transform: scale(1.05); }
+  .blog-featured-content { padding: var(--space-xl); display: flex; flex-direction: column; justify-content: center; }
+  .blog-featured-meta { display: flex; align-items: center; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--color-ink-2); margin-bottom: var(--space-md); }
+  .blog-featured-category { font-weight: 600; color: var(--color-accent-dark); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.7rem; }
+  .blog-featured-dot { opacity: 0.5; }
+  .blog-featured-title { font-size: var(--font-size-h3); font-weight: 700; line-height: 1.3; margin-bottom: var(--space-sm); }
+  .blog-featured-title a { color: var(--color-ink-1); transition: var(--transition); }
+  .blog-featured-title a:hover { color: var(--color-accent-dark); }
+  .blog-featured-excerpt { color: var(--color-ink-2); line-height: 1.6; margin-bottom: var(--space-md); font-size: var(--font-size-sm); }
+  .blog-featured-link { display: inline-flex; align-items: center; gap: var(--space-xs); color: var(--color-accent-dark); font-weight: 600; font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em; transition: var(--transition); }
+  .blog-featured-link:hover { gap: var(--space-sm); }
+  @media (max-width: 768px) { .blog-featured-card { grid-template-columns: 1fr; } .blog-featured-image { height: 200px; } }
 </style>
 
 <!-- ============ HERO (bold-industrial: full-bleed photo) ============ -->
@@ -330,6 +349,54 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             </details>
             <?php endforeach; ?>
         </div>
+    </div>
+</section>
+
+<!-- ============ FROM THE BLOG ============ -->
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php'; ?>
+<section class="section bg-light">
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">Plumbing Tips & Advice</p>
+            <h2>From the <span class="text-accent">Blog</span></h2>
+            <p class="section-intro">Practical advice from our team's <?php echo $yearsInBusiness; ?> years of experience serving the Palm Beaches.</p>
+        </div>
+
+        <?php if (!empty($blogPosts)): ?>
+        <div class="blog-preview">
+            <?php
+            $featuredPost = $blogPosts[0];
+            ?>
+            <article class="blog-featured-card">
+                <a href="/blog/<?php echo $featuredPost['slug']; ?>/" class="blog-featured-image-link">
+                    <img src="<?php echo $featuredPost['image']; ?>" alt="<?php echo htmlspecialchars($featuredPost['alt']); ?>" width="960" height="540" loading="lazy" class="blog-featured-image">
+                </a>
+                <div class="blog-featured-content">
+                    <div class="blog-featured-meta">
+                        <span class="blog-featured-category"><?php echo htmlspecialchars($featuredPost['category']); ?></span>
+                        <span class="blog-featured-dot">•</span>
+                        <time datetime="<?php echo $featuredPost['dateISO']; ?>"><?php echo $featuredPost['date']; ?></time>
+                        <span class="blog-featured-dot">•</span>
+                        <span><?php echo $featuredPost['readtime']; ?></span>
+                    </div>
+                    <h3 class="blog-featured-title">
+                        <a href="/blog/<?php echo $featuredPost['slug']; ?>/">
+                            <?php echo htmlspecialchars($featuredPost['title']); ?>
+                        </a>
+                    </h3>
+                    <p class="blog-featured-excerpt"><?php echo htmlspecialchars($featuredPost['excerpt']); ?></p>
+                    <a href="/blog/<?php echo $featuredPost['slug']; ?>/" class="blog-featured-link">
+                        Read Article
+                        <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);">
+            <a href="/blog/" class="btn-primary">View All Articles</a>
+        </div>
+        <?php endif; ?>
     </div>
 </section>
 

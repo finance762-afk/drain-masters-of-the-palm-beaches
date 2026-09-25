@@ -41,11 +41,11 @@
                         <?php foreach ($serviceAreas as $footArea): ?>
                         <?php
                         $areaSlug = getAreaSlug($footArea);
-                        $areaPath = $_SERVER['DOCUMENT_ROOT'] . '/areas/' . $areaSlug;
+                        $areaPath = $_SERVER['DOCUMENT_ROOT'] . '/service-areas/' . $areaSlug;
                         $areaExists = is_dir($areaPath);
                         ?>
                         <li role="none">
-                            <a href="<?php echo $areaExists ? '/areas/' . $areaSlug . '/' : '/service-areas/#' . $areaSlug; ?>" role="menuitem">
+                            <a href="<?php echo $areaExists ? '/service-areas/' . $areaSlug . '/' : '/service-areas/#' . $areaSlug; ?>" role="menuitem">
                                 <?php echo htmlspecialchars($footArea); ?>
                             </a>
                         </li>
@@ -102,11 +102,11 @@
             <?php foreach ($serviceAreas as $footArea): ?>
             <?php
             $areaSlug = getAreaSlug($footArea);
-            $areaPath = $_SERVER['DOCUMENT_ROOT'] . '/areas/' . $areaSlug;
+            $areaPath = $_SERVER['DOCUMENT_ROOT'] . '/service-areas/' . $areaSlug;
             $areaExists = is_dir($areaPath);
             ?>
             <li class="mobile-submenu-item">
-                <a href="<?php echo $areaExists ? '/areas/' . $areaSlug . '/' : '/service-areas/#' . $areaSlug; ?>">
+                <a href="<?php echo $areaExists ? '/service-areas/' . $areaSlug . '/' : '/service-areas/#' . $areaSlug; ?>">
                     <?php echo htmlspecialchars($footArea); ?>
                 </a>
             </li>
