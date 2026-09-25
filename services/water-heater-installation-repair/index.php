@@ -16,7 +16,7 @@ $sp = [
     'metaDescription' => 'Water heater installation & repair in Palm Springs, FL. Drain Masters fixes no-hot-water, leaks and sediment, and installs tank & tankless units to code. Free estimates — call ' . $phone . '.',
     'heroImage'       => 'owner-img_8933',
     'heroImageAlt'    => 'Drain Masters plumber servicing a residential water heater at a Palm Springs, FL home',
-    'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs, replaces, and installs water heaters across Palm Springs and Palm Beach County. Our licensed team fixes no-hot-water calls and leaks, flushes sediment, and installs tank &amp; tankless units sized to your household&mdash;often within the same week.',
+    'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs, replaces, and installs water heaters across Palm Springs and Palm Beach County. Our team fixes no-hot-water calls and leaks, flushes sediment, and installs tank &amp; tankless units sized to your household&mdash;often within the same week.',
     'heroChips'       => [
         ['flame', 'Tank &amp; tankless'],
         ['clock', 'Fast same-week swaps'],

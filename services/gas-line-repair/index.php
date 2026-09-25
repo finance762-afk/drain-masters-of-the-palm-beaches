@@ -13,13 +13,13 @@ $sp = [
     'name'            => 'Gas Line Repair',
     'h1'              => 'Gas Line Repair in Palm Springs, FL',
     'title'           => 'Gas Line Repair in Palm Springs, FL | Drain Masters of the Palm Beaches',
-    'metaDescription' => 'Licensed gas line repair, installation, and leak testing in Palm Springs, FL. Drain Masters services natural gas and propane lines to code for water heaters, ranges, and more. Call ' . $phone . '.',
+    'metaDescription' => 'Gas line repair, installation, and leak testing to code in Palm Springs, FL. Natural gas and propane lines for water heaters and ranges. Call ' . $phone . '.',
     'heroImage'       => 'owner-img_8819',
     'heroImageAlt'    => 'Drain Masters plumber inspecting a gas line connection at a Palm Springs, FL home',
     'heroAnswer'      => 'Drain Masters of the Palm Beaches installs, repairs, and leak-tests natural gas and propane lines across Palm Springs and Palm Beach County. If you ever smell gas, leave the house and call 911 or your gas utility first&mdash;then call us to find, fix, and pressure-test the line to code.',
     'heroChips'       => [
         ['flame', 'Natural gas &amp; propane'],
-        ['shield', 'Licensed &amp; leak-tested'],
+        ['shield', 'Permitted &amp; leak-tested'],
         ['badge-check', 'Permitted, to-code work'],
     ],
     'problem' => [
@@ -34,9 +34,9 @@ $sp = [
         ],
     ],
     'positioning' => [
-        'q'         => 'Why should Palm Springs homeowners hire a licensed plumber for gas line work?',
-        'answer'    => 'Gas line work is not a DIY or handyman job&mdash;it is life-safety work that must be permitted, done to code, and pressure-tested afterward. Drain Masters of the Palm Beaches is a licensed, insured, locally owned company that treats every gas line the way the code requires.',
-        'stat'      => 'Licensed &amp; Insured',
+        'q'         => 'Why should Palm Springs homeowners hire a professional plumber for gas line work?',
+        'answer'    => 'Gas line work is not a DIY or handyman job&mdash;it is life-safety work that must be permitted, done to code, and pressure-tested afterward. Drain Masters of the Palm Beaches is a locally owned company that treats every gas line the way the code requires.',
+        'stat'      => 'To Code',
         'statLabel' => 'Gas line work permitted and pressure-tested to code in Palm Springs, Florida',
         'paragraphs' => [
             'Palm Springs sits in humid, salty coastal air, and that moisture is hard on gas piping&mdash;especially outdoor and underground runs feeding pool heaters, generators, and outdoor kitchens. Corrosion at fittings and along buried steel is one of the most common reasons a line starts to leak here.',
@@ -86,19 +86,19 @@ $sp = [
     'faqs' => [
         ['What should I do if I smell gas in my Palm Springs home?', 'Leave the house right away and take everyone with you. Do not flip light switches, use your phone indoors, or light anything. Once you are safely outside and away, call 911 or your gas utility first so they can shut off supply. After the area is made safe, call Drain Masters to locate, repair, and pressure-test the line.'],
         ['Do you work on both natural gas and propane lines?', 'Yes. Drain Masters of the Palm Beaches repairs and installs both natural gas and propane lines throughout Palm Springs and Palm Beach County. We service lines feeding water heaters, ranges and cooktops, dryers, outdoor kitchens and grills, pool heaters, and standby generators, and we leak-test every line before restoring service.'],
-        ['Do you pull a permit for gas line work?', 'Yes, and it matters. Gas line repair and installation are code-regulated life-safety work in Florida, so we pull the required permit and build to the fuel-gas code. That keeps the job inspectable and safe, and it protects the value of your home. Unpermitted gas work can void insurance and create real hazards.'],
+        ['Do you pull a permit for gas line work?', 'Yes, and it matters. Gas line repair and installation are code-regulated life-safety work in Florida, so we pull the required permit and build to the fuel-gas code. That keeps the job inspectable and safe, and it protects the value of your home. Unpermitted gas work creates real hazards and problems when you sell the home.'],
         ['Can you run a new gas line for a range or outdoor kitchen?', 'Absolutely. We extend or run new gas lines for ranges, cooktops, dryers, pool heaters, generators, and outdoor kitchens across the Palm Beaches. We size the line for the appliance\'s demand, install it to code under permit, and pressure-test the whole run so your new appliance gets safe, reliable fuel.'],
         ['Why do gas lines fail in the Palm Springs area?', 'The humid, salty coastal air here is tough on gas piping. Corrosion at fittings and along outdoor or buried lines is common, especially on older steel. Physical damage from digging or ground settling, loose or faulty connections, and simple age all cause leaks too. We find the real cause instead of just patching the symptom.'],
         ['How do you know a gas line repair is safe after the work?', 'We prove it. After any repair or new installation, we pressure-test the piping and leak-check every connection before we turn the gas back on. Only once the line holds pressure do we restore service, relight appliances, and confirm everything is tight. You get work that is tested and verifiable, not taken on faith.'],
     ],
     'gallery' => [
         ['owner-img_8947', 'Drain Masters of the Palm Beaches servicing a gas line at a Palm Springs, FL home'],
-        ['owner-img_8933', 'Licensed gas and plumbing work by Drain Masters in Palm Beach County'],
+        ['owner-img_8933', 'Gas and plumbing work by Drain Masters in Palm Beach County'],
         ['owner-img_8976', 'Drain Masters technician completing a gas line job in Palm Springs, FL'],
     ],
     'finalCta' => [
         'heading' => 'Get your gas line repaired safely and to code',
-        'text'    => 'Smell gas? Leave and call 911 or your utility first. For repairs, new lines, and leak testing, Drain Masters of the Palm Beaches does licensed, permitted, pressure-tested gas work&mdash;call now or request a free estimate across Palm Springs and Palm Beach County.',
+        'text'    => 'Smell gas? Leave and call 911 or your utility first. For repairs, new lines, and leak testing, Drain Masters of the Palm Beaches does permitted, pressure-tested gas work to code&mdash;call now or request a free estimate across Palm Springs and Palm Beach County.',
     ],
 ];
 

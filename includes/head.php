@@ -13,7 +13,7 @@
 
     // Build page title
     $pageTitle = isset($pageTitle) ? $pageTitle : "$siteName | $primaryKeyword | {$address['city']}, {$address['state']}";
-    $metaDescription = isset($metaDescription) ? $metaDescription : "Expert drain cleaning and plumbing services in {$address['city']}, FL. Licensed, insured, and ready to solve your toughest plumbing challenges. Call $phone today.";
+    $metaDescription = isset($metaDescription) ? $metaDescription : "Drain cleaning and plumbing in {$address['city']}, FL. Drain Masters handles drains, sewers, leaks, water heaters and emergencies. Call $phone.";
     ?>
 
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
@@ -80,14 +80,6 @@
         "hasMap": "<?php echo $gbpProfileUrl; ?>",
         "image": "<?php echo $siteUrl; ?>/assets/images/og-image.jpg",
         "priceRange": "$$",
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:00",
-                "closes": "17:00"
-            }
-        ],
         "areaServed": [
             <?php
             $areaCount = count($serviceAreas);

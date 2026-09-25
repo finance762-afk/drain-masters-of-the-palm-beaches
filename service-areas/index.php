@@ -32,7 +32,7 @@ $canonicalUrl = $siteUrl . '/service-areas/';
             <p class="eyebrow">Communities We Serve</p>
             <h2>Expert Plumbing in <span class="text-accent">8 Palm Beach County Cities</span></h2>
             <p class="section-intro">
-                From emergency sewer backups to routine drain maintenance, our licensed plumbers bring the same expertise and fair pricing to every community we serve. Wherever you are in the Palm Beaches, we're ready to help.
+                From emergency sewer backups to routine drain maintenance, our plumbers bring the same expertise and fair pricing to every community we serve. Wherever you are in the Palm Beaches, we're ready to help.
             </p>
         </div>
 
@@ -81,7 +81,7 @@ $canonicalUrl = $siteUrl . '/service-areas/';
                 Our team has worked across the Palm Beaches since <?php echo $yearEstablished; ?>, and we've seen it all. We know which streets flood during summer storms, which neighborhoods have shared sewer laterals, and where tree roots are most likely to invade underground lines. That local knowledge means faster diagnosis, better solutions, and fewer return trips.
             </p>
             <p>
-                Whether you're in a high-rise condo in West Palm Beach or a single-family home in Wellington, we bring the same commitment: honest pricing, licensed technicians, and work that's guaranteed. No surprise charges, no upsells you don't need—just reliable plumbing service you can count on.
+                Whether you're in a high-rise condo in West Palm Beach or a single-family home in Wellington, we bring the same commitment: honest pricing, experienced technicians, and straight answers. No surprise charges, no upsells you don't need—just reliable plumbing service you can count on.
             </p>
         </div>
     </div>
@@ -124,7 +124,7 @@ $canonicalUrl = $siteUrl . '/service-areas/';
             <div class="service-highlight-card">
                 <svg aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                 <h3>Repiping & Gas Line Work</h3>
-                <p>Whole-home repiping for corroded lines, plus safe gas line repair and installation by licensed professionals.</p>
+                <p>Whole-home repiping for corroded lines, plus safe gas line repair and installation done to code.</p>
             </div>
         </div>
 
@@ -139,7 +139,7 @@ $canonicalUrl = $siteUrl . '/service-areas/';
     <div class="container">
         <div class="cta-content">
             <h2>Need a Plumber in Your Area?</h2>
-            <p>We're ready to help. Fast response, fair pricing, and work that's guaranteed across the Palm Beaches.</p>
+            <p>We're ready to help. Fast response, fair pricing, and straight answers across the Palm Beaches.</p>
         </div>
         <div class="cta-actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn-secondary">

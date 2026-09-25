@@ -31,12 +31,12 @@ $canonicalUrl = $siteUrl . '/service-areas/greenacres/';
                 <p class="eyebrow">Service in Greenacres</p>
                 <h1>Reliable Plumbing in Greenacres, Florida</h1>
                 <p class="hero-answer">
-                    Drain Masters of the Palm Beaches serves Greenacres' growing neighborhoods—from Palm Beach National's golf-course homes to River Bridge's gated community and the established Forest Hill Village area—with licensed plumbing service for drains, sewers, leaks, and water heaters.
+                    Drain Masters of the Palm Beaches serves Greenacres' growing neighborhoods—from Palm Beach National's golf-course homes to River Bridge's gated community and the established Forest Hill Village area—with professional plumbing service for drains, sewers, leaks, and water heaters.
                 </p>
                 <div class="hero-chips">
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                        Licensed & Insured
+                        Locally Owned Since 2023
                     </span>
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -62,7 +62,7 @@ $canonicalUrl = $siteUrl . '/service-areas/greenacres/';
                 <form action="<?php echo htmlspecialchars($formAction); ?>" method="POST">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
-                    <?php echo getAttributionFields('hero'); ?>
+                    <?php echo p1_attribution_fields('hero'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
@@ -207,7 +207,7 @@ $canonicalUrl = $siteUrl . '/service-areas/greenacres/';
                 When you call a plumber in Greenacres, you want someone who shows up on time, fixes the problem right the first time, and charges a fair price. You don't want surprise fees, pressure to buy services you don't need, or a repair that fails three months later.
             </p>
             <p>
-                That's what we deliver. We're a licensed Florida plumbing contractor, bonded and insured, and our work is guaranteed. We drive fully stocked service vehicles, so most repairs happen the same day. If we need to order a part or schedule a larger job—repiping, sewer line replacement, water heater installation—we'll give you an honest timeline and a written estimate before we start.
+                That's what we deliver. We're a locally owned Palm Springs plumbing company, and we diagnose the real cause before quoting a fix. We show up prepared for the common drain, sewer, and water heater problems in the area, so many repairs can be finished the same day. If we need to order a part or schedule a larger job—repiping, sewer line replacement, water heater installation—we'll give you an honest timeline and a written estimate before we start.
             </p>
             <p>
                 We've served the Palm Beaches since <?php echo $yearEstablished; ?>, and we're not going anywhere. When we finish a job, you get our direct number—not a call center. If you have a question two weeks later or need a follow-up visit, you call the same team who did the work. That's how local plumbing service should work.
@@ -221,7 +221,7 @@ $canonicalUrl = $siteUrl . '/service-areas/greenacres/';
     <div class="container">
         <div class="cta-content">
             <h2>Need a Plumber in Greenacres?</h2>
-            <p>Fast response, honest pricing, and work that's guaranteed. Call us or request a free estimate online.</p>
+            <p>Fast response, honest pricing, and straight answers. Call us or request a free estimate online.</p>
         </div>
         <div class="cta-actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn-secondary">

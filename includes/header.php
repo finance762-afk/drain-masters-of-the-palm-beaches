@@ -2,7 +2,7 @@
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <header class="site-header" data-header>
-    <nav class="navbar" aria-label="Main navigation">
+    <nav class="navbar navbar-inner container-wide" aria-label="Main navigation">
         <div class="navbar-inner container">
             <!-- Logo -->
             <a href="/" class="site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> Home">
@@ -55,6 +55,7 @@
 
                 <li><a href="/about/" <?php if (isActivePage('about')) echo 'aria-current="page"'; ?>>About</a></li>
                 <li><a href="/blog/" <?php if (isActivePage('blog')) echo 'aria-current="page"'; ?>>Blog</a></li>
+                <li><a href="/faq/" <?php if (isActivePage('faq')) echo 'aria-current="page"'; ?>>FAQ</a></li>
                 <li><a href="/contact/" <?php if (isActivePage('contact')) echo 'aria-current="page"'; ?>>Contact</a></li>
             </ul>
 
@@ -114,6 +115,7 @@
 
             <li><a href="/about/">About</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/faq/">FAQ</a></li>
             <li><a href="/contact/">Contact</a></li>
         </ul>
 

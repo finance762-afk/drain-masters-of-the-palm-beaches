@@ -107,8 +107,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li>Work is governed by a written contract specific to each job.</li>
             <li>We comply with applicable <?php echo $address['state']; ?> state and local building codes.</li>
             <li>Work is performed by <?php echo htmlspecialchars($siteName); ?> employees and qualified subcontractors.</li>
-            <li>All workers carry workers' compensation insurance as required by <?php echo $address['state']; ?> law.</li>
-            <li>We are licensed and insured to operate in the state of <?php echo $address['state']; ?>.</li>
         </ul>
 
         <h2>5. Warranties</h2>

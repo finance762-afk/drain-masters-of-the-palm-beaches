@@ -16,7 +16,6 @@ $canonicalUrl    = $siteUrl . '/faq/';
 $faqs = [
     /* General */
     ['category' => 'General', 'q' => 'What services does Drain Masters of the Palm Beaches provide?', 'a' => 'Drain Masters provides drain cleaning, hydro jetting, sewer line repair and replacement, trenchless sewer repair, leak detection and slab leak repair, water heater installation and repair, whole-home repiping, toilet and faucet repair, garbage disposal service, sump pump installation and repair, gas line repair, backflow prevention, and emergency plumbing across Palm Springs and Palm Beach County.'],
-    ['category' => 'General', 'q' => 'Are you licensed and insured?', 'a' => 'Yes. Drain Masters of the Palm Beaches is a Florida-licensed plumbing contractor with full liability insurance and workers\' compensation coverage. You can verify our license and credentials before we start work.'],
     ['category' => 'General', 'q' => 'Do you offer emergency plumbing service?', 'a' => 'Yes, we provide same-day and after-hours emergency service across Palm Springs and the Palm Beaches. Plumbing emergencies like burst pipes, sewer backups, and major leaks can\'t wait—call us and we\'ll get out to you as fast as possible.'],
     ['category' => 'General', 'q' => 'What areas do you serve?', 'a' => 'Drain Masters is based in Palm Springs, FL and serves homeowners and businesses throughout Palm Beach County, including Lake Worth, West Palm Beach, Greenacres, Boynton Beach, Wellington, Lantana, and Royal Palm Beach.'],
 
@@ -40,7 +39,7 @@ $faqs = [
     ['category' => 'Water Heaters & Leaks', 'q' => 'What is a slab leak and is it serious?', 'a' => 'A slab leak is a leak in a water line that runs under your home\'s concrete foundation. It\'s serious because it can waste water, damage the foundation, and cause mold. Signs include unexplained water bills, wet floors, or cracks in the foundation. Drain Masters can detect and repair slab leaks quickly.'],
 
     /* Process & Scheduling */
-    ['category' => 'Process & Scheduling', 'q' => 'How quickly can you get to me?', 'a' => 'We offer same-day service for most calls in Palm Springs and the Palm Beaches. For emergencies like sewer backups or burst pipes, we\'ll get out to you as fast as possible—often within a couple hours.'],
+    ['category' => 'Process & Scheduling', 'q' => 'How quickly can you get to me?', 'a' => 'We offer same-day service for most calls in Palm Springs and the Palm Beaches. For emergencies like sewer backups or burst pipes, we\'ll get out to you as fast as possible.'],
     ['category' => 'Process & Scheduling', 'q' => 'How long does a typical drain cleaning take?', 'a' => 'Most residential drain cleanings take one to two hours. A simple sink or tub clog can be cleared quickly, while a main-line blockage or a line that needs camera inspection and jetting takes longer. We confirm full flow before we consider the job done.'],
     ['category' => 'Process & Scheduling', 'q' => 'Will I need to be home during the service?', 'a' => 'Usually, yes. We need access to drains, shutoffs, and the affected areas. If you can\'t be home, we can arrange for secure access—just let us know when you schedule.'],
 ];
@@ -173,7 +172,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 <div>
                     <span class="eyebrow">Still Have Questions?</span>
                     <h2>We're Here to Help</h2>
-                    <p>Can't find the answer you're looking for? Call Drain Masters of the Palm Beaches and speak to a licensed plumber who can answer your specific question and provide a free, no-obligation estimate.</p>
+                    <p>Can't find the answer you're looking for? Call Drain Masters of the Palm Beaches and speak to a plumber who can answer your specific question and provide a free, no-obligation estimate.</p>
                 </div>
                 <div class="cta-actions">
                     <a href="tel:<?php echo formatPhone($phone); ?>" class="btn btn-primary btn-lg">

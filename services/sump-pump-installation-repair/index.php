@@ -16,7 +16,7 @@ $sp = [
     'metaDescription' => 'Sump pump installation, testing and repair in Palm Springs, FL. Drain Masters keeps groundwater and storm flooding out of your home. Free estimates — call ' . $phone . '.',
     'heroImage'       => 'owner-img_8933',
     'heroImageAlt'    => 'Drain Masters plumber installing a sump pump at a Palm Springs, FL home',
-    'heroAnswer'      => 'Drain Masters of the Palm Beaches installs, tests, and repairs sump pumps that keep groundwater and stormwater out of low areas of Palm Springs homes. With South Florida&rsquo;s high water table and hurricane-season downpours, our licensed team makes sure your pump is ready before the next storm rolls in.',
+    'heroAnswer'      => 'Drain Masters of the Palm Beaches installs, tests, and repairs sump pumps that keep groundwater and stormwater out of low areas of Palm Springs homes. With South Florida&rsquo;s high water table and hurricane-season downpours, our team makes sure your pump is ready before the next storm rolls in.',
     'heroChips'       => [
         ['gauge', 'Storm-season ready'],
         ['shield', 'Battery backup available'],

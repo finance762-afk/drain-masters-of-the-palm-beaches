@@ -16,7 +16,7 @@ $sp = [
     'metaDescription' => 'Professional drain cleaning in Palm Springs, FL. Drain Masters clears grease, roots and buildup with snaking and cabling to restore full flow. Free estimates — call ' . $phone . '.',
     'heroImage'       => 'owner-img_8820',
     'heroImageAlt'    => 'Drain Masters plumber clearing a clogged drain line at a Palm Springs, FL home',
-    'heroAnswer'      => 'Drain Masters of the Palm Beaches clears stubborn kitchen, bathroom, and main-line clogs across Palm Springs and Palm Beach County. Our licensed team snakes and cables the line, removes the blockage at its source, and restores full flow&mdash;usually same day.',
+    'heroAnswer'      => 'Drain Masters of the Palm Beaches clears stubborn kitchen, bathroom, and main-line clogs across Palm Springs and Palm Beach County. Our team snakes and cables the line, removes the blockage at its source, and restores full flow&mdash;usually same day.',
     'heroChips'       => [
         ['droplets', 'Kitchen, bath &amp; main lines'],
         ['clock', 'Same-day service'],

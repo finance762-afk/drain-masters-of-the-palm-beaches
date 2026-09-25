@@ -16,7 +16,7 @@ $sp = [
     'metaDescription' => 'Emergency plumbing in Palm Springs, FL. Drain Masters answers burst pipes, sewer backups, and major leaks with same-day and after-hours service. Call ' . $phone . '.',
     'heroImage'       => 'owner-img_8820',
     'heroImageAlt'    => 'Drain Masters plumber responding to an emergency water leak at a Palm Springs, FL home',
-    'heroAnswer'      => 'When a pipe bursts or sewage backs up, Drain Masters of the Palm Beaches answers with same-day and after-hours emergency service across Palm Springs and Palm Beach County. Our licensed team gets on site as fast as possible, stops the water, and limits the damage to your home.',
+    'heroAnswer'      => 'When a pipe bursts or sewage backs up, Drain Masters of the Palm Beaches answers with same-day and after-hours emergency service across Palm Springs and Palm Beach County. Our team gets on site as fast as possible, stops the water, and limits the damage to your home.',
     'heroChips'       => [
         ['alert-triangle', 'Burst pipes &amp; backups'],
         ['clock', 'Same-day &amp; after-hours'],
@@ -35,7 +35,7 @@ $sp = [
     ],
     'positioning' => [
         'q'         => 'Why do Palm Springs homeowners call Drain Masters first in an emergency?',
-        'answer'    => 'When water is running and the clock matters, you want a licensed local plumber who actually answers. Drain Masters of the Palm Beaches is owner-operated in Palm Springs, so your call reaches people who work here every day&mdash;not a distant call center or an overnight voicemail.',
+        'answer'    => 'When water is running and the clock matters, you want a local plumber who actually answers. Drain Masters of the Palm Beaches is owner-operated in Palm Springs, so your call reaches people who work here every day&mdash;not a distant call center or an overnight voicemail.',
         'stat'      => 'Est. 2023',
         'statLabel' => 'Locally owned and owner-operated in Palm Springs, Florida',
         'paragraphs' => [
@@ -44,7 +44,7 @@ $sp = [
         ],
         'points' => [
             ['Same-day &amp; after-hours', 'We answer urgent calls when other plumbers have gone home, so a burst pipe or backup never has to wait until morning.'],
-            ['Licensed &amp; insured', 'Every emergency is handled by a licensed, insured Palm Springs plumber&mdash;so the fast fix is also the correct one.'],
+            ['Local &amp; owner-run', 'Every emergency is handled by a Palm Springs plumber who works here every day&mdash;so the fast fix is also the correct one.'],
             ['Local response', 'We work throughout Palm Beach County daily, so we know the routes and the older housing stock that makes fast response possible.'],
         ],
     ],

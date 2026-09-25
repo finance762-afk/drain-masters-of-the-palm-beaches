@@ -20,7 +20,7 @@ $sp = [
     'heroChips'       => [
         ['hammer', 'Little to no digging'],
         ['home', 'Yard &amp; driveway preserved'],
-        ['shield', 'Licensed &amp; insured'],
+        ['shield', 'Locally owned since 2023'],
     ],
     'problem' => [
         'q'         => 'What are the signs a Palm Springs sewer line needs trenchless repair?',

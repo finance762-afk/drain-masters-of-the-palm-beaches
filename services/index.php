@@ -49,7 +49,7 @@ $svcMeta = [
     'toilet-faucet-repair-and-installation' => ['icon' => 'droplet',  'bullets' => ['Stops running toilets', 'Fixture install and repair', 'Cuts wasted water']],
     'garbage-disposal-repair'               => ['icon' => 'trash-2',  'bullets' => ['Fixes jams and leaks', 'Repair or full swap', 'Kitchen sink back in service']],
     'sump-pump-installation-repair'         => ['icon' => 'gauge',    'bullets' => ['Storm-season ready', 'Install, test, and repair', 'Keeps groundwater out']],
-    'gas-line-repair'                       => ['icon' => 'zap',      'bullets' => ['Licensed gas work', 'Leak testing to code', 'Safe install and repair']],
+    'gas-line-repair'                       => ['icon' => 'zap',      'bullets' => ['Gas line work to code', 'Leak testing to code', 'Safe install and repair']],
     'backflow-prevention'                   => ['icon' => 'shield',   'bullets' => ['Device install and testing', 'Annual certification', 'Protects drinking water']],
     'emergency-plumbing'                    => ['icon' => 'alert-triangle', 'bullets' => ['Same-day and after-hours', 'Burst pipes and backups', 'Fast damage control']],
 ];
@@ -85,7 +85,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="hero-text">
             <span class="eyebrow">Serving Palm Springs &amp; the Palm Beaches</span>
             <h1 class="hero-title">Plumbing Services in Palm Springs, FL</h1>
-            <p class="hero-answer">Drain Masters of the Palm Beaches is a licensed, locally owned plumbing company in Palm Springs, Florida. From routine drain cleaning to sewer replacement and 24/7 emergencies, we handle the full range of residential plumbing across Palm Beach County.</p>
+            <p class="hero-answer">Drain Masters of the Palm Beaches is a locally owned plumbing company in Palm Springs, Florida. From routine drain cleaning to sewer replacement and 24/7 emergencies, we handle the full range of residential plumbing across Palm Beach County.</p>
             <div class="hero-actions">
                 <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
                 <a class="link-call" href="tel:<?php echo formatPhone($phone); ?>"><?php echo $icons['phone']; ?> or call <?php echo $phone; ?></a>
@@ -142,7 +142,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="cta-copy">
             <span class="eyebrow-label">Ready when you are</span>
             <h2>One call handles it&mdash;from a slow drain to a full repipe</h2>
-            <p>Drain Masters of the Palm Beaches brings the right tools and a licensed local crew to every job in Palm Springs and Palm Beach County. Call now or request a free estimate.</p>
+            <p>Drain Masters of the Palm Beaches brings the right tools and a local crew to every job in Palm Springs and Palm Beach County. Call now or request a free estimate.</p>
         </div>
         <div class="actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn btn-accent btn-lg"><?php echo $icons['phone']; ?> Call <?php echo $phone; ?></a>

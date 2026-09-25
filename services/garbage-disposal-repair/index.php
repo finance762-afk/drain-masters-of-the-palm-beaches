@@ -16,7 +16,7 @@ $sp = [
     'metaDescription' => 'Garbage disposal repair in Palm Springs, FL. Drain Masters fixes jams, leaks, humming and dead units under the sink—or replaces them right-sized. Free estimates, call ' . $phone . '.',
     'heroImage'       => 'owner-img_8820',
     'heroImageAlt'    => 'Drain Masters plumber repairing a garbage disposal under a kitchen sink at a Palm Springs, FL home',
-    'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs and replaces kitchen garbage disposals across Palm Springs and Palm Beach County. Whether your unit hums but won\'t grind, trips its reset, leaks under the sink, or has gone completely dead, our licensed team diagnoses the cause and gets your sink working again&mdash;usually same day.',
+    'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs and replaces kitchen garbage disposals across Palm Springs and Palm Beach County. Whether your unit hums but won\'t grind, trips its reset, leaks under the sink, or has gone completely dead, our team diagnoses the cause and gets your sink working again&mdash;usually same day.',
     'heroChips'       => [
         ['trash-2', 'Jams, leaks &amp; dead units'],
         ['clock', 'Same-day service'],

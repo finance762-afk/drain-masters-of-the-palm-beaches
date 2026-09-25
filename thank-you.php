@@ -49,10 +49,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <div class="next-steps">
                 <h2>What Happens Next?</h2>
                 <ol>
-                    <li>A member of our team will review your request within the hour.</li>
+                    <li>A member of our team will review your request promptly.</li>
                     <li>We'll call or email you to confirm details and schedule a time that works for you.</li>
-                    <li>Our licensed plumber will arrive on time, diagnose the issue, and provide an upfront quote before starting any work.</li>
-                    <li>We'll fix the problem right and clean up when we're done—guaranteed.</li>
+                    <li>Our plumber will arrive at the scheduled time, diagnose the issue, and provide an upfront quote before starting any work.</li>
+                    <li>We'll fix the problem right and clean up when we're done.</li>
                 </ol>
             </div>
 

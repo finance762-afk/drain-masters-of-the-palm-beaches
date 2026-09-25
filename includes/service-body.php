@@ -249,7 +249,7 @@ if (!isset($sp) || !isset($spIcons)) { return; }
         <div class="section-title reveal-up">
             <span class="eyebrow-label">What We Do</span>
             <h2>What other <span class="text-accent">plumbing services</span> can Drain Masters handle for your Palm Springs home?</h2>
-            <p class="hero-answer">Drain Masters of the Palm Beaches is a full-service plumbing company&mdash;beyond <?php echo sp_e(strtolower($spName)); ?>, our licensed Palm Springs crew repairs sewers, installs water heaters, finds hidden leaks, and answers emergency calls across Palm Beach County.</p>
+            <p class="hero-answer">Drain Masters of the Palm Beaches is a full-service plumbing company&mdash;beyond <?php echo sp_e(strtolower($spName)); ?>, our Palm Springs crew repairs sewers, installs water heaters, finds hidden leaks, and answers emergency calls across Palm Beach County.</p>
         </div>
         <div class="services-grid">
             <?php

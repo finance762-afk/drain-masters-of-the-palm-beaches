@@ -33,7 +33,7 @@ $canonicalUrl = $siteUrl . '/blog/';
             <?php foreach ($blogPosts as $post): ?>
             <article class="blog-card">
                 <a href="/blog/<?php echo $post['slug']; ?>/" class="blog-card-image-link">
-                    <img src="<?php echo $post['image']; ?>" alt="<?php echo htmlspecialchars($post['alt']); ?>" width="960" height="540" loading="lazy" class="blog-card-image">
+                    <?php echo renderPicture($post['imageBase'], $post['alt'], 960, 540, '(max-width: 768px) 100vw, 400px', ['imgClass' => 'blog-card-image']); ?>
                 </a>
                 <div class="blog-card-content">
                     <div class="blog-card-meta">
@@ -102,6 +102,7 @@ $canonicalUrl = $siteUrl . '/blog/';
     overflow: hidden;
 }
 
+.blog-card-image-link picture { display: block; }
 .blog-card-image {
     width: 100%;
     height: 240px;

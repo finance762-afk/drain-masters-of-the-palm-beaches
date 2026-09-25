@@ -16,7 +16,7 @@ $pageType = 'city';
 $citySlug = 'west-palm-beach';
 $areaName = 'West Palm Beach';
 $pageTitle = "Plumber in West Palm Beach, FL | Drain & Sewer Experts | $siteName";
-$metaDescription = "Expert plumbing in West Palm Beach, FL. Serving Northwood Hills, Flamingo Park, and all historic neighborhoods with drain cleaning, sewer repair, and emergency service. Licensed plumbers. Call $phone.";
+$metaDescription = "West Palm Beach, FL plumber serving Northwood Hills, Flamingo Park, and more. Drain cleaning, sewer repair, same-day emergency service. Call $phone.";
 $pageDescription = $metaDescription;
 $canonicalUrl = $siteUrl . '/service-areas/west-palm-beach/';
 ?>
@@ -31,12 +31,12 @@ $canonicalUrl = $siteUrl . '/service-areas/west-palm-beach/';
                 <p class="eyebrow">Service in West Palm Beach</p>
                 <h1>Professional Plumbing in West Palm Beach, Florida</h1>
                 <p class="hero-answer">
-                    From Northwood Hills to Flamingo Park and across all of West Palm Beach's diverse neighborhoods, Drain Masters of the Palm Beaches delivers licensed plumbing service—drain cleaning, sewer repair, repiping, and emergency calls—to homes of every age and style.
+                    From Northwood Hills to Flamingo Park and across all of West Palm Beach's diverse neighborhoods, Drain Masters of the Palm Beaches delivers professional plumbing service—drain cleaning, sewer repair, repiping, and emergency calls—to homes of every age and style.
                 </p>
                 <div class="hero-chips">
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                        Licensed & Insured
+                        Locally Owned Since 2023
                     </span>
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -62,7 +62,7 @@ $canonicalUrl = $siteUrl . '/service-areas/west-palm-beach/';
                 <form action="<?php echo htmlspecialchars($formAction); ?>" method="POST">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
-                    <?php echo getAttributionFields('hero'); ?>
+                    <?php echo p1_attribution_fields('hero'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
@@ -204,10 +204,10 @@ $canonicalUrl = $siteUrl . '/service-areas/west-palm-beach/';
         <h2>Why West Palm Beach Residents Choose Drain Masters</h2>
         <div class="prose">
             <p>
-                In a city as large and diverse as West Palm Beach, finding a plumber you can trust means finding someone who's licensed, experienced with homes of every age, and willing to show up when they say they will. We're a Florida-licensed plumbing contractor serving the Palm Beaches, and we've worked on everything from century-old homes in Old Northwood to new construction on the west side.
+                In a city as large and diverse as West Palm Beach, finding a plumber you can trust means finding someone who's experienced with homes of every age and willing to show up when they say they will. We're a locally owned plumbing company serving the Palm Beaches, and we've worked on everything from century-old homes in Old Northwood to new construction on the west side.
             </p>
             <p>
-                We drive fully stocked service trucks, so most repairs happen the same day. If we need to order a part or schedule a bigger job—repiping, sewer line replacement, water heater installation—we'll give you an honest timeline and a written estimate with no hidden fees before we start.
+                We show up prepared for the common drain, sewer, and water heater problems in the area, so many repairs can be finished the same day. If we need to order a part or schedule a bigger job—repiping, sewer line replacement, water heater installation—we'll give you an honest timeline and a written estimate with no hidden fees before we start.
             </p>
             <p>
                 We've served this community since <?php echo $yearEstablished; ?>, and we're not going anywhere. When we finish a job, you get our direct number. If you have a question two weeks later or need a follow-up visit, you call the same team who did the work—not a call center. That's how local plumbing service should work.
@@ -221,7 +221,7 @@ $canonicalUrl = $siteUrl . '/service-areas/west-palm-beach/';
     <div class="container">
         <div class="cta-content">
             <h2>Need a Plumber in West Palm Beach?</h2>
-            <p>Fast response, honest pricing, and work that's guaranteed. Call us or request a free estimate online.</p>
+            <p>Fast response, honest pricing, and straight answers. Call us or request a free estimate online.</p>
         </div>
         <div class="cta-actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn-secondary">

@@ -8,7 +8,7 @@ $currentPage = 'home';
 $pageType    = 'home';
 
 $pageTitle       = 'Plumber & Drain Cleaning in Palm Springs, FL | Drain Masters of the Palm Beaches';
-$metaDescription = 'Drain Masters of the Palm Beaches is a licensed Palm Springs, FL plumber for drain cleaning, sewer line repair, water heaters and emergency plumbing. Call ' . $phone . '.';
+$metaDescription = 'Locally owned Palm Springs, FL plumber for drain cleaning, sewer repair, water heaters and same-day emergency plumbing. Free estimates. Call ' . $phone . '.';
 $pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/';
 
@@ -106,6 +106,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .blog-featured-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; transition: var(--transition); display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
   .blog-featured-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
   .blog-featured-image-link { display: block; overflow: hidden; }
+  .blog-featured-image-link picture { display: block; height: 100%; }
   .blog-featured-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
   .blog-featured-card:hover .blog-featured-image { transform: scale(1.05); }
   .blog-featured-content { padding: var(--space-xl); display: flex; flex-direction: column; justify-content: center; }
@@ -133,15 +134,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <div class="hero-text">
                 <span class="eyebrow">Palm Springs, FL &middot; Serving the Palm Beaches</span>
                 <h1 class="hero-title">Fast, Honest Plumbing &amp; Drain Service in Palm Springs</h1>
-                <p class="hero-answer">Drain Masters of the Palm Beaches clears stubborn clogs, repairs sewer lines, and handles plumbing emergencies across Palm Springs and Palm Beach County&mdash;licensed, insured, and ready for same-day calls.</p>
+                <p class="hero-answer">Drain Masters of the Palm Beaches clears stubborn clogs, repairs and replaces sewer lines, finds hidden leaks, installs water heaters, and handles plumbing emergencies across Palm Springs and Palm Beach County. Locally owned since 2023, owner Luis Noda's team offers same-day and after-hours emergency service and free estimates.</p>
                 <div class="hero-actions">
                     <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
                     <a class="link-call" href="tel:<?php echo formatPhone($phone); ?>"><?php echo $icons['phone']; ?> or call <?php echo $phone; ?></a>
                 </div>
                 <p class="hero-rating"><span class="stars"><?php echo str_repeat($icons['star'], 5); ?></span> <strong>5.0</strong> from 6 Google reviews</p>
                 <ul class="hero-chips">
-                    <li><?php echo $icons['shield']; ?> Licensed &amp; insured</li>
-                    <li><?php echo $icons['home']; ?> Family owned since 2023</li>
+                    <li><?php echo $icons['shield']; ?> Locally owned since 2023</li>
+                    <li><?php echo $icons['home']; ?> Serving 8 Palm Beach County cities</li>
                     <li><?php echo $icons['clock']; ?> Same-day emergency service</li>
                 </ul>
             </div>
@@ -153,7 +154,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="form_location" value="hero">
-                    <?php echo getAttributionFields('hero'); ?>
+                    <?php echo p1_attribution_fields('hero'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
                     <div class="form-row"><label class="sr-only" for="hero-name">Name</label><input id="hero-name" type="text" name="name" placeholder="Name" autocomplete="name" required></div>
@@ -206,7 +207,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 <span class="eyebrow-label">Palm Springs Plumbing Specialists</span>
                 <h2>Why Palm Springs homeowners call Drain Masters first</h2>
                 <p>Drain Masters of the Palm Beaches was built around one job most plumbers treat as an afterthought: keeping your drains and sewer lines flowing. Palm Springs sits on hard, mineral-heavy water, and many homes here run on decades-old cast iron and clay pipe that scales up, corrodes, and pulls in tree roots. We know exactly how those lines fail&mdash;and how to fix them for good.</p>
-                <p>You get a straight answer, an upfront estimate with no surprise fees, and work backed by a licensed, insured local team. Whether it's a slow kitchen sink or a collapsed sewer main, we diagnose the real cause before we quote a repair.</p>
+                <p>You get a straight answer, an upfront estimate with no surprise fees, and work done by a local team that knows Palm Springs plumbing. Whether it's a slow kitchen sink or a collapsed sewer main, we diagnose the real cause before we quote a repair.</p>
                 <ul class="intro-points">
                     <li><?php echo $icons['check']; ?> Free assessments &amp; upfront pricing</li>
                     <li><?php echo $icons['check']; ?> Same-day &amp; after-hours emergencies</li>
@@ -271,14 +272,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="ticker-track">
         <?php
         $tickerItems = [
-            ['shield',      'Licensed &amp; Insured'],
+            ['shield',      'Locally Owned &amp; Operated'],
             ['star',        '5.0&#9733; Google Rating'],
             ['clock',       'Same-Day Service'],
             ['waves',       'Drain Cleaning &amp; Hydro Jetting'],
             ['wrench',      'Sewer Line Experts'],
             ['map-pin',     'Palm Springs &amp; Lake Worth'],
             ['badge-check', 'Free Estimates'],
-            ['home',        'Family Owned Since 2023'],
+            ['home',        'Serving the Palm Beaches Since 2023'],
         ];
         // Print twice for a seamless loop
         for ($pass = 0; $pass < 2; $pass++):
@@ -301,8 +302,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 <ol class="process-steps">
                     <li><b>Inspect</b><span>We assess the line, often with a camera, to find the real problem.</span></li>
                     <li><b>Diagnose &amp; Quote</b><span>You get a clear explanation and an upfront, no-surprise estimate.</span></li>
-                    <li><b>Repair</b><span>Licensed techs complete the work cleanly and to code.</span></li>
-                    <li><b>Guarantee</b><span>We confirm full flow and stand behind every repair.</span></li>
+                    <li><b>Repair</b><span>Our crew completes the work cleanly and to code.</span></li>
+                    <li><b>Confirm</b><span>We test the line and confirm full flow before we leave.</span></li>
                 </ol>
             </div>
             <div class="about-image reveal-right">
@@ -370,7 +371,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             ?>
             <article class="blog-featured-card">
                 <a href="/blog/<?php echo $featuredPost['slug']; ?>/" class="blog-featured-image-link">
-                    <img src="<?php echo $featuredPost['image']; ?>" alt="<?php echo htmlspecialchars($featuredPost['alt']); ?>" width="960" height="540" loading="lazy" class="blog-featured-image">
+                    <?php echo renderPicture($featuredPost['imageBase'], $featuredPost['alt'], 960, 540, '(max-width: 768px) 100vw, 400px', ['imgClass' => 'blog-featured-image']); ?>
                 </a>
                 <div class="blog-featured-content">
                     <div class="blog-featured-meta">
@@ -413,7 +414,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
                     <input type="hidden" name="form_location" value="estimate-section">
-                    <?php echo getAttributionFields('estimate-section'); ?>
+                    <?php echo p1_attribution_fields('estimate-section'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
@@ -470,9 +471,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <span class="eyebrow-label">What happens next</span>
                     <h3>Three steps to a fixed drain</h3>
                     <ol class="next-steps">
-                        <li><strong>We call you back same day</strong>Tell us what's happening and we'll respond fast&mdash;often within the hour during business hours.</li>
+                        <li><strong>We call you back same day</strong>Tell us what's happening and we'll respond fast with next steps.</li>
                         <li><strong>We diagnose the real cause</strong>On urgent jobs we head out same-day and inspect the line before quoting anything.</li>
-                        <li><strong>You get an upfront price</strong>Clear options, no hidden fees, and work backed by a licensed local team.</li>
+                        <li><strong>You get an upfront price</strong>Clear options, no hidden fees, and work done by a local Palm Springs team.</li>
                     </ol>
                 </div>
 

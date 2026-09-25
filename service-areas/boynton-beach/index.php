@@ -33,12 +33,12 @@ $canonicalUrl = $siteUrl . '/service-areas/boynton-beach/';
                 <p class="eyebrow">Service in Boynton Beach</p>
                 <h1>Expert Plumbing in Boynton Beach, Florida</h1>
                 <p class="hero-answer">
-                    Drain Masters of the Palm Beaches serves Boynton Beach's coastal and inland neighborhoods—from Leisureville and Golfview Harbour to the historic downtown area and Boynton Beach Heights—with licensed plumbing service for hard water issues, sewer repairs, and emergency calls.
+                    Drain Masters of the Palm Beaches serves Boynton Beach's coastal and inland neighborhoods—from Leisureville and Golfview Harbour to the historic downtown area and Boynton Beach Heights—with professional plumbing service for hard water issues, sewer repairs, and emergency calls.
                 </p>
                 <div class="hero-chips">
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                        Licensed & Insured
+                        Locally Owned Since 2023
                     </span>
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -64,7 +64,7 @@ $canonicalUrl = $siteUrl . '/service-areas/boynton-beach/';
                 <form action="<?php echo htmlspecialchars($formAction); ?>" method="POST">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
-                    <?php echo getAttributionFields('hero'); ?>
+                    <?php echo p1_attribution_fields('hero'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
@@ -206,10 +206,10 @@ $canonicalUrl = $siteUrl . '/service-areas/boynton-beach/';
         <h2>Why Boynton Beach Homeowners Trust Drain Masters</h2>
         <div class="prose">
             <p>
-                When you call a plumber in Boynton Beach, you want someone who understands the local challenges—hard water, saltwater corrosion, and aging plumbing systems—and has the tools to diagnose and fix problems right the first time. That's what we deliver. We're a licensed Florida plumbing contractor, bonded and insured, and our work is guaranteed.
+                When you call a plumber in Boynton Beach, you want someone who understands the local challenges—hard water, saltwater corrosion, and aging plumbing systems—and has the tools to diagnose and fix problems right the first time. That's what we deliver. We're a locally owned Palm Springs plumbing company, and we diagnose the real cause before quoting a fix.
             </p>
             <p>
-                We drive fully stocked service trucks, so most repairs happen the same day. If we need to order a specialty part or schedule a larger project—repiping, sewer line replacement, water heater installation—we'll give you an honest timeline and a written estimate with no hidden fees before we start.
+                We show up prepared for the common drain, sewer, and water heater problems in the area, so many repairs can be finished the same day. If we need to order a specialty part or schedule a larger project—repiping, sewer line replacement, water heater installation—we'll give you an honest timeline and a written estimate with no hidden fees before we start.
             </p>
             <p>
                 We've served the Palm Beaches since <?php echo $yearEstablished; ?>, and we're not going anywhere. When we finish a job, you get our direct number—not a call center. If you have a question two weeks later or need a follow-up visit, you call the same team who did the work. That's how local plumbing service should work.
@@ -223,7 +223,7 @@ $canonicalUrl = $siteUrl . '/service-areas/boynton-beach/';
     <div class="container">
         <div class="cta-content">
             <h2>Need a Plumber in Boynton Beach?</h2>
-            <p>Fast response, honest pricing, and work that's guaranteed. Call us or request a free estimate online.</p>
+            <p>Fast response, honest pricing, and straight answers. Call us or request a free estimate online.</p>
         </div>
         <div class="cta-actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn-secondary">

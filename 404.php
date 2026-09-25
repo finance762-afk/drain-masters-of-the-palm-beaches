@@ -13,6 +13,8 @@ $pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/404';
 $noindex         = true;  // Don't index 404 pages
 
+http_response_code(404);
+
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>

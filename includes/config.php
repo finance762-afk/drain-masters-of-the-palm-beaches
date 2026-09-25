@@ -9,7 +9,7 @@
 /* ---- Identity --------------------------------------------------------- */
 $slug            = 'drain-masters-of-the-palm-beaches';          // == build directory name
 $siteName        = 'Drain Masters of the Palm Beaches';
-$tagline         = 'Licensed Drain & Plumbing Experts in Palm Springs, FL';
+$tagline         = 'Drain & Plumbing Experts in Palm Springs, FL';
 $ownerName       = 'Luis Noda';
 $industry        = 'plumbing';
 
@@ -107,13 +107,13 @@ $services = [
     [
         'name'        => 'Gas Line Repair',
         'slug'        => 'gas-line-repair',
-        'description' => 'Safe gas line repair, installation, and leak testing performed by licensed plumbers to code.',
+        'description' => 'Safe gas line repair, installation, and leak testing performed to code.',
         'keywords'    => 'gas line repair Palm Springs FL',
     ],
     [
         'name'        => 'Backflow Prevention',
         'slug'        => 'backflow-prevention',
-        'description' => 'Backflow prevention device installation, testing, and certification that protects your drinking water supply.',
+        'description' => 'Backflow prevention device installation, testing, and repair that protects your drinking water supply.',
         'keywords'    => 'backflow prevention Palm Springs FL',
     ],
     [

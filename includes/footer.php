@@ -12,12 +12,12 @@
                         <span class="logo-tagline">of the Palm Beaches</span>
                     </div>
                     <p class="footer-tagline"><?php echo htmlspecialchars($tagline); ?></p>
-                    <p class="footer-description">Licensed drain cleaning and plumbing experts serving Palm Springs and the Palm Beaches. Fast response, fair pricing, work guaranteed.</p>
+                    <p class="footer-description">Locally owned drain cleaning and plumbing experts serving Palm Springs and the Palm Beaches. Fast response and fair, upfront pricing.</p>
 
                     <div class="footer-trust-badges">
                         <div class="trust-badge">
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
-                            <span>Licensed & Insured</span>
+                            <span>Locally Owned Since 2023</span>
                         </div>
                         <div class="trust-badge">
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
@@ -105,7 +105,7 @@
 
                         <div class="footer-contact-item">
                             <svg aria-hidden="true" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-                            <span>Monday - Friday: 8am - 5pm<br>Emergency Service Available 24/7</span>
+                            <span>Emergency service available<br>Same-day and after-hours</span>
                         </div>
                     </div>
 
@@ -125,7 +125,7 @@
                 <meta itemprop="url" content="<?php echo $siteUrl; ?>">
                 <meta itemprop="telephone" content="<?php echo $phone; ?>">
                 <p class="entity-description">
-                    <strong itemprop="name"><?php echo htmlspecialchars($siteName); ?></strong> is a licensed Florida plumbing contractor based in <?php echo $address['city']; ?>, serving homeowners and businesses across the Palm Beaches with professional drain cleaning, sewer repair, leak detection, and emergency plumbing services. With <?php echo $yearsInBusiness; ?> years of hands-on experience, our team brings reliable solutions to the area's toughest plumbing challenges—from stubborn clogs to full sewer line replacements.
+                    <strong itemprop="name"><?php echo htmlspecialchars($siteName); ?></strong> is a locally owned plumbing company based in <?php echo $address['city']; ?>, serving homeowners and businesses across the Palm Beaches with professional drain cleaning, sewer repair, leak detection, and emergency plumbing services. With <?php echo $yearsInBusiness; ?> years of hands-on experience, our team brings reliable solutions to the area's toughest plumbing challenges—from stubborn clogs to full sewer line replacements.
                 </p>
             </div>
         </div>
@@ -135,6 +135,8 @@
     <div class="footer-legal-row">
         <div class="container">
             <nav aria-label="Legal">
+                <a href="/faq/">FAQ</a>
+                <span class="footer-legal-divider">|</span>
                 <a href="/privacy-policy/">Privacy Policy</a>
                 <span class="footer-legal-divider">|</span>
                 <a href="/terms/">Terms of Service</a>
@@ -199,7 +201,7 @@
             <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
             <input type="hidden" name="form_location" value="dialog">
-            <?php echo getAttributionFields('dialog'); ?>
+            <?php echo p1_attribution_fields('dialog'); ?>
             <input type="hidden" name="consent_version" value="v2.1">
             <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 

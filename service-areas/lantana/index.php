@@ -17,7 +17,7 @@ $pageType = 'city';
 $citySlug = 'lantana';
 $areaName = 'Lantana';
 $pageTitle = "Plumber in Lantana, FL | Coastal Plumbing Experts | $siteName";
-$metaDescription = "Expert plumbing in Lantana, FL. Serving Lantana Heights, Ocean Breeze, and all coastal neighborhoods with drain cleaning, sewer repair, and emergency plumbing. Licensed plumbers. Call $phone.";
+$metaDescription = "Lantana, FL plumber serving Lantana Heights, Ocean Breeze, and the coast. Drain cleaning, sewer repair, same-day emergency plumbing. Call $phone.";
 $pageDescription = $metaDescription;
 $canonicalUrl = $siteUrl . '/service-areas/lantana/';
 ?>
@@ -32,12 +32,12 @@ $canonicalUrl = $siteUrl . '/service-areas/lantana/';
                 <p class="eyebrow">Service in Lantana</p>
                 <h1>Trusted Plumbing in Lantana, Florida</h1>
                 <p class="hero-answer">
-                    Drain Masters of the Palm Beaches serves Lantana's coastal neighborhoods—from Lantana Heights and Ocean Breeze to the waterfront properties along the Intracoastal—with licensed plumbing service for slab homes, older ranch-style properties, and everything in between.
+                    Drain Masters of the Palm Beaches serves Lantana's coastal neighborhoods—from Lantana Heights and Ocean Breeze to the waterfront properties along the Intracoastal—with professional plumbing service for slab homes, older ranch-style properties, and everything in between.
                 </p>
                 <div class="hero-chips">
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                        Licensed & Insured
+                        Locally Owned Since 2023
                     </span>
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -63,7 +63,7 @@ $canonicalUrl = $siteUrl . '/service-areas/lantana/';
                 <form action="<?php echo htmlspecialchars($formAction); ?>" method="POST">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
-                    <?php echo getAttributionFields('hero'); ?>
+                    <?php echo p1_attribution_fields('hero'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
@@ -208,7 +208,7 @@ $canonicalUrl = $siteUrl . '/service-areas/lantana/';
                 In a small coastal community like Lantana, you want a plumber who understands the local challenges—slab foundations, salt air corrosion, and the aging plumbing systems common in older ranch homes. You also want someone who shows up on time, fixes the problem right the first time, and charges a fair price.
             </p>
             <p>
-                That's what we deliver. We're a licensed Florida plumbing contractor, bonded and insured, and our work is guaranteed. We drive fully stocked service vehicles, so most repairs happen the same day. For larger projects—slab leak repair, repiping, sewer line replacement—we'll give you an honest timeline and a written estimate with no hidden fees before we start.
+                That's what we deliver. We're a locally owned Palm Springs plumbing company, and we diagnose the real cause before quoting a fix. We show up prepared for the common drain, sewer, and water heater problems in the area, so many repairs can be finished the same day. For larger projects—slab leak repair, repiping, sewer line replacement—we'll give you an honest timeline and a written estimate with no hidden fees before we start.
             </p>
             <p>
                 We've served the Palm Beaches since <?php echo $yearEstablished; ?>, and we're not going anywhere. When we finish a job, you get our direct number—not a call center. If you have a question two weeks later or need a follow-up visit, you call the same team who did the work. That's how local plumbing service should work.
@@ -222,7 +222,7 @@ $canonicalUrl = $siteUrl . '/service-areas/lantana/';
     <div class="container">
         <div class="cta-content">
             <h2>Need a Plumber in Lantana?</h2>
-            <p>Fast response, honest pricing, and work that's guaranteed. Call us or request a free estimate online.</p>
+            <p>Fast response, honest pricing, and straight answers. Call us or request a free estimate online.</p>
         </div>
         <div class="cta-actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn-secondary">

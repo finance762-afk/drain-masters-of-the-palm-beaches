@@ -90,7 +90,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="container">
             <div class="hero-copy">
                 <span class="eyebrow">About Drain Masters</span>
-                <h1>Licensed Palm Springs Plumber Since 2023</h1>
+                <h1>Locally Owned Palm Springs Plumber Since 2023</h1>
                 <p class="hero-answer">Drain Masters of the Palm Beaches is a locally owned plumbing company serving Palm Springs and Palm Beach County. We specialize in drain cleaning, sewer line repair, leak detection, and emergency plumbing—delivering fast, reliable service when you need it most.</p>
             </div>
         </div>
@@ -108,7 +108,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                         <span class="eyebrow">Our Story</span>
                         <h2>Built on a Foundation of Honest Work</h2>
                     </div>
-                    <p>Drain Masters of the Palm Beaches was founded in 2023 by <?php echo htmlspecialchars($ownerName); ?>, a licensed Florida plumber who saw too many homeowners frustrated by overpriced quotes, missed appointments, and plumbing "fixes" that didn't last. We built this business around a simple idea: diagnose the real problem, quote it fairly, and fix it right the first time.</p>
+                    <p>Drain Masters of the Palm Beaches was founded in 2023 by <?php echo htmlspecialchars($ownerName); ?>, a Palm Springs plumber who saw too many homeowners frustrated by overpriced quotes, missed appointments, and plumbing "fixes" that didn't last. We built this business around a simple idea: diagnose the real problem, quote it fairly, and fix it right the first time.</p>
                     <p>Palm Springs and the surrounding Palm Beach County communities have unique plumbing challenges—hard water that scales pipes, older homes with cast iron drains, and tree roots that invade sewer lines. We've made those issues our specialty, investing in the right tools (from high-pressure hydro jetters to electronic leak detection equipment) and the training to use them correctly.</p>
                     <p>Today, Drain Masters serves homeowners and businesses across the Palm Beaches with drain cleaning, sewer repair, leak detection, water heater service, and emergency plumbing. We're still locally owned, still owner-operated, and still committed to the same honest approach that started this company.</p>
                 </div>
@@ -152,8 +152,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 </div>
                 <div class="value-card">
                     <svg aria-hidden="true" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-                    <h3>Guarantees Honored</h3>
-                    <p>Our work is guaranteed. If a repair doesn't hold or a drain clogs again soon after we clear it, we come back and make it right—no argument.</p>
+                    <h3>Straight Answers</h3>
+                    <p>We explain what we found, what it will cost, and what your options are before any work starts—no pressure and no surprise fees.</p>
                 </div>
             </div>
         </div>
@@ -164,25 +164,25 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="container container-narrow">
             <div class="split-content">
                 <div>
-                    <span class="eyebrow">Qualifications</span>
-                    <h2>Licensed, Insured & Ready to Serve</h2>
-                    <p>Drain Masters of the Palm Beaches holds all state and local licensing required to provide plumbing services across Palm Beach County. We carry full liability insurance and workers' compensation coverage to protect your property and our team on every job.</p>
+                    <span class="eyebrow">Who You're Hiring</span>
+                    <h2>Locally Owned & Ready to Serve</h2>
+                    <p>Drain Masters of the Palm Beaches is a locally owned plumbing company based in Palm Springs, serving homeowners and businesses across Palm Beach County since 2023. Here is what you can count on when you call.</p>
                     <ul class="about-credentials">
                         <li>
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-                            <span><strong>Florida Licensed Plumber</strong> — fully licensed to provide drain cleaning, sewer repair, leak detection, and all residential plumbing services</span>
+                            <span><strong>Locally Owned Since 2023</strong> — based in Palm Springs and run by owner Luis Noda, who still works the jobs</span>
                         </li>
                         <li>
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-                            <span><strong>Liability Insurance</strong> — general liability coverage protects your home during service</span>
+                            <span><strong>Drain &amp; Sewer Specialists</strong> — drain cleaning, hydro jetting, and sewer line repair are our core trade</span>
                         </li>
                         <li>
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-                            <span><strong>Workers' Compensation Coverage</strong> — so you're never liable if someone is injured on your property</span>
+                            <span><strong>Emergency Plumbing</strong> — same-day and after-hours service for burst pipes, sewer backups, and major leaks</span>
                         </li>
                         <li>
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-                            <span><strong>Background Checked</strong> — every technician is vetted before entering your home</span>
+                            <span><strong>Free Estimates</strong> — an upfront price and clear options before any work begins</span>
                         </li>
                         <li>
                             <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>

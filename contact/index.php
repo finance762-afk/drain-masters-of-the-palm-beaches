@@ -185,7 +185,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                         <!-- Hidden fields -->
                         <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
                         <input type="hidden" name="form_location" value="contact">
-                        <?php echo getAttributionFields('contact'); ?>
+                        <?php echo p1_attribution_fields('contact'); ?>
                         <input type="hidden" name="consent_version" value="v2.1">
                         <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 

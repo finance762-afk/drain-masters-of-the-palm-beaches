@@ -14,7 +14,7 @@ $pageType = 'city';
 $citySlug = 'palm-springs';
 $areaName = 'Palm Springs';
 $pageTitle = "Plumber in Palm Springs, FL | Drain Cleaning & Sewer Repair | $siteName";
-$metaDescription = "Expert plumbing in Palm Springs, FL. We serve Century Village, Golf, and Vista Park neighborhoods with drain cleaning, sewer repair, and emergency service. Local licensed plumbers. Call $phone.";
+$metaDescription = "Palm Springs, FL plumber serving Century Village, Golf, and Vista Park. Drain cleaning, sewer repair, same-day emergency service. Call $phone.";
 $pageDescription = $metaDescription;
 $canonicalUrl = $siteUrl . '/service-areas/palm-springs/';
 ?>
@@ -29,12 +29,12 @@ $canonicalUrl = $siteUrl . '/service-areas/palm-springs/';
                 <p class="eyebrow">Service in Palm Springs</p>
                 <h1>Expert Plumbing in Palm Springs, Florida</h1>
                 <p class="hero-answer">
-                    As a licensed Florida plumbing contractor based right here in Palm Springs, Drain Masters of the Palm Beaches brings local expertise to every call—from Century Village condos to single-family homes in the Golf and Vista Park neighborhoods.
+                    Based right here in Palm Springs and locally owned since 2023, Drain Masters of the Palm Beaches brings local expertise to every call—from Century Village condos to single-family homes in the Golf and Vista Park neighborhoods.
                 </p>
                 <div class="hero-chips">
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                        Licensed & Insured
+                        Locally Owned Since 2023
                     </span>
                     <span class="hero-chip">
                         <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -60,7 +60,7 @@ $canonicalUrl = $siteUrl . '/service-areas/palm-springs/';
                 <form action="<?php echo htmlspecialchars($formAction); ?>" method="POST">
                     <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
-                    <?php echo getAttributionFields('hero'); ?>
+                    <?php echo p1_attribution_fields('hero'); ?>
                     <input type="hidden" name="consent_version" value="v2.1">
                     <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
@@ -205,7 +205,7 @@ $canonicalUrl = $siteUrl . '/service-areas/palm-springs/';
                 When you call a local plumber in Palm Springs, you want someone who shows up on time, diagnoses the problem accurately, and gives you a fair price before starting work. You don't want surprise charges, pressure to buy services you don't need, or a repair that fails three months later.
             </p>
             <p>
-                That's what we deliver. We're licensed, bonded, and insured in Florida, and our work is guaranteed. We drive company vehicles stocked with common parts, so most repairs happen the same day. If we need to order a specialty part or schedule a larger job like repiping or sewer line replacement, we'll give you an honest timeline and a written estimate with no hidden fees.
+                That's what we deliver. We're a locally owned Palm Springs plumbing company, and we diagnose the real cause before quoting a fix. We show up prepared for the common drain, sewer, and water heater problems in the area, so many repairs can be finished the same day. If we need to order a specialty part or schedule a larger job like repiping or sewer line replacement, we'll give you an honest timeline and a written estimate with no hidden fees.
             </p>
             <p>
                 We've lived and worked in Palm Springs since <?php echo $yearEstablished; ?>, and we're not going anywhere. When we finish a job, you get our direct number—not a call center. If you have a question two weeks later or need a follow-up visit, you call the same team who did the work. That's how local service should work.
@@ -219,7 +219,7 @@ $canonicalUrl = $siteUrl . '/service-areas/palm-springs/';
     <div class="container">
         <div class="cta-content">
             <h2>Need a Plumber in Palm Springs?</h2>
-            <p>Fast response, fair pricing, and work that's guaranteed. Call us or request a free estimate online.</p>
+            <p>Fast response, fair pricing, and straight answers. Call us or request a free estimate online.</p>
         </div>
         <div class="cta-actions">
             <a href="tel:<?php echo formatPhone($phone); ?>" class="btn-secondary">

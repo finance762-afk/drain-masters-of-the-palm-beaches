@@ -1,15 +1,15 @@
 # llms.txt — Drain Masters of the Palm Beaches
 
-# Business Overview
+# Business Information
 
 Drain Masters of the Palm Beaches
-Licensed Plumbing Contractor
+Locally Owned Plumbing Company (est. 2023, owner Luis Noda)
 3193 Drew Way
 Palm Springs, FL 33406
 Phone: 561-906-8711
 Email: nodaluis239@gmail.com
 
-**About:** Drain Masters of the Palm Beaches is a licensed Florida plumbing contractor based in Palm Springs, serving homeowners and businesses across the Palm Beaches with professional drain cleaning, sewer repair, leak detection, and emergency plumbing services. In business since 2023, our team brings reliable solutions to the area's toughest plumbing challenges.
+**About:** Drain Masters of the Palm Beaches is a locally owned plumbing company based in Palm Springs, serving homeowners and businesses across the Palm Beaches with professional drain cleaning, sewer repair, leak detection, and emergency plumbing services. In business since 2023, our team brings reliable solutions to the area's toughest plumbing challenges.
 
 **Rating:** 5.0 stars (6 Google reviews)
 
@@ -37,7 +37,7 @@ Email: nodaluis239@gmail.com
 
 10. **Sump Pump Installation & Repair** — Protects basements and low areas from flooding with reliable sump pump service.
 
-11. **Gas Line Repair** — Licensed gas line diagnostics and repair for safe, code-compliant installations.
+11. **Gas Line Repair** — Gas line diagnostics, repair, installation, and leak testing performed to code.
 
 12. **Backflow Prevention** — Installation and testing of backflow prevention devices to protect drinking water quality.
 
@@ -58,7 +58,6 @@ Primary service area: Palm Springs, FL and surrounding Palm Beach County communi
 - Lantana, FL
 - Royal Palm Beach, FL
 
-Service radius: 35 miles from Palm Springs, FL
 
 ---
 
@@ -72,7 +71,7 @@ Service radius: 35 miles from Palm Springs, FL
 
 4. **Transparent pricing** — Free assessments and upfront pricing with no hidden fees or surprise charges
 
-5. **Licensed, bonded, and insured** — Fully licensed Florida plumbing contractor
+5. **Locally owned since 2023** — Based in Palm Springs and run by owner Luis Noda
 
 6. **Owner-operated** — Direct accountability and hands-on service quality control
 
@@ -97,10 +96,9 @@ A: Snaking/cabling clears most everyday clogs quickly. Hydro jetting is better w
 
 ---
 
-# Operating Hours
+# Availability
 
-**Regular Hours:** Monday - Friday, 8:00 AM - 5:00 PM
-**Emergency Service:** Available 24/7 for urgent drain and plumbing issues
+**Emergency Service:** Same-day and after-hours emergency plumbing for urgent drain, leak, and sewer issues. Call to confirm availability for your location.
 
 ---
 
@@ -124,7 +122,7 @@ Our team understands these local factors and tailors solutions to Palm Beach Cou
 **Phone:** 561-906-8711 (Call for same-day service and emergency response)
 **Email:** nodaluis239@gmail.com
 **Address:** 3193 Drew Way, Palm Springs, FL 33406
-**Website:** https://drain-masters-of-the-palm-beaches.com
+**Website:** https://drain-masters-of-the-palm-beaches.pageone.cloud
 
 **How to Get Service:**
 1. Call or submit online estimate request
@@ -134,10 +132,22 @@ Our team understands these local factors and tailors solutions to Palm Beach Cou
 
 ---
 
-# License & Credentials
+# Pages
 
-- Licensed Florida Plumbing Contractor
-- Fully insured and bonded
+- Home: /
+- Services: /services/ (13 service pages under /services/<service>/)
+- Service Areas: /service-areas/ (8 city pages under /service-areas/<city>/)
+- About: /about/
+- FAQ: /faq/
+- Blog: /blog/
+- Contact: /contact/
+
+---
+
+# Credentials
+
+- Locally owned plumbing company based in Palm Springs, FL
+- Owner: Luis Noda
 - 5.0-star Google rating (6 reviews)
 - Locally owned and operated in Palm Springs, FL
 - In business since 2023

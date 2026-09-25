@@ -9,13 +9,15 @@ $postSlug = 'drain-cleaning-cost-palm-springs';
 $post = array_values(array_filter($blogPosts, fn($p) => $p['slug'] === $postSlug))[0] ?? null;
 
 if (!$post) {
-    header('HTTP/1.1 404 Not Found');
-    include $_SERVER['DOCUMENT_ROOT'] . '/404.php';
-    exit;
+    // Registry miss (cannot happen for a hardcoded slug) — 404 without rendering a second page template.
+    http_response_code(404);
+    exit('Post not found.');
 }
 
 $pageTitle = $post['title'] . " | $siteName";
 $metaDescription = $post['excerpt'];
+$pageDescription = $metaDescription;
+$canonicalUrl    = $siteUrl . '/blog/' . $postSlug . '/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
@@ -99,10 +101,10 @@ $metaDescription = $post['excerpt'];
 
                 <h2>How to Avoid Drain Cleaning Scams</h2>
                 <p>
-                    Drain cleaning is a common target for unlicensed operators and high-pressure sales tactics. Protect yourself by asking these questions before hiring:
+                    Drain cleaning is a common target for unqualified operators and high-pressure sales tactics. Protect yourself by asking these questions before hiring:
                 </p>
                 <ul>
-                    <li>Are you licensed and insured in Florida? (Ask for proof.)</li>
+                    <li>Can you show proof of your credentials and coverage before you start?</li>
                     <li>What's your diagnostic fee, and does it apply to the repair if I hire you?</li>
                     <li>Will you give me a written estimate before starting work?</li>
                     <li>What's included in that price, and what could add to it?</li>
@@ -125,8 +127,8 @@ $metaDescription = $post['excerpt'];
                 <?php
                 $faqs = [
                     [
-                        'q' => 'Does homeowners insurance cover drain cleaning?',
-                        'a' => 'Usually not. Most policies exclude routine maintenance and clogs caused by normal use. They may cover sudden pipe bursts or sewer backups if they result from a covered peril (like a tree falling and breaking the line), but not slow drains or grease buildup. Check your policy or call your insurer to confirm.'
+                        'q' => 'Will my homeowners policy cover drain cleaning?',
+                        'a' => 'Usually not. Most policies exclude routine maintenance and clogs caused by normal use. They may cover sudden pipe bursts or sewer backups if they result from a covered peril (like a tree falling and breaking the line), but not slow drains or grease buildup. Check your policy or call your carrier to confirm.'
                     ],
                     [
                         'q' => 'How can I prevent future clogs and save money?',

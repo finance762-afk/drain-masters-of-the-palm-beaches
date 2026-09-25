@@ -70,7 +70,7 @@ $spServiceMeta = [
     'toilet-faucet-repair-and-installation' => ['icon' => 'droplet',  'bullets' => ['Stops running toilets', 'Fixture install and repair', 'Cuts wasted water']],
     'garbage-disposal-repair'               => ['icon' => 'trash-2',  'bullets' => ['Fixes jams and leaks', 'Repair or full swap', 'Kitchen sink back in service']],
     'sump-pump-installation-repair'         => ['icon' => 'gauge',    'bullets' => ['Storm-season ready', 'Install, test, and repair', 'Keeps groundwater out']],
-    'gas-line-repair'                       => ['icon' => 'zap',      'bullets' => ['Licensed gas work', 'Leak testing to code', 'Safe install and repair']],
+    'gas-line-repair'                       => ['icon' => 'zap',      'bullets' => ['Gas line work to code', 'Leak testing to code', 'Safe install and repair']],
     'backflow-prevention'                   => ['icon' => 'shield',   'bullets' => ['Device install and testing', 'Annual certification', 'Protects drinking water']],
     'emergency-plumbing'                    => ['icon' => 'alert-triangle', 'bullets' => ['Same-day and after-hours', 'Burst pipes and backups', 'Fast damage control']],
 ];

@@ -83,6 +83,9 @@
   --font-size-xs: .75rem; --font-size-sm: .875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem; --font-size-2xl: var(--fs-h3); --font-size-3xl: var(--fs-h2); --font-size-4xl: var(--fs-h1);
   --font-size-5xl: var(--fs-h1); --font-size-6xl: var(--fs-h1);
+  /* Page-level aliases (blog/city/faq compositions) */
+  --fs-h4: clamp(1rem, .95rem + .3vw, 1.15rem); --fs-h5: 1rem; --fs-sm: var(--fs-small); --font-size-h3: var(--fs-h3);
+  --color-ink-1: var(--color-ink); --color-paper-3: color-mix(in srgb, #f6f3ec 86%, #1f2428 14%);
 
   /* Layout */
   --measure: 62ch; --content-width: 62ch;

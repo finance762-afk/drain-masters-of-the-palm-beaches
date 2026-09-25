@@ -9,13 +9,15 @@ $postSlug = 'hurricane-season-plumbing-prep';
 $post = array_values(array_filter($blogPosts, fn($p) => $p['slug'] === $postSlug))[0] ?? null;
 
 if (!$post) {
-    header('HTTP/1.1 404 Not Found');
-    include $_SERVER['DOCUMENT_ROOT'] . '/404.php';
-    exit;
+    // Registry miss (cannot happen for a hardcoded slug) — 404 without rendering a second page template.
+    http_response_code(404);
+    exit('Post not found.');
 }
 
 $pageTitle = $post['title'] . " | $siteName";
 $metaDescription = $post['excerpt'];
+$pageDescription = $metaDescription;
+$canonicalUrl    = $siteUrl . '/blog/' . $postSlug . '/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
@@ -52,7 +54,7 @@ $metaDescription = $post['excerpt'];
         <div class="container-narrow">
             <div class="prose">
                 <p>
-                    Hurricane season in South Florida runs from June through November, and Palm Beach County sees its share of tropical storms and near-miss hurricanes. While most homeowners focus on boarding windows and stocking supplies, your plumbing system needs attention too—flooding and power outages can cause sewer backups, burst pipes, and contaminated water that turns a storm cleanup into a months-long insurance fight.
+                    Hurricane season in South Florida runs from June through November, and Palm Beach County sees its share of tropical storms and near-miss hurricanes. While most homeowners focus on boarding windows and stocking supplies, your plumbing system needs attention too—flooding and power outages can cause sewer backups, burst pipes, and contaminated water that turns a storm cleanup into a months-long ordeal.
                 </p>
 
                 <h2>What Hurricane Conditions Do to Plumbing</h2>
@@ -119,7 +121,7 @@ $metaDescription = $post['excerpt'];
 
                 <h2>When to Call a Plumber</h2>
                 <p>
-                    If you discover a burst pipe, sewer backup, or major leak after the storm, shut off your main water supply and call a licensed plumber. Do not attempt DIY repairs on gas lines, sewer lines, or water heaters—those require professional tools and licensing. And if your home flooded, have a plumber inspect all fixtures and supply lines before resuming normal use. Contaminated floodwater can introduce bacteria into your plumbing system that standard cleaning won't remove.
+                    If you discover a burst pipe, sewer backup, or major leak after the storm, shut off your main water supply and call a professional plumber. Do not attempt DIY repairs on gas lines, sewer lines, or water heaters—those require professional tools and permits. And if your home flooded, have a plumber inspect all fixtures and supply lines before resuming normal use. Contaminated floodwater can introduce bacteria into your plumbing system that standard cleaning won't remove.
                 </p>
             </div>
 
