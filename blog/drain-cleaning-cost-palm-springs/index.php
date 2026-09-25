@@ -79,6 +79,7 @@ $canonicalUrl    = $siteUrl . '/blog/' . $postSlug . '/';
 
                 <h2>Typical Drain Cleaning Costs in Palm Springs</h2>
                 <ul>
+                    <li><em>The ranges below are general South Florida market figures for comparison only, not Drain Masters pricing. Your written quote comes after a plumber sees the job.</em></li>
                     <li><strong>Sink or tub drain:</strong> $150-$250</li>
                     <li><strong>Toilet clog:</strong> $175-$275</li>
                     <li><strong>Main sewer line (cable):</strong> $250-$400</li>
