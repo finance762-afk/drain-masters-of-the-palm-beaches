@@ -118,6 +118,60 @@ function icon($name, $size = 24) {
 }
 
 /**
+ * Render a responsive <picture> element (v6.3 — AVIF source + WebP srcset + JPG fallback).
+ * Only references variant files that actually exist on disk, so QA never flags a
+ * missing descriptor. Base is the filename stem in /assets/images/ (no extension).
+ *
+ * @param string $base    Filename stem, e.g. 'owner-img_8976'
+ * @param string $alt     Alt text (empty string allowed for decorative)
+ * @param int    $w       Intrinsic width  (for the <img> width attr — prevents CLS)
+ * @param int    $h       Intrinsic height (for the <img> height attr)
+ * @param string $sizes   The sizes attribute value
+ * @param array  $opts    ['eager'=>bool, 'class'=>picture class, 'imgClass'=>img class, 'objectPosition'=>css]
+ * @return string <picture> markup
+ */
+function renderPicture($base, $alt, $w, $h, $sizes, $opts = []) {
+    $dir       = $_SERVER['DOCUMENT_ROOT'] . '/assets/images/';
+    $eager     = !empty($opts['eager']);
+    $picClass  = isset($opts['class']) ? ' class="' . htmlspecialchars($opts['class']) . '"' : '';
+    $imgClass  = isset($opts['imgClass']) ? ' class="' . htmlspecialchars($opts['imgClass']) . '"' : '';
+    $widths    = [480, 960, 1600];
+
+    $build = function ($ext) use ($dir, $base, $widths) {
+        $parts = [];
+        foreach ($widths as $w) {
+            if (file_exists($dir . $base . '-' . $w . '.' . $ext)) {
+                $parts[] = '/assets/images/' . $base . '-' . $w . '.' . $ext . ' ' . $w . 'w';
+            }
+        }
+        return implode(', ', $parts);
+    };
+
+    $avif = $build('avif');
+    $webp = $build('webp');
+
+    // Fallback src: the on-disk .jpg if present, else the smallest webp.
+    $fallback = file_exists($dir . $base . '.jpg')
+        ? '/assets/images/' . $base . '.jpg'
+        : '/assets/images/' . $base . '-480.webp';
+
+    $loading = $eager ? 'eager' : 'lazy';
+    $priority = $eager ? ' fetchpriority="high"' : ' decoding="async"';
+    $sizesAttr = ($webp || $avif) ? ' sizes="' . htmlspecialchars($sizes) . '"' : '';
+
+    $out  = '<picture' . $picClass . '>';
+    if ($avif) $out .= '<source type="image/avif" srcset="' . $avif . '"' . $sizesAttr . '>';
+    $out .= '<img src="' . $fallback . '"';
+    if ($webp) $out .= ' srcset="' . $webp . '"' . $sizesAttr;
+    $out .= $imgClass;
+    $out .= ' alt="' . htmlspecialchars($alt) . '" width="' . (int)$w . '" height="' . (int)$h . '"';
+    $out .= ' loading="' . $loading . '"' . $priority . '>';
+    $out .= '</picture>';
+
+    return $out;
+}
+
+/**
  * Generate attribution hidden form fields
  * Wrapper for the p1_attribution_fields() function from attribution.php
  * @param string $formId Unique form identifier on the page
