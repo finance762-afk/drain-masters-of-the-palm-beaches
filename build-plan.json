@@ -1,0 +1,490 @@
+{
+  "seo": {
+    "serp_context": null,
+    "target_radius": 35,
+    "primary_keyword": "plumber Palm Springs FL",
+    "secondary_keywords": [
+      "drain cleaning Palm Beach County",
+      "emergency plumber Lake Worth",
+      "sewer line repair West Palm Beach",
+      "water heater installation Palm Springs FL"
+    ]
+  },
+  "tier": "premium",
+  "email": "nodaluis239@gmail.com",
+  "pages": [
+    {
+      "slug": "drain-cleaning",
+      "type": "service",
+      "title": "Drain Cleaning in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Drain Cleaning"
+      ],
+      "primary_keyword": "drain cleaning Palm Springs FL"
+    },
+    {
+      "slug": "hydro-jetting",
+      "type": "service",
+      "title": "Hydro Jetting in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Hydro Jetting"
+      ],
+      "primary_keyword": "hydro jetting Palm Springs FL"
+    },
+    {
+      "slug": "sewer-line-repair-replacement",
+      "type": "service",
+      "title": "Sewer Line Repair & Replacement in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Sewer Line Repair & Replacement"
+      ],
+      "primary_keyword": "sewer line repair & replacement Palm Springs FL"
+    },
+    {
+      "slug": "trenchless-sewer-repair",
+      "type": "service",
+      "title": "Trenchless Sewer Repair in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Trenchless Sewer Repair"
+      ],
+      "primary_keyword": "trenchless sewer repair Palm Springs FL"
+    },
+    {
+      "slug": "leak-detection-slab-leak-repair",
+      "type": "service",
+      "title": "Leak Detection & Slab Leak Repair in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Leak Detection & Slab Leak Repair"
+      ],
+      "primary_keyword": "leak detection & slab leak repair Palm Springs FL"
+    },
+    {
+      "slug": "water-heater-installation-repair",
+      "type": "service",
+      "title": "Water Heater Installation & Repair in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Water Heater Installation & Repair"
+      ],
+      "primary_keyword": "water heater installation & repair Palm Springs FL"
+    },
+    {
+      "slug": "repiping",
+      "type": "service",
+      "title": "Repiping in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Repiping"
+      ],
+      "primary_keyword": "repiping Palm Springs FL"
+    },
+    {
+      "slug": "toilet-faucet-repair-and-installation",
+      "type": "service",
+      "title": "Toilet & Faucet Repair and Installation in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Toilet & Faucet Repair and Installation"
+      ],
+      "primary_keyword": "toilet & faucet repair and installation Palm Springs FL"
+    },
+    {
+      "slug": "garbage-disposal-repair",
+      "type": "service",
+      "title": "Garbage Disposal Repair in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Garbage Disposal Repair"
+      ],
+      "primary_keyword": "garbage disposal repair Palm Springs FL"
+    },
+    {
+      "slug": "sump-pump-installation-repair",
+      "type": "service",
+      "title": "Sump Pump Installation & Repair in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Sump Pump Installation & Repair"
+      ],
+      "primary_keyword": "sump pump installation & repair Palm Springs FL"
+    },
+    {
+      "slug": "gas-line-repair",
+      "type": "service",
+      "title": "Gas Line Repair in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Gas Line Repair"
+      ],
+      "primary_keyword": "gas line repair Palm Springs FL"
+    },
+    {
+      "slug": "backflow-prevention",
+      "type": "service",
+      "title": "Backflow Prevention in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Backflow Prevention"
+      ],
+      "primary_keyword": "backflow prevention Palm Springs FL"
+    },
+    {
+      "slug": "emergency-plumbing",
+      "type": "service",
+      "title": "Emergency Plumbing in Palm Springs, FL",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Emergency Plumbing"
+      ],
+      "primary_keyword": "emergency plumbing Palm Springs FL"
+    }
+  ],
+  "phone": "561-906-8711",
+  "assets": {
+    "logo": null,
+    "images": [
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8976.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "drain-masters-of-the-palm-beaches/photos/owner-img_8976.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8820.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "drain-masters-of-the-palm-beaches/photos/owner-img_8820.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8947.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "drain-masters-of-the-palm-beaches/photos/owner-img_8947.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8933.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "drain-masters-of-the-palm-beaches/photos/owner-img_8933.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8819.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "drain-masters-of-the-palm-beaches/photos/owner-img_8819.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "Drain Masters of the Palm Beaches cover photo",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/main_image.webp",
+        "page": null,
+        "role": null,
+        "caption": "",
+        "context": "cover",
+        "storage_path": null,
+        "quality_score": null
+      },
+      {
+        "alt": "Drain Masters of the Palm Beaches cover photo",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/main_image.webp",
+        "page": null,
+        "role": null,
+        "caption": "",
+        "context": "cover",
+        "storage_path": null,
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8946.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "drain-masters-of-the-palm-beaches/photos/owner-img_8946.jpg",
+        "quality_score": null
+      }
+    ],
+    "page_allocations": null,
+    "recommended_hero_image": {
+      "alt": "",
+      "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/drain-masters-of-the-palm-beaches/processed/owner-img_8976.webp",
+      "context": "other",
+      "quality_score": null
+    }
+  },
+  "design": {
+    "fonts": {},
+    "notes": "",
+    "style": "modern",
+    "colors": {
+      "extracted_from_logo": true
+    },
+    "logo_analysis": {}
+  },
+  "domain": "drain-masters-of-the-palm-beaches",
+  "phases": [
+    {
+      "name": "scaffold",
+      "phase": 1,
+      "status": "pending"
+    },
+    {
+      "name": "nav_footer_head",
+      "phase": 2,
+      "status": "pending"
+    },
+    {
+      "name": "homepage",
+      "phase": 3,
+      "status": "pending"
+    },
+    {
+      "name": "inner_pages",
+      "phase": 4,
+      "status": "pending"
+    },
+    {
+      "name": "seo_aeo_deploy",
+      "phase": 5,
+      "status": "pending"
+    }
+  ],
+  "address": {
+    "zip": "33406",
+    "city": "Palm Springs",
+    "state": "FL",
+    "street": "3193 Drew Way"
+  },
+  "content": {
+    "usps": [
+      "5.0-star Google rating from 6 reviews",
+      "In business since 2023",
+      "Locally owned in Palm Springs, Florida"
+    ],
+    "years": 3,
+    "insurance": "",
+    "description": "Drain Masters of the Palm Beaches is a local business serving Palm Springs, FL and the surrounding area, in business since 2023. Services include Drain Cleaning, Water Heater Installation, Leak Detection and Sewer Line Repair. Contact Drain Masters of the Palm Beaches at 561-906-8711 for availability and pricing.",
+    "certifications": []
+  },
+  "reviews": [],
+  "tagline": "",
+  "industry": "plumbing",
+  "services": [
+    "Drain Cleaning",
+    "Hydro Jetting",
+    "Sewer Line Repair & Replacement",
+    "Trenchless Sewer Repair",
+    "Leak Detection & Slab Leak Repair",
+    "Water Heater Installation & Repair",
+    "Repiping",
+    "Toilet & Faucet Repair and Installation",
+    "Garbage Disposal Repair",
+    "Sump Pump Installation & Repair",
+    "Gas Line Repair",
+    "Backflow Prevention",
+    "Emergency Plumbing"
+  ],
+  "owner_name": "Luis Noda",
+  "client_slug": "drain-masters-of-the-palm-beaches",
+  "form_action": "https://db.pageone.cloud/functions/v1/leads/drain-masters-of-the-palm-beaches",
+  "github_repo": "",
+  "web_sources": [],
+  "company_name": "Drain Masters of the Palm Beaches",
+  "integrations": {
+    "geo": null,
+    "bbb_url": null,
+    "financing": null,
+    "accepts_sms": null,
+    "gbp_place_id": "ChIJ7x22zmG-n4kRX8wzPU6Cvdo",
+    "gbp_map_embed": null,
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=place_id:ChIJ7x22zmG-n4kRX8wzPU6Cvdo",
+    "elfsight_embed": null,
+    "scheduling_url": null,
+    "review_request_url": "https://search.google.com/local/writereview?placeid=ChIJ7x22zmG-n4kRX8wzPU6Cvdo",
+    "certification_links": []
+  },
+  "service_areas": [
+    "Palm Springs",
+    "Lake Worth",
+    "West Palm Beach",
+    "Greenacres",
+    "Boynton Beach",
+    "Wellington",
+    "Lantana",
+    "Royal Palm Beach"
+  ],
+  "address_public": true,
+  "business_hours": "",
+  "image_curation": null,
+  "research_brief": {
+    "gbp": null,
+    "brief": {
+      "faqs": [
+        {
+          "a": "Common signs include slow drains, recurring clogs, gurgling sounds from pipes, water backing up, or foul odors. If plunging doesn't solve the problem, professional cleaning is usually needed to clear debris, roots, or mineral buildup deeper in the line.",
+          "q": "What are the signs I need professional drain cleaning?"
+        },
+        {
+          "a": "Most homes benefit from professional drain cleaning every 1-2 years as preventative maintenance. Homes with trees nearby, older pipes, or frequent clogs may need annual service. We can assess your system and recommend a schedule.",
+          "q": "How often should I have my drains professionally cleaned?"
+        },
+        {
+          "a": "Yes, we provide emergency drain cleaning and plumbing repairs. Contact us for same-day or after-hours availability—we understand that plumbing problems don't wait for business hours.",
+          "q": "Do you offer emergency drain service in Palm Springs?"
+        },
+        {
+          "a": "Our area's hard water and mineral content can build up in pipes over time. Older homes may have corroded pipes, and tree root intrusion is common. We diagnose the root cause and recommend the best solution for your situation.",
+          "q": "What causes drain problems in Palm Springs specifically?"
+        },
+        {
+          "a": "We provide free initial assessments and transparent estimates with no hidden fees. Pricing depends on the severity of the blockage and method required (standard snaking, hydro-jetting, etc.). We'll explain your options before starting work.",
+          "q": "What's your pricing structure, and do you charge for estimates?"
+        }
+      ],
+      "about_angle": "Focus on local roots and deep understanding of Palm Springs' unique plumbing challenges (mineral-heavy water, older infrastructure in some neighborhoods, seasonal vacation home maintenance). Emphasize the team's experience, licensing, and commitment to same-day solutions. Include a brief origin story (if available) or founding principle around honest service and fair pricing.",
+      "hero_headline": "Expert Drain Cleaning & Plumbing for Palm Springs Homes",
+      "differentiators": [
+        "Local expertise in Palm Springs water systems and climate-specific challenges (hard water, humidity-related corrosion)",
+        "Specialization in drain cleaning and maintenance as core competency (not just general plumbing)",
+        "Emergency response capability for urgent drain issues",
+        "Transparent pricing and no-surprise estimates",
+        "Licensed, bonded, and insured with verifiable certifications",
+        "Same-day or next-day service availability for local customers"
+      ],
+      "hero_subheadline": "Fast, reliable service from licensed professionals—emergency or scheduled, we're here when you need us.",
+      "tone_recommendation": "Professional yet approachable and friendly. Be competent and authoritative (build trust through expertise), but avoid jargon-heavy language. Use 'we' to sound personable and collaborative. Emphasize reliability, honesty, and local knowledge. Acknowledge that plumbing emergencies are stressful and position the company as a calm, solution-focused partner."
+    },
+    "competitors": [],
+    "generated_at": "2026-09-25T21:54:42.706Z",
+    "existing_site": null
+  },
+  "competitor_urls": [],
+  "phone_secondary": "",
+  "service_grouping": {
+    "cap": 16,
+    "tier": "premium",
+    "groups": [
+      {
+        "page": "Drain Cleaning",
+        "solo": true,
+        "services": [
+          "Drain Cleaning"
+        ]
+      },
+      {
+        "page": "Hydro Jetting",
+        "solo": true,
+        "services": [
+          "Hydro Jetting"
+        ]
+      },
+      {
+        "page": "Sewer Line Repair & Replacement",
+        "solo": true,
+        "services": [
+          "Sewer Line Repair & Replacement"
+        ]
+      },
+      {
+        "page": "Trenchless Sewer Repair",
+        "solo": true,
+        "services": [
+          "Trenchless Sewer Repair"
+        ]
+      },
+      {
+        "page": "Leak Detection & Slab Leak Repair",
+        "solo": true,
+        "services": [
+          "Leak Detection & Slab Leak Repair"
+        ]
+      },
+      {
+        "page": "Water Heater Installation & Repair",
+        "solo": true,
+        "services": [
+          "Water Heater Installation & Repair"
+        ]
+      },
+      {
+        "page": "Repiping",
+        "solo": true,
+        "services": [
+          "Repiping"
+        ]
+      },
+      {
+        "page": "Toilet & Faucet Repair and Installation",
+        "solo": true,
+        "services": [
+          "Toilet & Faucet Repair and Installation"
+        ]
+      },
+      {
+        "page": "Garbage Disposal Repair",
+        "solo": true,
+        "services": [
+          "Garbage Disposal Repair"
+        ]
+      },
+      {
+        "page": "Sump Pump Installation & Repair",
+        "solo": true,
+        "services": [
+          "Sump Pump Installation & Repair"
+        ]
+      },
+      {
+        "page": "Gas Line Repair",
+        "solo": true,
+        "services": [
+          "Gas Line Repair"
+        ]
+      },
+      {
+        "page": "Backflow Prevention",
+        "solo": true,
+        "services": [
+          "Backflow Prevention"
+        ]
+      },
+      {
+        "page": "Emergency Plumbing",
+        "solo": true,
+        "services": [
+          "Emergency Plumbing"
+        ]
+      }
+    ],
+    "grouped_count": 13,
+    "original_count": 13
+  },
+  "lead_notification_email": "nodaluis239@gmail.com",
+  "lead_notification_phone": "561-906-8711",
+  "google_business_profile_url": "https://share.google/UHHg3DvwRmLceJEvI"
+}
