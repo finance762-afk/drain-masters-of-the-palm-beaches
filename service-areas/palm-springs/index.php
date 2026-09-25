@@ -15,6 +15,8 @@ $citySlug = 'palm-springs';
 $areaName = 'Palm Springs';
 $pageTitle = "Plumber in Palm Springs, FL | Drain Cleaning & Sewer Repair | $siteName";
 $metaDescription = "Expert plumbing in Palm Springs, FL. We serve Century Village, Golf, and Vista Park neighborhoods with drain cleaning, sewer repair, and emergency service. Local licensed plumbers. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/palm-springs/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

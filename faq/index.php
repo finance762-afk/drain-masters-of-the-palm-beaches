@@ -9,6 +9,7 @@ $pageType    = 'faq';
 
 $pageTitle       = 'Frequently Asked Questions | Drain Masters of the Palm Beaches';
 $metaDescription = 'Get answers to common questions about drain cleaning, sewer repair, plumbing costs, and emergency service in Palm Springs, FL. Call Drain Masters at ' . $phone . '.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/faq/';
 
 /* FAQ data */

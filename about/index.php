@@ -9,6 +9,7 @@ $pageType    = 'about';
 
 $pageTitle       = 'About Us | Drain Masters of the Palm Beaches';
 $metaDescription = 'Learn about Drain Masters of the Palm Beaches — a locally owned Palm Springs, FL plumbing company specializing in drain cleaning, sewer repair, and emergency plumbing since 2023.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/about/';
 
 /* Schema markup */

@@ -9,6 +9,7 @@ $pageType    = 'contact';
 
 $pageTitle       = 'Contact Us | Drain Masters of the Palm Beaches | Palm Springs, FL Plumber';
 $metaDescription = 'Contact Drain Masters of the Palm Beaches for drain cleaning, sewer repair, or emergency plumbing in Palm Springs, FL. Call ' . $phone . ' or request a free estimate online.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/contact/';
 
 /* Schema markup */

@@ -9,6 +9,8 @@ $pageType    = 'other';
 
 $pageTitle       = 'Thank You | Drain Masters of the Palm Beaches';
 $metaDescription = 'Thank you for contacting Drain Masters of the Palm Beaches. We\'ll respond to your inquiry within the hour.';
+$pageDescription = $metaDescription;
+$canonicalUrl    = $siteUrl . '/thank-you';
 $noindex         = true;  // Don't index thank-you pages
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

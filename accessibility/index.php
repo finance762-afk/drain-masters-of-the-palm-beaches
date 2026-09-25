@@ -9,6 +9,7 @@ $pageType    = 'other';
 
 $pageTitle       = 'Accessibility Statement | Drain Masters of the Palm Beaches';
 $metaDescription = 'Our commitment to WCAG 2.1 AA accessibility conformance and how to report barriers on drainmastersofthepalmbeaches.com.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/accessibility/';
 
 $lastUpdated = date('F j, Y');

@@ -9,6 +9,7 @@ $pageType    = 'other';
 
 $pageTitle       = 'Terms of Service | Drain Masters of the Palm Beaches';
 $metaDescription = 'Terms of Service governing use of drainmastersofthepalmbeaches.com and engagement of Drain Masters of the Palm Beaches for plumbing services.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/terms/';
 
 $lastUpdated = date('F j, Y');

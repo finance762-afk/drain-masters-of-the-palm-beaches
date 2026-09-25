@@ -9,6 +9,7 @@ $pageType    = 'home';
 
 $pageTitle       = 'Plumber & Drain Cleaning in Palm Springs, FL | Drain Masters of the Palm Beaches';
 $metaDescription = 'Drain Masters of the Palm Beaches is a licensed Palm Springs, FL plumber for drain cleaning, sewer line repair, water heaters and emergency plumbing. Call ' . $phone . '.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/';
 
 /* Allocated homepage hero (deal_assets role=hero) — NOT $photoLibrary[0] */

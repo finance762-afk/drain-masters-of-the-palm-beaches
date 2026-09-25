@@ -9,6 +9,7 @@ $pageType    = 'other';
 
 $pageTitle       = 'Cookie Policy | Drain Masters of the Palm Beaches';
 $metaDescription = 'How Drain Masters of the Palm Beaches uses cookies and tracking technologies on our website.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 
 $lastUpdated = date('F j, Y');

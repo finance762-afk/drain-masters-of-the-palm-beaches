@@ -6,6 +6,8 @@ $currentPage = 'service-areas';
 $pageType = 'other';
 $pageTitle = "Plumbing Service Areas | $siteName | Palm Beach County, FL";
 $metaDescription = "Expert drain cleaning and plumbing services across Palm Beach County. We serve Palm Springs, Lake Worth, West Palm Beach, Boynton Beach, Wellington, and surrounding communities. Call $phone today.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

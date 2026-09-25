@@ -9,6 +9,8 @@ $pageType    = 'other';
 
 $pageTitle       = 'Page Not Found | Drain Masters of the Palm Beaches';
 $metaDescription = '404 - The page you\'re looking for doesn\'t exist. Return to Drain Masters of the Palm Beaches homepage or contact us for drain cleaning and plumbing service in Palm Springs, FL.';
+$pageDescription = $metaDescription;
+$canonicalUrl    = $siteUrl . '/404';
 $noindex         = true;  // Don't index 404 pages
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

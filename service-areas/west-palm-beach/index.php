@@ -17,6 +17,8 @@ $citySlug = 'west-palm-beach';
 $areaName = 'West Palm Beach';
 $pageTitle = "Plumber in West Palm Beach, FL | Drain & Sewer Experts | $siteName";
 $metaDescription = "Expert plumbing in West Palm Beach, FL. Serving Northwood Hills, Flamingo Park, and all historic neighborhoods with drain cleaning, sewer repair, and emergency service. Licensed plumbers. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/west-palm-beach/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

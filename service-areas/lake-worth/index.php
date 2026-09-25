@@ -17,6 +17,8 @@ $citySlug = 'lake-worth';
 $areaName = 'Lake Worth';
 $pageTitle = "Plumber in Lake Worth, FL | Emergency Drain & Sewer Repair | $siteName";
 $metaDescription = "Expert plumbing in Lake Worth, FL. We serve College Park, Old Lucerne, and historic downtown neighborhoods with drain cleaning, sewer repair, and emergency service. Licensed plumbers. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/lake-worth/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

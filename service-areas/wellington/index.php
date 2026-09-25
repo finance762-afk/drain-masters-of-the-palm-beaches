@@ -18,6 +18,8 @@ $citySlug = 'wellington';
 $areaName = 'Wellington';
 $pageTitle = "Plumber in Wellington, FL | Equestrian Property Plumbing | $siteName";
 $metaDescription = "Expert plumbing in Wellington, FL. Serving Grand Prix Village, Equestrian Club Estates, and all Wellington neighborhoods with drain cleaning, sewer repair, and emergency service. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/wellington/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

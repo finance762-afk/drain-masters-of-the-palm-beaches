@@ -18,6 +18,8 @@ $citySlug = 'lantana';
 $areaName = 'Lantana';
 $pageTitle = "Plumber in Lantana, FL | Coastal Plumbing Experts | $siteName";
 $metaDescription = "Expert plumbing in Lantana, FL. Serving Lantana Heights, Ocean Breeze, and all coastal neighborhoods with drain cleaning, sewer repair, and emergency plumbing. Licensed plumbers. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/lantana/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

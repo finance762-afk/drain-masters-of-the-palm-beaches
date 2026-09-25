@@ -17,6 +17,8 @@ $citySlug = 'greenacres';
 $areaName = 'Greenacres';
 $pageTitle = "Plumber in Greenacres, FL | Drain Cleaning & Repairs | $siteName";
 $metaDescription = "Expert plumbing in Greenacres, FL. Serving Palm Beach National, River Bridge, Magnolia Bay, and all Greenacres neighborhoods with drain cleaning, sewer repair, and water heater service. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/greenacres/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

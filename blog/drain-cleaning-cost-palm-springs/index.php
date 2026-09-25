@@ -198,9 +198,7 @@ $metaDescription = $post['excerpt'];
     </section>
 </article>
 
-<style>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/css/blog-post.css'; ?>
-</style>
+<link rel="stylesheet" href="/assets/css/blog-post.css?v=1">
 
 <script type="application/ld+json">
 {

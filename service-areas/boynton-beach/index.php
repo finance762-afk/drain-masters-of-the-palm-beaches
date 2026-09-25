@@ -19,6 +19,8 @@ $citySlug = 'boynton-beach';
 $areaName = 'Boynton Beach';
 $pageTitle = "Plumber in Boynton Beach, FL | Drain & Sewer Repair | $siteName";
 $metaDescription = "Expert plumbing in Boynton Beach, FL. Serving Leisureville, Golfview Harbour, and all coastal and inland neighborhoods with drain cleaning, sewer repair, water heater service. Call $phone.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/service-areas/boynton-beach/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

@@ -9,6 +9,7 @@ $pageType    = 'other';
 
 $pageTitle       = 'Privacy Policy | Drain Masters of the Palm Beaches';
 $metaDescription = 'How Drain Masters of the Palm Beaches collects, uses, and protects your information. Privacy practices for our website and contact forms.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 
 $companyEntityType = 'LLC';

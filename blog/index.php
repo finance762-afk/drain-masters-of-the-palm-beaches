@@ -7,6 +7,8 @@ $currentPage = 'blog';
 $pageType = 'blog';
 $pageTitle = "Plumbing Tips & Advice Blog | $siteName | Palm Springs, FL";
 $metaDescription = "Expert plumbing advice, maintenance tips, and cost guides for Palm Beach County homeowners. Learn how to protect your drains, avoid costly repairs, and keep your plumbing running smoothly.";
+$pageDescription = $metaDescription;
+$canonicalUrl = $siteUrl . '/blog/';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
