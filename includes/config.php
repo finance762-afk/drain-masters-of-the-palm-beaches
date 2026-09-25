@@ -172,5 +172,8 @@ $formAction      = 'https://db.pageone.cloud/functions/v1/leads/drain-masters-of
 /* ---- CSS cache-bust (SINGLE source — never set per page) -------------- */
 $cssVersion      = '1';
 
+/* ---- Helper functions ------------------------------------------------- */
+require_once __DIR__ . '/functions.php';
+
 /* ---- Lead attribution (v6.3) — MUST be last, before any output -------- */
 require_once __DIR__ . '/attribution.php';

@@ -238,8 +238,13 @@
     }
   },
   "design": {
-    "fonts": {},
-    "notes": "",
+    "archetype": "bold-industrial",
+    "fonts": {
+      "heading": "Bricolage Grotesque",
+      "body": "Figtree",
+      "accent": "Barlow Condensed"
+    },
+    "notes": "Bold-industrial archetype: full-bleed photo heroes, slant dividers, technical/emergency-focused. Matches drain/sewer work nature.",
     "style": "modern",
     "colors": {
       "extracted_from_logo": true
@@ -256,7 +261,7 @@
     {
       "name": "nav_footer_head",
       "phase": 2,
-      "status": "pending"
+      "status": "complete"
     },
     {
       "name": "homepage",
