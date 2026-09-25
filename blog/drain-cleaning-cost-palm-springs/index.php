@@ -45,7 +45,7 @@ $canonicalUrl    = $siteUrl . '/blog/' . $postSlug . '/';
 
             <div class="answer-block">
                 <svg aria-hidden="true" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-                <p><strong>Quick answer:</strong> Professional drain cleaning in Palm Springs typically costs $150-$250 for a standard service call with cable snaking, $250-$400 for hydro jetting, and $350-$600+ for main sewer line work or video camera inspection. Most residential clogs fall in the $175-$300 range and take 1-2 hours.</p>
+                <p><strong>Quick answer:</strong> Around Palm Springs and Palm Beach County, homeowners commonly see cable snaking priced in the low hundreds, hydro jetting somewhat higher, and main sewer line work or camera inspections higher still. Those are general market ranges, not a Drain Masters quote. Every job is priced after a plumber sees the drain, and you get the number in writing before work starts.</p>
             </div>
         </div>
     </header>
@@ -113,12 +113,12 @@ $canonicalUrl    = $siteUrl . '/blog/' . $postSlug . '/';
                     Beware of flat-rate pricing that sounds too good—$99 drain cleaning often comes with hidden fees or aggressive upselling once the plumber arrives. Honest companies charge for their time and equipment, not bait-and-switch tactics.
                 </p>
 
-                <h2>What We Charge at Drain Masters</h2>
+                <h2>How Drain Masters Prices a Drain Job</h2>
                 <p>
-                    We charge a $99 service call fee to diagnose the problem, which includes the first hour of labor. If you approve the work, that fee applies to your total. Most standard drain clogs (sinks, tubs, toilets) run $175-$275 total. Main sewer line work depends on the severity—we'll camera-inspect the line if needed and give you a written quote before we start.
+                    Drain Masters of the Palm Beaches quotes every drain job after seeing it, and the price goes in writing before work starts. Main sewer line work depends on the severity, so we camera-inspect the line when it is warranted and walk you through what we find.
                 </p>
                 <p>
-                    We don't upsell services you don't need. If a $200 cable snaking will clear your drain, we won't push you toward a $500 hydro jetting job. And if we find a bigger problem—like a broken pipe or root invasion—we'll show you the camera footage and explain your options honestly.
+                    We don't upsell services you don't need. If cable snaking will clear your drain, we won't push you toward hydro jetting. And if we find a bigger problem—like a broken pipe or root invasion—we'll show you the camera footage and explain your options honestly.
                 </p>
             </div>
 

@@ -9,7 +9,7 @@ $blogPosts = [
     [
         'slug'        => 'drain-cleaning-cost-palm-springs',
         'title'       => 'What Does Drain Cleaning Cost in Palm Springs, FL?',
-        'excerpt'     => 'Professional drain cleaning in Palm Springs typically runs $150-$400 for standard service, with hydro jetting costing more. Here is what affects the price and what you can expect.',
+        'excerpt'     => 'What drives the price of drain cleaning around Palm Springs, the general ranges homeowners see, and how Drain Masters quotes every job in writing before work starts.',
         'image'       => '/assets/images/owner-img_8947-960.webp',
         'imageBase'   => 'owner-img_8947',
         'alt'         => 'Professional drain cleaning equipment in Palm Springs home',
