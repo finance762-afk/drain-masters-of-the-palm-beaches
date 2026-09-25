@@ -1,0 +1,33 @@
+# robots.txt — Drain Masters of the Palm Beaches
+
+User-agent: *
+Allow: /
+
+# Disallow utility directories
+Disallow: /includes/
+Disallow: /assets/js/
+
+# Disallow thank-you page (no value in search results)
+Disallow: /thank-you
+
+# AI crawlers explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Perplexitybot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemaps
+Sitemap: https://preview-drain-masters-of-the-palm-beaches.pageone.cloud/sitemap.xml
