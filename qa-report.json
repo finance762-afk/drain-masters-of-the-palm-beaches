@@ -47,7 +47,7 @@
     {
       "name": "color_mix",
       "description": "color-mix() function (modern CSS)",
-      "matches": 80
+      "matches": 81
     },
     {
       "name": "scroll_snap",
@@ -67,7 +67,7 @@
     {
       "name": "logical_properties",
       "description": "Logical properties (inline/block)",
-      "matches": 32
+      "matches": 33
     }
   ],
   "checks": [
@@ -283,11 +283,11 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
-      "detail": "84 CSS lines in 1 block(s)",
+      "detail": "15 CSS lines in 1 block(s)",
       "file": "service-areas/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "84",
+      "actual": "15",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -392,89 +392,89 @@
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/lantana/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/boynton-beach/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/greenacres/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/wellington/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/lake-worth/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/west-palm-beach/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/palm-springs/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "26 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 1 external CSS file(s), 612 lines total",
       "file": "service-areas/royal-palm-beach/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "26",
+      "actual": "612",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -2593,7 +2593,7 @@
     {
       "status": "pass",
       "check": "Content H2 question ratio",
-      "detail": "31/67 content H2s are questions (46%; 16 CTA/label H2s exempt)",
+      "detail": "15/35 content H2s are questions (43%; 24 CTA/label H2s exempt)",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -2857,7 +2857,7 @@
     {
       "status": "pass",
       "check": "JS budget \u2264100KB",
-      "detail": "Total JS: 29KB",
+      "detail": "Total JS: 19KB",
       "file": "",
       "severity": "blocker",
       "expected": null,
