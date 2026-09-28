@@ -138,7 +138,7 @@ if (!isset($sp) || !isset($spIcons)) { return; }
             </div>
             <?php else: /* no client photo of this service yet — brand panel, never a mislabeled photo */ ?>
             <div class="sp-brand-panel reveal-right">
-                <img src="/assets/images/dm-brand-hero-v2-960.webp" alt="Drain Masters of the Palm Beaches logo" width="960" height="382" loading="lazy" decoding="async">
+                <img src="/assets/images/logo-hero-v2-960.webp" alt="Drain Masters of the Palm Beaches logo" width="960" height="382" loading="lazy" decoding="async">
                 <p><?php echo sp_e($spName); ?> across Palm Springs and Palm Beach County</p>
                 <a href="tel:<?php echo formatPhone($phone); ?>" class="btn btn-primary"><?php echo $spIcons['phone']; ?> Call <?php echo $phone; ?></a>
             </div>

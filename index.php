@@ -15,7 +15,7 @@ $canonicalUrl    = $siteUrl . '/';
 /* Hero backdrop = the client's own logo (revision 1, 2026-09-28: Luis asked for his logo
    as the backdrop of the first screen). Cut from his 28 Sep upload, phone/email/licence line
    cropped off, background knocked out to transparency. */
-$heroImage  = 'dm-brand-hero-v2';
+$heroImage  = 'logo-hero-v2';
 $heroPreload = [
     'srcset' => '/assets/images/' . $heroImage . '-480.avif 480w, /assets/images/' . $heroImage . '-960.avif 960w, /assets/images/' . $heroImage . '-1600.avif 1600w',
     'sizes'  => '(max-width: 900px) 100vw, 1180px',

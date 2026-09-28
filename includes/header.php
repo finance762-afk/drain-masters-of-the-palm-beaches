@@ -7,8 +7,8 @@
             <!-- Logo -->
             <a href="/" class="site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> Home">
                 <picture>
-                    <source type="image/webp" srcset="/assets/images/dm-brand-mark-v2.webp">
-                    <img class="logo--combo" src="/assets/images/dm-brand-mark-v2.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="687" height="120">
+                    <source type="image/webp" srcset="/assets/images/logo-mark-v2.webp">
+                    <img class="logo--combo" src="/assets/images/logo-mark-v2.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="687" height="120">
                 </picture>
             </a>
 
