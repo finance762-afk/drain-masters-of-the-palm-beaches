@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Backflow Prevention in Palm Springs, FL',
     'title'           => 'Backflow Prevention in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Backflow prevention in Palm Springs, FL. Drain Masters installs, tests, and certifies backflow assemblies to keep contaminated water out of your drinking supply. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8976',
-    'heroImageAlt'    => 'Drain Masters plumber servicing a backflow prevention assembly at a Palm Springs, FL property',
+    'heroImage'       => $servicePhoto['backflow-prevention'],
+    'heroImageAlt'    => photoAlt($servicePhoto['backflow-prevention']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches installs, tests, and repairs backflow prevention assemblies that keep contaminated water from reversing into your clean drinking supply. Our Palm Springs team handles the annual testing many local utilities require, repairs failed devices, and files the paperwork&mdash;protecting homes, irrigation systems, and businesses across Palm Beach County.',
     'heroChips'       => [
         ['shield', 'Protects drinking water'],
@@ -65,8 +65,8 @@ $sp = [
             ['Repair or install', 'We rebuild a failed assembly or install the correct new one when a device cannot be saved.'],
             ['File the certification', 'We submit the passing results to your water utility so your account stays compliant.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters plumber testing a backflow prevention assembly at a Palm Springs, FL property',
+        'photo'    => null,   // no client photo of this service yet — brand panel renders instead
+        'photoAlt' => '',
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters?',
@@ -91,11 +91,7 @@ $sp = [
         ['What happens if my backflow test fails?', 'If your assembly fails the annual test, it is no longer reliably stopping reverse flow and must be repaired or replaced before the utility accepts a passing result. Drain Masters of the Palm Beaches can often rebuild a failed device with new valves and seals instead of replacing it, then retest and file the certification for your Palm Springs property.'],
         ['What does backflow prevention cost in Palm Springs?', 'Cost depends on whether you need annual testing, a repair, or a new assembly, and on the device type and size. A routine test is straightforward; installing an RPZ assembly on a commercial line costs more. Drain Masters of the Palm Beaches gives a free, upfront estimate for your Palm Springs property before any work starts.'],
     ],
-    'gallery' => [
-        ['owner-img_8947', 'Drain Masters of the Palm Beaches installing a backflow prevention assembly in Palm Springs, FL'],
-        ['owner-img_8933', 'Backflow device testing by Drain Masters at a Palm Beach County property'],
-        ['owner-img_8819', 'Drain Masters plumber completing backflow certification work in Palm Springs, FL'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Protect your drinking water with professional backflow prevention',
         'text'    => 'Got an annual test notice, a new irrigation system, or a device that failed? Drain Masters of the Palm Beaches installs, tests, and certifies backflow assemblies across Palm Springs and Palm Beach County&mdash;call now or request your free estimate.',

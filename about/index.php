@@ -101,7 +101,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="container">
             <div class="split">
                 <div>
-                    <?php echo renderPicture('owner-img_8820', 'Drain Masters of the Palm Beaches owner and team at a job site in Palm Springs, FL', 800, 600, '(min-width: 1024px) 50vw, 100vw', ['class' => 'img-diagonal']); ?>
+                    <?php echo renderPicture('dm-sewer-dig-crew', photoAlt('dm-sewer-dig-crew'), 800, 600, '(min-width: 1024px) 50vw, 100vw', ['class' => 'img-diagonal']); ?>
                 </div>
                 <div class="about-story">
                     <div>
@@ -191,7 +191,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     </ul>
                 </div>
                 <div>
-                    <?php echo renderPicture('owner-img_8947', 'Drain Masters technician on a drain cleaning job in Palm Springs, FL', 800, 600, '(min-width: 1024px) 50vw, 100vw', []); ?>
+                    <?php echo renderPicture('dm-drain-machine-bathroom', photoAlt('dm-drain-machine-bathroom'), 800, 600, '(min-width: 1024px) 50vw, 100vw', []); ?>
                 </div>
             </div>
         </div>

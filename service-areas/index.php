@@ -121,7 +121,7 @@ $saHighlights = [
             </div>
             <div class="frame reveal-right">
                 <div class="frame__img img-reveal">
-                    <?php echo renderPicture('owner-img_8819', 'Drain Masters of the Palm Beaches technician on a plumbing job in Palm Beach County, FL', 600, 660, '(max-width: 900px) 100vw, 460px'); ?>
+                    <?php echo renderPicture('dm-service-van', photoAlt('dm-service-van'), 600, 660, '(max-width: 900px) 100vw, 460px'); ?>
                 </div>
                 <div class="frame__card">
                     <span class="stat-number"><span>8</span> cities</span>

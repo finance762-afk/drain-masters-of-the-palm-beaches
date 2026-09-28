@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Emergency Plumbing in Palm Springs, FL',
     'title'           => 'Emergency Plumbing in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Emergency plumbing in Palm Springs, FL. Drain Masters answers burst pipes, sewer backups, and major leaks with same-day and after-hours service. Call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8820',
-    'heroImageAlt'    => 'Drain Masters plumber responding to an emergency water leak at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['emergency-plumbing'],
+    'heroImageAlt'    => photoAlt($servicePhoto['emergency-plumbing']),
     'heroAnswer'      => 'When a pipe bursts or sewage backs up, Drain Masters of the Palm Beaches answers with same-day and after-hours emergency service across Palm Springs and Palm Beach County. Our team gets on site as fast as possible, stops the water, and limits the damage to your home.',
     'heroChips'       => [
         ['alert-triangle', 'Burst pipes &amp; backups'],
@@ -65,8 +65,8 @@ $sp = [
             ['Diagnose &amp; price', 'We pinpoint the failure and give you a clear price before we touch a repair.'],
             ['Repair &amp; confirm', 'We fix it or make it safe, then check that the leak or backup is fully contained.'],
         ],
-        'photo'    => 'owner-img_8947',
-        'photoAlt' => 'Drain Masters technician making an emergency pipe repair at a Palm Springs, FL property',
+        'photo'    => 'dm-clogged-toilet',
+        'photoAlt' => photoAlt('dm-clogged-toilet'),
     ],
     'proof' => [
         'q'      => 'Can Palm Springs homeowners count on Drain Masters in an emergency?',
@@ -91,11 +91,7 @@ $sp = [
         ['What areas do you serve for emergency plumbing?', 'Drain Masters of the Palm Beaches responds to emergencies across Palm Springs, Lake Worth, West Palm Beach, Greenacres, Boynton Beach, Wellington, Lantana, and Royal Palm Beach. We are based in Palm Springs and work throughout Palm Beach County daily, which is what lets us respond to urgent calls as fast as possible.'],
         ['How much does an emergency plumbing call cost?', 'The cost depends on what failed and what the repair takes&mdash;a broken valve is different from a burst pipe or a flooded water heater. Drain Masters of the Palm Beaches diagnoses the problem on site and gives you a clear price before any work begins, so even in an emergency there are no surprise fees added at the end.'],
     ],
-    'gallery' => [
-        ['owner-img_8933', 'Drain Masters of the Palm Beaches on an emergency service call in Palm Springs, FL'],
-        ['owner-img_8819', 'Emergency pipe and leak repair by Drain Masters in Palm Beach County'],
-        ['owner-img_8976', 'Drain Masters plumber completing an urgent repair at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Plumbing emergency? Call now',
         'text'    => 'Burst pipe, sewer backup, or water you cannot stop? Shut off your main valve, then call Drain Masters of the Palm Beaches&mdash;same-day and after-hours emergency plumbing across Palm Springs and Palm Beach County, on site as fast as possible.',

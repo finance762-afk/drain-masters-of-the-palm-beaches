@@ -14,8 +14,8 @@ $sp = [
     'h1'             => 'Garbage Disposal Repair in Palm Springs, FL',
     'title'           => 'Garbage Disposal Repair in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Garbage disposal repair in Palm Springs, FL. Drain Masters fixes jams, leaks, humming and dead units under the sink—or replaces them right-sized. Free estimates, call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8820',
-    'heroImageAlt'    => 'Drain Masters plumber repairing a garbage disposal under a kitchen sink at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['garbage-disposal-repair'],
+    'heroImageAlt'    => photoAlt($servicePhoto['garbage-disposal-repair']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs and replaces kitchen garbage disposals across Palm Springs and Palm Beach County. Whether your unit hums but won\'t grind, trips its reset, leaks under the sink, or has gone completely dead, our team diagnoses the cause and gets your sink working again&mdash;usually same day.',
     'heroChips'       => [
         ['trash-2', 'Jams, leaks &amp; dead units'],
@@ -65,8 +65,8 @@ $sp = [
             ['Replace if needed', 'When the body or motor is gone, we install a right-sized unit and seal the flange and drain connections.'],
             ['Test and hand back', 'We run the disposal and dishwasher under water, confirm no leaks, and show you safe-use habits.'],
         ],
-        'photo'    => 'owner-img_8947',
-        'photoAlt' => 'Drain Masters technician installing a new garbage disposal under a kitchen sink in Palm Springs, FL',
+        'photo'    => 'dm-commercial-kitchen-drain',
+        'photoAlt' => photoAlt('dm-commercial-kitchen-drain'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters disposal work?',
@@ -91,11 +91,7 @@ $sp = [
         ['How do I keep my disposal from breaking again?', 'Run cold water before, during, and after grinding, and feed food in slowly. Keep out grease, coffee grounds, eggshells, and fibrous or starchy items like celery, potato peels, and rice, which bind the impeller or coat the drain. In Palm Springs\' hard water, a monthly cold-water flush helps. We share these habits on every repair visit.'],
         ['How long does garbage disposal repair or replacement take?', 'Most jams and resets are cleared in under an hour. A full replacement typically takes one to two hours, including removing the old unit, mounting the new one, connecting the drain and dishwasher line, and testing for leaks. Drain Masters offers same-day service across Palm Springs and Palm Beach County whenever the schedule allows.'],
     ],
-    'gallery' => [
-        ['owner-img_8933', 'Drain Masters of the Palm Beaches on a kitchen service call in Palm Springs, FL'],
-        ['owner-img_8819', 'Under-sink plumbing and disposal connections handled by Drain Masters in Palm Beach County'],
-        ['owner-img_8946', 'Drain Masters technician completing a garbage disposal job at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Get your kitchen sink grinding again',
         'text'    => 'Humming, leaking, jammed, or dead disposal? Drain Masters of the Palm Beaches diagnoses it fast and fixes or replaces it right&mdash;call now or request a free estimate for garbage disposal repair in Palm Springs and across Palm Beach County.',

@@ -55,8 +55,7 @@ $spIcons = [
     'arrow-right'   => '<svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>',
 ];
 
-/* Photo pool cycled across related-service cards (hero photo reserved for the hero) */
-$svcPhotos = ['owner-img_8820', 'owner-img_8947', 'owner-img_8933', 'owner-img_8819', 'owner-img_8946', 'owner-img_8976'];
+/* Related-service cards use each service's own photo ($servicePhoto in config.php) */
 
 /* ---- Icon + bullet metadata for every service (used by related-services cards) ---- */
 $spServiceMeta = [
@@ -88,8 +87,14 @@ $spName = $sp['name'] ?? $spService['name'];
 
 /* Hero image + preload (v6.3 — avif srcset for the eager hero <picture>) */
 $spHeroImage = $sp['heroImage'];
+$spPreloadSet = [];
+foreach ([480, 960, 1600] as $spW) {   // only widths that exist on disk (portrait crops stop at 960)
+    if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/assets/images/' . $spHeroImage . '-' . $spW . '.avif')) {
+        $spPreloadSet[] = '/assets/images/' . $spHeroImage . '-' . $spW . '.avif ' . $spW . 'w';
+    }
+}
 $heroPreload = [
-    'srcset' => '/assets/images/' . $spHeroImage . '-480.avif 480w, /assets/images/' . $spHeroImage . '-960.avif 960w, /assets/images/' . $spHeroImage . '-1600.avif 1600w',
+    'srcset' => implode(', ', $spPreloadSet),
     'sizes'  => '100vw',
 ];
 

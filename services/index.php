@@ -13,7 +13,7 @@ $pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/services/';
 
 /* Hero image preload (v6.3 — avif srcset for the eager hero <picture>) */
-$heroImage   = 'owner-img_8976';
+$heroImage   = 'dm-camera-and-jetter-reels';
 $heroPreload = [
     'srcset' => '/assets/images/' . $heroImage . '-480.avif 480w, /assets/images/' . $heroImage . '-960.avif 960w',
     'sizes'  => '100vw',
@@ -53,7 +53,6 @@ $svcMeta = [
     'backflow-prevention'                   => ['icon' => 'shield',   'bullets' => ['Device install and testing', 'Annual certification', 'Protects drinking water']],
     'emergency-plumbing'                    => ['icon' => 'alert-triangle', 'bullets' => ['Same-day and after-hours', 'Burst pipes and backups', 'Fast damage control']],
 ];
-$svcPhotos = ['owner-img_8820', 'owner-img_8947', 'owner-img_8933', 'owner-img_8819', 'owner-img_8946', 'owner-img_8976'];
 
 /* BreadcrumbList schema */
 $servicesBreadcrumb = json_encode([
@@ -77,7 +76,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ HERO ============ -->
 <section class="hero hero--photo services-index-hero" aria-label="Plumbing services introduction">
     <div class="hero-bg">
-        <?php echo renderPicture($heroImage, 'Drain Masters of the Palm Beaches plumbing team in Palm Springs, Florida', 1600, 1000, '100vw', ['eager' => true]); ?>
+        <?php echo renderPicture($heroImage, photoAlt($heroImage), 1600, 1000, '100vw', ['eager' => true]); ?>
     </div>
     <div class="hero-overlay"></div>
     <span class="grain" aria-hidden="true"></span>
@@ -108,11 +107,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             $tintCycle = [1, 2, 3];
             foreach ($services as $i => $svc):
                 $meta  = $svcMeta[$svc['slug']] ?? ['icon' => 'wrench', 'bullets' => []];
-                $photo = $svcPhotos[$i % count($svcPhotos)];
+                $photo = $servicePhoto[$svc['slug']];
             ?>
             <article class="service-card-with-image card-tint-<?php echo $tintCycle[$i % 3]; ?> reveal-up reveal-delay-<?php echo ($i % 3) + 1; ?>">
                 <div class="service-card__image">
-                    <?php echo renderPicture($photo, $svc['name'] . ' by Drain Masters of the Palm Beaches in Palm Springs, FL', 600, 360, '(max-width: 768px) 100vw, 300px'); ?>
+                    <?php echo renderPicture($photo, photoAlt($photo), 600, 360, '(max-width: 768px) 100vw, 300px'); ?>
                 </div>
                 <div class="service-card__body">
                     <div class="service-card__icon"><?php echo $icons[$meta['icon']]; ?></div>

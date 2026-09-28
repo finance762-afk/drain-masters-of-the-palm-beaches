@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Sump Pump Installation & Repair in Palm Springs, FL',
     'title'           => 'Sump Pump Installation & Repair in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Sump pump installation, testing and repair in Palm Springs, FL. Drain Masters keeps groundwater and storm flooding out of your home. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8933',
-    'heroImageAlt'    => 'Drain Masters plumber installing a sump pump at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['sump-pump-installation-repair'],
+    'heroImageAlt'    => photoAlt($servicePhoto['sump-pump-installation-repair']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches installs, tests, and repairs sump pumps that keep groundwater and stormwater out of low areas of Palm Springs homes. With South Florida&rsquo;s high water table and hurricane-season downpours, our team makes sure your pump is ready before the next storm rolls in.',
     'heroChips'       => [
         ['gauge', 'Storm-season ready'],
@@ -65,8 +65,8 @@ $sp = [
             ['Test under load', 'We fill the pit and run the pump to confirm it turns on, discharges, and shuts off cleanly.'],
             ['Ready for storms', 'You get honest advice on backup power and a maintenance check before hurricane season.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters technician installing a sump pump at a Palm Springs, FL home',
+        'photo'    => null,   // no client photo of this service yet — brand panel renders instead
+        'photoAlt' => '',
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters sump pump service?',
@@ -91,11 +91,7 @@ $sp = [
         ['How often should a sump pump be tested or serviced?', 'Test your sump pump at least once a year, and ideally again right before hurricane season starts in June. Pour water into the pit and confirm the pump turns on, discharges, and shuts off. Drain Masters can service the float, check valve, and discharge line during a visit so your pump is ready before Palm Beach County\'s heavy rains arrive.'],
         ['Submersible or pedestal sump pump — which is better?', 'It depends on your pit and how much water your home takes on. Submersible pumps sit inside the pit, run quieter, and move more water, which suits most Palm Springs homes. Pedestal pumps sit above the pit and are easier to service. Drain Masters recommends the right type after checking your setup and typical inflow during a storm.'],
     ],
-    'gallery' => [
-        ['owner-img_8947', 'Drain Masters of the Palm Beaches on a sump pump service call in Palm Springs, FL'],
-        ['owner-img_8819', 'Sump pump and plumbing work by Drain Masters in Palm Beach County'],
-        ['owner-img_8946', 'Drain Masters technician completing a sump pump job at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Get your sump pump storm-ready',
         'text'    => 'Standing water, a pump that won&rsquo;t start, or no backup before hurricane season? Drain Masters of the Palm Beaches installs, tests, and repairs sump pumps&mdash;call now or request a free estimate across Palm Springs and Palm Beach County.',

@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Repiping in Palm Springs, FL',
     'title'           => 'Repiping in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Whole-home and partial repiping in Palm Springs, FL. Drain Masters replaces corroded galvanized, aging copper and failing polybutylene with PEX or copper. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8819',
-    'heroImageAlt'    => 'Drain Masters plumber replacing corroded water supply pipe during a repipe at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['repiping'],
+    'heroImageAlt'    => photoAlt($servicePhoto['repiping']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches repipes homes across Palm Springs and Palm Beach County, replacing the water supply lines inside walls, ceilings, and under the house. We swap corroded galvanized, aging copper, or failing polybutylene for PEX or copper&mdash;ending the endless leak-repair cycle for good.',
     'heroChips'       => [
         ['wrench', 'Whole-home &amp; partial'],
@@ -65,8 +65,8 @@ $sp = [
             ['Pressure-test', 'The new system is charged and tested for leaks before anything is sealed behind a wall.'],
             ['Patch &amp; clean up', 'We close the drywall we opened and leave the home clean, with pressure and clear water restored.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters technician installing new PEX water supply lines during a repipe in Palm Springs, FL',
+        'photo'    => 'dm-gutted-bathroom-plumbing',
+        'photoAlt' => photoAlt('dm-gutted-bathroom-plumbing'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters?',
@@ -91,11 +91,7 @@ $sp = [
         ['Why does my Palm Springs home keep getting pinhole leaks?', 'Repeated pinhole leaks usually mean the pipe material itself is corroding from the inside, not that you have been unlucky. Palm Springs&rsquo; hard, mineral-heavy water is hard on aging galvanized steel and older copper. Once one section fails, the same pipe tends to fail elsewhere, which is when a repipe makes more sense than more patches.'],
         ['Is my water safe if my home still has polybutylene pipe?', 'Polybutylene was widely installed decades ago and is now known to become brittle and fail, often without warning. If your Palm Springs home still has it, we recommend replacing it before a hidden failure floods a wall. Drain Masters can identify polybutylene during a free assessment and lay out your repipe options.'],
     ],
-    'gallery' => [
-        ['owner-img_8947', 'Drain Masters of the Palm Beaches running new water supply lines during a Palm Springs repipe'],
-        ['owner-img_8933', 'Fresh PEX and copper pipe installed by Drain Masters at a Palm Beach County home'],
-        ['owner-img_8976', 'Drain Masters technician completing a repipe and pressure test in Palm Springs, FL'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Stop patching leaks and repipe it right',
         'text'    => 'Tired of rusty water, weak pressure, and one pinhole leak after another? Drain Masters of the Palm Beaches repipes your home with PEX or copper that lasts&mdash;call now or request a free estimate for repiping in Palm Springs and across Palm Beach County.',

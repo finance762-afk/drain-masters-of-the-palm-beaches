@@ -25,7 +25,7 @@
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl); ?>">
-    <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/og-image.jpg">
+    <meta property="og:image" content="<?php echo $siteUrl; ?>/assets/images/og-image-v2.jpg">
     <meta property="og:site_name" content="<?php echo htmlspecialchars($siteName); ?>">
     <meta property="og:locale" content="en_US">
 
@@ -78,7 +78,7 @@
             "longitude": "-80.0967"
         },
         "hasMap": "<?php echo $gbpProfileUrl; ?>",
-        "image": "<?php echo $siteUrl; ?>/assets/images/og-image.jpg",
+        "image": "<?php echo $siteUrl; ?>/assets/images/og-image-v2.jpg",
         "priceRange": "$$",
         "areaServed": [
             <?php

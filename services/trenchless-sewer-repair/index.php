@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Trenchless Sewer Repair in Palm Springs, FL',
     'title'           => 'Trenchless Sewer Repair in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Trenchless sewer repair in Palm Springs, FL. Drain Masters renews failing sewer lines with pipe lining and pipe bursting—no yard or driveway dig-up. Free estimates, call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8976',
-    'heroImageAlt'    => 'Drain Masters plumber preparing a trenchless sewer repair at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['trenchless-sewer-repair'],
+    'heroImageAlt'    => photoAlt($servicePhoto['trenchless-sewer-repair']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches renews failing sewer lines with little or no digging. We line or burst the old pipe from small access points, so your Palm Springs lawn, pavers, and driveway stay intact&mdash;a camera inspection first confirms the line is a good trenchless candidate.',
     'heroChips'       => [
         ['hammer', 'Little to no digging'],
@@ -65,8 +65,8 @@ $sp = [
             ['Line or burst', 'We cure a new liner in place or pull a new pipe through, renewing the line from small pits.'],
             ['Verify &amp; restore', 'A final camera pass confirms a seamless, full-flow line before we backfill the access points.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters technician setting up sewer line equipment at a Palm Springs, FL property',
+        'photo'    => 'dm-camera-and-jetter-reels',
+        'photoAlt' => photoAlt('dm-camera-and-jetter-reels'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters sewer work?',
@@ -91,11 +91,7 @@ $sp = [
         ['How long does trenchless sewer repair take?', 'Many trenchless jobs are completed in a day, though larger or deeper lines can take longer. Because there is no full trench to dig and no yard to rebuild afterward, the overall project is usually much faster than traditional dig-and-replace. We give you a realistic timeline after the camera inspection.'],
         ['Does a trenchless-repaired sewer line last?', 'Yes. A cured-in-place liner forms a seamless, jointless pipe that resists the root intrusion and corrosion that failed the original, and a burst-in replacement pipe is new throughout. Both are built to last for decades under normal Palm Springs residential use, which is why they replace aging cast iron and clay so well.'],
     ],
-    'gallery' => [
-        ['owner-img_8947', 'Drain Masters of the Palm Beaches performing sewer line work in Palm Springs, FL'],
-        ['owner-img_8933', 'Sewer and drain line service by Drain Masters in Palm Beach County'],
-        ['owner-img_8819', 'Drain Masters technician completing a sewer repair at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Fix your sewer line without tearing up the yard',
         'text'    => 'Failing sewer line under your lawn, pavers, or driveway? Drain Masters of the Palm Beaches scopes it and renews it trenchless when it fits&mdash;call now or request a free estimate for trenchless sewer repair in Palm Springs and across Palm Beach County.',

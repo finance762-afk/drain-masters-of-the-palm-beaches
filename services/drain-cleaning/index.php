@@ -14,8 +14,8 @@ $sp = [
     'h1'             => 'Drain Cleaning in Palm Springs, FL',
     'title'           => 'Drain Cleaning in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Professional drain cleaning in Palm Springs, FL. Drain Masters clears grease, roots and buildup with snaking and cabling to restore full flow. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8820',
-    'heroImageAlt'    => 'Drain Masters plumber clearing a clogged drain line at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['drain-cleaning'],
+    'heroImageAlt'    => photoAlt($servicePhoto['drain-cleaning']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches clears stubborn kitchen, bathroom, and main-line clogs across Palm Springs and Palm Beach County. Our team snakes and cables the line, removes the blockage at its source, and restores full flow&mdash;usually same day.',
     'heroChips'       => [
         ['droplets', 'Kitchen, bath &amp; main lines'],
@@ -65,8 +65,8 @@ $sp = [
             ['Confirm full flow', 'We run water to make sure the drain empties fast and stays clear.'],
             ['Prevent the next one', 'You get honest advice&mdash;and a jetting or repair option if the line needs more.'],
         ],
-        'photo'    => 'owner-img_8947',
-        'photoAlt' => 'Drain Masters technician running a drain cable at a Palm Springs, FL property',
+        'photo'    => 'dm-shower-drain-cabling',
+        'photoAlt' => photoAlt('dm-shower-drain-cabling'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters drain cleaning?',
@@ -92,10 +92,11 @@ $sp = [
         ['Can drain cleaning damage older pipes?', 'Professional drain cleaning is safe for the cast iron and clay pipe common in older Palm Springs homes when done correctly. We match the tool and pressure to the pipe, and if we find a line that is corroded or cracked, we tell you before doing anything that could make it worse.'],
     ],
     'gallery' => [
-        ['owner-img_8933', 'Drain Masters of the Palm Beaches on a residential service call in Palm Springs, FL'],
-        ['owner-img_8819', 'Drain and plumbing line work by Drain Masters in Palm Beach County'],
-        ['owner-img_8946', 'Drain Masters technician completing a drain job at a Palm Springs home'],
+        ['dm-drain-machine-bathroom', photoAlt('dm-drain-machine-bathroom')],
+        ['dm-clogged-toilet', photoAlt('dm-clogged-toilet')],
+        ['dm-commercial-kitchen-drain', photoAlt('dm-commercial-kitchen-drain')],
     ],
+    'galleryHeading' => 'Recent drain cleaning jobs',
     'finalCta' => [
         'heading' => 'Get your drain flowing again today',
         'text'    => 'Slow drain, backed-up sink, or a clog that keeps coming back? Drain Masters of the Palm Beaches clears it fast&mdash;call now or request a free estimate for drain cleaning in Palm Springs and across Palm Beach County.',

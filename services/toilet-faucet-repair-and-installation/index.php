@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Toilet & Faucet Repair and Installation in Palm Springs, FL',
     'title'           => 'Toilet & Faucet Repair and Installation in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Toilet & faucet repair and installation in Palm Springs, FL. Drain Masters fixes running toilets, base leaks, and dripping faucets, and installs new fixtures. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8976',
-    'heroImageAlt'    => 'Drain Masters plumber repairing a bathroom faucet at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['toilet-faucet-repair-and-installation'],
+    'heroImageAlt'    => photoAlt($servicePhoto['toilet-faucet-repair-and-installation']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs and installs toilets, faucets, and fixtures across Palm Springs and Palm Beach County. We stop running toilets, base leaks, and dripping faucets at the source, then set new fixtures level and leak-free&mdash;usually in a single visit.',
     'heroChips'       => [
         ['droplet', 'Toilets, faucets &amp; fixtures'],
@@ -65,8 +65,8 @@ $sp = [
             ['Seal &amp; connect', 'Wax rings, cartridges, and supply lines go in fresh so every joint is watertight.'],
             ['Pressure-test the work', 'We run the fixture under full pressure and check for drips before we call it done.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters technician installing a new toilet at a Palm Springs, FL home',
+        'photo'    => 'dm-toilet-flange',
+        'photoAlt' => photoAlt('dm-toilet-flange'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters fixture work?',
@@ -92,10 +92,11 @@ $sp = [
         ['Should I repair my old toilet or replace it?', 'If the tank or bowl is cracked, the toilet wobbles from a bad flange, or it wastes water with every flush, replacing it usually costs less over time than repeated repairs. We will tell you honestly whether a rebuild makes sense or a new comfort-height, low-flow toilet is the smarter call for your home.'],
     ],
     'gallery' => [
-        ['owner-img_8947', 'Drain Masters of the Palm Beaches installing a new faucet in Palm Springs, FL'],
-        ['owner-img_8933', 'Toilet repair and fixture work by Drain Masters in Palm Beach County'],
-        ['owner-img_8819', 'Drain Masters technician finishing a bathroom fixture job at a Palm Springs home'],
+        ['dm-toilet-installation', photoAlt('dm-toilet-installation')],
+        ['dm-shower-valve-fixtures', photoAlt('dm-shower-valve-fixtures')],
+        ['dm-bottle-filler-fountain', photoAlt('dm-bottle-filler-fountain')],
     ],
+    'galleryHeading' => 'Recent toilet and fixture installs',
     'finalCta' => [
         'heading' => 'Stop that running toilet or dripping faucet',
         'text'    => 'Running toilet, leak at the base, or a faucet that won\'t quit dripping? Drain Masters of the Palm Beaches fixes and installs fixtures fast&mdash;call now or request a free estimate for toilet &amp; faucet work in Palm Springs and across Palm Beach County.',

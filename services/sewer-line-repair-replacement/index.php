@@ -14,8 +14,8 @@ $sp = [
     'h1'             => 'Sewer Line Repair & Replacement in Palm Springs, FL',
     'title'           => 'Sewer Line Repair & Replacement in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Sewer line repair and replacement in Palm Springs, FL. Drain Masters camera-diagnoses root intrusion, cracks, and collapsed pipe, then repairs or fully replaces the line to code. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8819',
-    'heroImageAlt'    => 'Drain Masters plumber excavating a failed main sewer line at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['sewer-line-repair-replacement'],
+    'heroImageAlt'    => photoAlt($servicePhoto['sewer-line-repair-replacement']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches diagnoses and repairs failing main sewer lines across Palm Springs and Palm Beach County. We camera-inspect the line to pinpoint root intrusion, cracks, or collapse, then spot-repair or fully replace the damaged section&mdash;permitted, dug to code, and flowing right before we backfill.',
     'heroChips'       => [
         ['wrench', 'Repair &amp; full replacement'],
@@ -65,8 +65,8 @@ $sp = [
             ['Repair or replace', 'We replace the failed length, or the full run when needed, with durable pipe joined to code.'],
             ['Test & backfill', 'We reset the correct slope, confirm free flow, then backfill and tidy the site.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters technician replacing a section of damaged sewer pipe at a Palm Springs, FL property',
+        'photo'    => 'owner-img_8819',
+        'photoAlt' => photoAlt('owner-img_8819'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters sewer line work?',
@@ -92,10 +92,11 @@ $sp = [
         ['How long does a sewer line replacement take?', 'Most residential sewer repairs are completed in a day. A full line replacement typically runs one to three days depending on the length, depth, and access, plus time for permits and inspection. Drain Masters gives you a realistic timeline after the camera inspection so you know what to expect before we start.'],
     ],
     'gallery' => [
-        ['owner-img_8947', 'Drain Masters of the Palm Beaches performing sewer line work in Palm Springs, FL'],
-        ['owner-img_8933', 'Excavated sewer line repair by Drain Masters in Palm Beach County'],
-        ['owner-img_8946', 'Drain Masters technician completing a sewer replacement at a Palm Springs home'],
+        ['dm-new-pvc-line-trench', photoAlt('dm-new-pvc-line-trench')],
+        ['owner-img_8820', photoAlt('owner-img_8820')],
+        ['dm-cast-iron-pipe-scale', photoAlt('dm-cast-iron-pipe-scale')],
     ],
+    'galleryHeading' => 'Recent sewer line work',
     'finalCta' => [
         'heading' => 'Fix your failing sewer line the right way',
         'text'    => 'Sewage backing up, or a line that clogs no matter how often it is cleared? Drain Masters of the Palm Beaches scopes it, repairs or replaces it, and gets it flowing&mdash;call now or request a free estimate across Palm Springs and Palm Beach County.',

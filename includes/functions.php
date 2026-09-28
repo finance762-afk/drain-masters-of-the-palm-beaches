@@ -130,6 +130,14 @@ function icon($name, $size = 24) {
  * @param array  $opts    ['eager'=>bool, 'class'=>picture class, 'imgClass'=>img class, 'objectPosition'=>css]
  * @return string <picture> markup
  */
+/**
+ * Alt text for a library photo (config.php $photoAlt) — describes what is in the frame.
+ */
+function photoAlt($base, $fallback = '') {
+    global $photoAlt;
+    return $photoAlt[$base] ?? $fallback;
+}
+
 function renderPicture($base, $alt, $w, $h, $sizes, $opts = []) {
     $dir       = $_SERVER['DOCUMENT_ROOT'] . '/assets/images/';
     $eager     = !empty($opts['eager']);

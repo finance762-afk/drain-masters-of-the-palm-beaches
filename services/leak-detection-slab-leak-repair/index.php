@@ -14,8 +14,8 @@ $sp = [
     'h1'             => 'Leak Detection & Slab Leak Repair in Palm Springs, FL',
     'title'           => 'Leak Detection & Slab Leak Repair in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Non-invasive leak detection and slab leak repair in Palm Springs, FL. Drain Masters pinpoints hidden leaks with acoustic and thermal tools before opening a wall or floor. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8820',
-    'heroImageAlt'    => 'Drain Masters plumber pinpointing a hidden slab leak at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['leak-detection-slab-leak-repair'],
+    'heroImageAlt'    => photoAlt($servicePhoto['leak-detection-slab-leak-repair']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches finds hidden water leaks inside walls, underground, and under the concrete slab of Palm Springs homes. We use acoustic listening gear, thermal imaging, and line pressure testing to locate the leak first&mdash;then repair only that spot, so your floors and walls stay intact.',
     'heroChips'       => [
         ['search', 'Electronic leak location'],
@@ -65,8 +65,8 @@ $sp = [
             ['Repair on target', 'We access only the marked spot for a slab repair or reroute the line when that is the smarter fix.'],
             ['Test & verify', 'We re-pressurize the system to confirm the leak is sealed and the line holds.'],
         ],
-        'photo'    => 'owner-img_8947',
-        'photoAlt' => 'Drain Masters technician pressure testing a water line at a Palm Springs, FL property',
+        'photo'    => 'dm-night-dig-foundation',
+        'photoAlt' => photoAlt('dm-night-dig-foundation'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters leak detection?',
@@ -91,11 +91,7 @@ $sp = [
         ['Are slab leaks common in Palm Springs and Palm Beach County?', 'Yes. Most homes here are built on concrete slabs, and Florida\'s hard, mineral-heavy water combined with a high water table corrodes copper pipes over the years. That is why hidden pinhole and slab leaks are one of the most frequent calls we get from Palm Springs, Lake Worth, and Greenacres homeowners.'],
         ['How do I know if a hidden leak is urgent?', 'If you hear running water with everything off, see a warm floor spot, notice damp carpet or a mildew smell, or your bill spikes, treat it as urgent. A hidden leak keeps soaking the ground or your home\'s structure every hour it runs. Call Drain Masters and we will locate it before the water damage grows.'],
     ],
-    'gallery' => [
-        ['owner-img_8933', 'Drain Masters of the Palm Beaches locating a hidden leak at a Palm Springs, FL home'],
-        ['owner-img_8819', 'Water line and slab leak repair work by Drain Masters in Palm Beach County'],
-        ['owner-img_8946', 'Drain Masters technician completing a leak repair at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Find that hidden leak before it costs you',
         'text'    => 'Water bill climbing, floor warm underfoot, or the sound of running water with everything off? Drain Masters of the Palm Beaches pinpoints the leak fast&mdash;call now or request a free estimate for leak detection and slab leak repair in Palm Springs and across Palm Beach County.',

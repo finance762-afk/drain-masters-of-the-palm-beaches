@@ -76,8 +76,7 @@ $svcMeta = [
     'repiping'                              => ['icon' => 'wrench',   'bullets' => ['Whole-home pipe replacement', 'Ends recurring leaks', 'Modern, durable materials']],
     'toilet-faucet-repair-and-installation' => ['icon' => 'droplets', 'bullets' => ['Stops running toilets', 'Fixture install and repair', 'Cuts wasted water']],
 ];
-/* Photo pool cycled across service cards (hero photo is reserved for the hero) */
-$svcPhotos    = ['owner-img_8820', 'owner-img_8947', 'owner-img_8933', 'owner-img_8819', 'owner-img_8946', 'owner-img_8976'];
+/* Service cards use each service's own photo ($servicePhoto in config.php) */
 $homeServices = array_slice($services, 0, 8);
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -250,7 +249,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             </div>
             <div class="frame reveal-right">
                 <div class="frame__img">
-                    <?php echo renderPicture('owner-img_8820', 'Drain Masters technician servicing a plumbing line at a Palm Springs, FL home', 600, 660, '(max-width: 900px) 100vw, 500px'); ?>
+                    <?php echo renderPicture('dm-cast-iron-pipe-scale', photoAlt('dm-cast-iron-pipe-scale'), 600, 660, '(max-width: 900px) 100vw, 500px'); ?>
                 </div>
             </div>
         </div>
@@ -273,11 +272,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 $meta   = $svcMeta[$svc['slug']] ?? ['icon' => 'wrench', 'bullets' => []];
                 $tint   = $tintCycle[$i % 3];
                 $delay  = ($i % 3) + 1;
-                $photo  = $svcPhotos[$i % count($svcPhotos)];
+                $photo  = $servicePhoto[$svc['slug']];
             ?>
             <article class="service-card-with-image card-tint-<?php echo $tint; ?> reveal-up reveal-delay-<?php echo $delay; ?>">
                 <div class="service-card__image">
-                    <?php echo renderPicture($photo, $svc['name'] . ' by Drain Masters of the Palm Beaches in Palm Springs, FL', 600, 360, '(max-width: 768px) 100vw, 300px'); ?>
+                    <?php echo renderPicture($photo, photoAlt($photo), 600, 360, '(max-width: 768px) 100vw, 300px'); ?>
                 </div>
                 <div class="service-card__body">
                     <div class="service-card__icon"><?php echo $icons[$meta['icon']]; ?></div>
@@ -341,7 +340,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             </div>
             <div class="about-image reveal-right">
                 <div class="about-image-primary">
-                    <?php echo renderPicture('owner-img_8933', 'Drain Masters of the Palm Beaches team completing a plumbing repair in Palm Springs, FL', 600, 660, '(max-width: 900px) 100vw, 460px'); ?>
+                    <?php echo renderPicture('dm-sewer-camera-screen', photoAlt('dm-sewer-camera-screen'), 600, 660, '(max-width: 900px) 100vw, 460px'); ?>
                 </div>
                 <div class="about-stat-card">
                     <span class="stat-number">Since <span>2023</span></span>

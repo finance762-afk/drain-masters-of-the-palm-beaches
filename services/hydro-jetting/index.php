@@ -14,8 +14,8 @@ $sp = [
     'h1'             => 'Hydro Jetting in Palm Springs, FL',
     'title'           => 'Hydro Jetting in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Hydro jetting in Palm Springs, FL. Drain Masters scours grease, mineral scale, and tree roots off the full pipe wall with high-pressure water. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8933',
-    'heroImageAlt'    => 'Drain Masters plumber hydro jetting a sewer line at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['hydro-jetting'],
+    'heroImageAlt'    => photoAlt($servicePhoto['hydro-jetting']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches hydro jets kitchen, laundry, and main sewer lines across Palm Springs and Palm Beach County. High-pressure water scours grease, sludge, mineral scale, and tree roots off the entire pipe wall&mdash;so a line that keeps clogging finally flows freely again.',
     'heroChips'       => [
         ['waves', 'Thousands of PSI'],
@@ -65,8 +65,8 @@ $sp = [
             ['Jet the pipe wall', 'High-pressure water scours grease, scale, and roots off the full wall and flushes it downstream.'],
             ['Verify it\'s clean', 'We flow-test and can re-camera the line so you see a pipe cleaned end to end.'],
         ],
-        'photo'    => 'owner-img_8976',
-        'photoAlt' => 'Drain Masters technician running a hydro jetting hose into a sewer cleanout in Palm Beach County',
+        'photo'    => 'dm-drain-line-sludge',
+        'photoAlt' => photoAlt('dm-drain-line-sludge'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters hydro jetting?',
@@ -91,11 +91,7 @@ $sp = [
         ['How long does a hydro jetting service take?', 'Most residential jetting jobs take one to two hours. A single grease-heavy kitchen or laundry line is faster; a long main sewer that needs a camera inspection first, a root-cutting nozzle, and an after-camera check takes longer. We confirm the full line flows freely before we consider the job finished.'],
         ['How often should I have my line hydro jetted?', 'It depends on your pipes and habits. A busy kitchen line in an older Palm Springs home that cooks with a lot of grease may benefit every year or two, while a root-prone main sewer is set by how fast roots return. After we jet and camera your line, we give you an honest interval instead of a guess.'],
     ],
-    'gallery' => [
-        ['owner-img_8820', 'Drain Masters of the Palm Beaches on a hydro jetting service call in Palm Springs, FL'],
-        ['owner-img_8947', 'Sewer line jetting and cleanout work by Drain Masters in Palm Beach County'],
-        ['owner-img_8819', 'Drain Masters technician finishing a hydro jetting job at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Get your line jetted clean and flowing',
         'text'    => 'Clog that keeps coming back, grease-packed kitchen line, or roots in the main? Drain Masters of the Palm Beaches scours it clean with high-pressure water&mdash;call now or request a free estimate for hydro jetting in Palm Springs and across Palm Beach County.',

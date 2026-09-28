@@ -6,7 +6,7 @@
  * required "Other Services" cards and the Service/FAQ/Breadcrumb schema. All copy
  * is unique per service via $sp; structure/tokens are shared. Requires the vars
  * defined in includes/service-init.php ($spIcons, sp_e/sp_d, $spName, $spRelatedRecords,
- * $svcPhotos, $spServiceMeta, $spSchemaJson).
+ * $servicePhoto (config.php), $spServiceMeta, $spSchemaJson).
  */
 if (!isset($sp) || !isset($spIcons)) { return; }
 ?>
@@ -34,6 +34,9 @@ if (!isset($sp) || !isset($spIcons)) { return; }
   .sp-included { list-style: none; margin: var(--space-md) 0 0; padding: 0; display: grid; gap: var(--space-sm); }
   .sp-included li { display: grid; grid-template-columns: 24px 1fr; gap: var(--space-sm); align-items: start; font-size: .95rem; color: var(--color-ink-2); }
   .sp-included svg { color: var(--color-primary); margin-top: 2px; }
+  .sp-brand-panel { display: grid; justify-items: center; gap: var(--space-md); text-align: center; padding: var(--space-2xl) var(--space-xl); border-radius: var(--radius-lg); background: linear-gradient(160deg, var(--color-surface) 0%, var(--color-paper-2) 100%); border: 1px solid var(--color-line); border-top: 4px solid var(--color-primary); box-shadow: var(--shadow); }
+  .sp-brand-panel img { width: 100%; max-width: 420px; height: auto; }
+  .sp-brand-panel p { margin: 0; font-family: var(--font-accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: var(--fs-eyebrow); color: var(--color-primary); }
   @media (max-width: 900px) { .sp-breakdown .sp-break-grid { grid-template-columns: 1fr; } }
 
   .sp-proof .sp-proof-card { display: grid; grid-template-columns: auto 1fr; gap: var(--space-lg); align-items: center; padding: var(--space-xl); border-radius: var(--radius-lg); background: var(--color-surface); border: 1px solid var(--color-line); box-shadow: var(--shadow); }
@@ -127,11 +130,19 @@ if (!isset($sp) || !isset($spIcons)) { return; }
                     <?php endforeach; ?>
                 </ol>
             </div>
+            <?php if (!empty($sp['breakdown']['photo'])): ?>
             <div class="frame reveal-right">
                 <div class="frame__img">
                     <?php echo renderPicture($sp['breakdown']['photo'], sp_d($sp['breakdown']['photoAlt']), 600, 660, '(max-width: 900px) 100vw, 460px'); ?>
                 </div>
             </div>
+            <?php else: /* no client photo of this service yet — brand panel, never a mislabeled photo */ ?>
+            <div class="sp-brand-panel reveal-right">
+                <img src="/assets/images/dm-brand-hero-v2-960.webp" alt="Drain Masters of the Palm Beaches logo" width="960" height="382" loading="lazy" decoding="async">
+                <p><?php echo sp_e($spName); ?> across Palm Springs and Palm Beach County</p>
+                <a href="tel:<?php echo formatPhone($phone); ?>" class="btn btn-primary"><?php echo $spIcons['phone']; ?> Call <?php echo $phone; ?></a>
+            </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
@@ -256,11 +267,11 @@ if (!isset($sp) || !isset($spIcons)) { return; }
             $spTint = [1, 2, 3];
             foreach ($spRelatedRecords as $ri => $rsvc):
                 $rmeta  = $spServiceMeta[$rsvc['slug']] ?? ['icon' => 'wrench', 'bullets' => []];
-                $rphoto = $svcPhotos[$ri % count($svcPhotos)] ?? 'owner-img_8820';
+                $rphoto = $servicePhoto[$rsvc['slug']];
             ?>
             <article class="service-card-with-image card-tint-<?php echo $spTint[$ri % 3]; ?> reveal-up reveal-delay-<?php echo ($ri % 3) + 1; ?>">
                 <div class="service-card__image">
-                    <?php echo renderPicture($rphoto, $rsvc['name'] . ' by Drain Masters of the Palm Beaches in Palm Springs, FL', 600, 360, '(max-width: 768px) 100vw, 300px'); ?>
+                    <?php echo renderPicture($rphoto, photoAlt($rphoto), 600, 360, '(max-width: 768px) 100vw, 300px'); ?>
                 </div>
                 <div class="service-card__body">
                     <div class="service-card__icon"><?php echo $spIcons[$rmeta['icon']]; ?></div>

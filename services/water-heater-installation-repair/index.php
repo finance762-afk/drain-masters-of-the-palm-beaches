@@ -14,8 +14,8 @@ $sp = [
     'h1'              => 'Water Heater Installation & Repair in Palm Springs, FL',
     'title'           => 'Water Heater Installation & Repair in Palm Springs, FL | Drain Masters of the Palm Beaches',
     'metaDescription' => 'Water heater installation & repair in Palm Springs, FL. Drain Masters fixes no-hot-water, leaks and sediment, and installs tank & tankless units to code. Free estimates — call ' . $phone . '.',
-    'heroImage'       => 'owner-img_8933',
-    'heroImageAlt'    => 'Drain Masters plumber servicing a residential water heater at a Palm Springs, FL home',
+    'heroImage'       => $servicePhoto['water-heater-installation-repair'],
+    'heroImageAlt'    => photoAlt($servicePhoto['water-heater-installation-repair']),
     'heroAnswer'      => 'Drain Masters of the Palm Beaches repairs, replaces, and installs water heaters across Palm Springs and Palm Beach County. Our team fixes no-hot-water calls and leaks, flushes sediment, and installs tank &amp; tankless units sized to your household&mdash;often within the same week.',
     'heroChips'       => [
         ['flame', 'Tank &amp; tankless'],
@@ -65,8 +65,8 @@ $sp = [
             ['Install to code', 'We set the unit, connect water, gas or power, and the T&amp;P valve safely to code.'],
             ['Test the hot water', 'We fire it up, confirm temperature and flow, and clear the old unit away.'],
         ],
-        'photo'    => 'owner-img_8820',
-        'photoAlt' => 'Drain Masters technician installing a water heater at a Palm Springs, FL property',
+        'photo'    => 'dm-old-water-heater-removed',
+        'photoAlt' => photoAlt('dm-old-water-heater-removed'),
     ],
     'proof' => [
         'q'      => 'What do Palm Springs customers say about Drain Masters water heater service?',
@@ -91,11 +91,7 @@ $sp = [
         ['Do you offer same-day or emergency water heater service?', 'Yes. Drain Masters of the Palm Beaches handles same-day and after-hours water heater calls across Palm Springs and Palm Beach County. If your tank is leaking or you have no hot water, call us and we will get out as fast as possible to repair it or set a replacement.'],
         ['What size water heater does my home need?', 'It depends on how many people live in your home and when you use hot water at once. A right-sized tank stops you running out mid-shower without paying to heat water you never use; a tankless unit is sized by flow rate instead. We assess your household demand before recommending a size.'],
     ],
-    'gallery' => [
-        ['owner-img_8947', 'Water heater installation by Drain Masters of the Palm Beaches in Palm Springs, FL'],
-        ['owner-img_8819', 'Drain Masters plumbing work on a residential water line in Palm Beach County'],
-        ['owner-img_8946', 'Drain Masters technician completing a water heater job at a Palm Springs home'],
-    ],
+    'gallery' => [],   // revision 1: only photos that show this service; none beyond the hero/breakdown yet
     'finalCta' => [
         'heading' => 'Get your hot water back today',
         'text'    => 'No hot water, a leaking tank, or a unit past its prime? Drain Masters of the Palm Beaches repairs and installs tank &amp; tankless water heaters&mdash;call now or request a free estimate in Palm Springs and across Palm Beach County.',

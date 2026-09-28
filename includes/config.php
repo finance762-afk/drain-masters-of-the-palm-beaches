@@ -175,6 +175,65 @@ $formAction      = 'https://db.pageone.cloud/functions/v1/leads/drain-masters-of
 /* ---- CSS cache-bust (SINGLE source — never set per page) -------------- */
 $cssVersion      = '2';
 
+/* ---- Photo library (revision 1, 2026-09-28) ---------------------------
+ * Every client photo on the site, with alt text that describes what is
+ * actually in the frame (looked at one by one). Pages pull alt text from
+ * here so a photo is never captioned as something it does not show.
+ * dm-* files are Luis Noda's 28 Sep 2026 upload; owner-img_* are intake.
+ * Only dm-new-pvc-line-trench carries a verified location (EXIF GPS =
+ * West Palm Beach); no other photo is tied to a city.
+ * ---------------------------------------------------------------------- */
+$photoAlt = [
+    'dm-roots-pulled-from-drain'   => 'Drain Masters technician holding a mass of tree roots pulled out of a clogged drain line',
+    'dm-shower-drain-cabling'      => 'Drain cable fed into a shower drain from a drum machine to clear a clog',
+    'dm-drain-machine-bathroom'    => 'Drain cleaning machine and cable set up on a protective blanket in a customer\'s bathroom',
+    'dm-clogged-toilet'            => 'Clogged toilet bowl full of paper and waste, before the line was cleared',
+    'dm-commercial-kitchen-drain'  => 'Drain machine and cable clearing a floor drain in a commercial kitchen',
+    'dm-van-and-jetter-trailer'    => 'Drain Masters service van with a hydro jetting trailer parked outside a customer\'s home',
+    'dm-camera-and-jetter-reels'   => 'Sewer inspection camera reel and jetter hose reel set up on a job',
+    'dm-drain-line-sludge'         => 'Opened drain line with thick grease sludge pouring out around the cleaning cable',
+    'dm-sewer-camera-screen'       => 'Sewer camera monitor showing the inside of a buried drain pipe during an inspection',
+    'dm-cast-iron-pipe-scale'      => 'Cut section of old cast iron drain pipe packed with scale and buildup',
+    'dm-sewer-dig-crew'            => 'Two Drain Masters technicians digging beside a walkway to reach a buried sewer line',
+    'dm-new-pvc-line-trench'       => 'New white PVC line laid in an open trench beside a building in West Palm Beach',
+    'dm-night-dig-foundation'      => 'Drain Masters technician digging along a home\'s foundation at night under a work light',
+    'dm-copper-water-line-valves'  => 'New copper water line with shutoff valves plumbed on the outside wall of a home',
+    'dm-recirculation-pump-copper' => 'New copper piping and ball valves at a hot water recirculation pump and timer',
+    'dm-whole-house-water-filter'  => 'Whole-house two-stage water filter plumbed in copper on an exterior wall',
+    'dm-electric-tankless-heater'  => 'Newly installed electric tankless water heater with copper lines and an inline filter',
+    'dm-old-water-heater-removed'  => 'Rusted old tank water heater pulled out of a home and staged by the Drain Masters van',
+    'dm-toilet-flange'             => 'Toilet pulled to expose the closet flange and drain opening for repair',
+    'dm-toilet-installation'       => 'Drain Masters technician setting a new toilet in a tiled bathroom',
+    'dm-bathroom-sink-toilet'      => 'Bathroom with a newly installed wall-mounted sink and toilet',
+    'dm-shower-valve-fixtures'     => 'Tiled walk-in shower with a newly installed valve, shower head and handheld shower',
+    'dm-bottle-filler-fountain'    => 'Newly installed drinking fountain with a bottle filler in a commercial building',
+    'dm-gutted-bathroom-plumbing'  => 'Drain Masters plumber in a gutted bathroom with the wall plumbing opened up',
+    'dm-shower-pan-drain'          => 'Shower pan and drain roughed in on a concrete slab with the wall plumbing exposed',
+    'dm-service-van'               => 'Drain Masters of the Palm Beaches service van parked outside a customer\'s building',
+    'owner-img_8819'               => 'Excavated sewer connection with an old corroded cast iron stub, new PVC line and tree roots',
+    'owner-img_8820'               => 'Corroded, split cast iron drain pipe exposed under a concrete slab',
+    'owner-img_8976'               => 'Tankless gas water heater on an exterior wall with its gas piping and meter below',
+];
+
+/* One photo per service, used wherever that service's card appears (home grid,
+ * /services/, "Other services" cards) and as that service page's hero, so the
+ * picture always matches the service named on it. */
+$servicePhoto = [
+    'drain-cleaning'                        => 'dm-roots-pulled-from-drain',
+    'hydro-jetting'                         => 'dm-van-and-jetter-trailer',
+    'sewer-line-repair-replacement'         => 'dm-sewer-dig-crew',
+    'trenchless-sewer-repair'               => 'dm-sewer-camera-screen',
+    'leak-detection-slab-leak-repair'       => 'owner-img_8820',
+    'water-heater-installation-repair'      => 'dm-electric-tankless-heater',
+    'repiping'                              => 'dm-recirculation-pump-copper',
+    'toilet-faucet-repair-and-installation' => 'dm-bathroom-sink-toilet',
+    'garbage-disposal-repair'               => 'dm-drain-line-sludge',
+    'sump-pump-installation-repair'         => 'dm-service-van',
+    'gas-line-repair'                       => 'owner-img_8976',
+    'backflow-prevention'                   => 'dm-copper-water-line-valves',
+    'emergency-plumbing'                    => 'dm-night-dig-foundation',
+];
+
 /* ---- Helper functions ------------------------------------------------- */
 require_once __DIR__ . '/functions.php';
 
