@@ -33,28 +33,28 @@
 
 /* === Tokens === */
 :root {
-  /* Brand — from logo analysis (build-plan design.colors) */
-  --color-primary: #1f2428;
-  --color-primary-rgb: 31, 36, 40;
-  --color-primary-dark: color-mix(in srgb, #1f2428 78%, black);
-  --color-primary-deep: color-mix(in srgb, #1f2428 62%, black);
-  --color-secondary: #5a6570;
-  --color-secondary-rgb: 90, 101, 112;
-  --color-accent: #c8461a;
-  --color-accent-rgb: 200, 70, 26;
-  --color-accent-dark: color-mix(in srgb, #c8461a 55%, black);      /* accent as TEXT on light — 55% keeps warm accents ≥4.5:1 on paper (2026-09-04) */
-  --color-accent-bright: color-mix(in srgb, #c8461a 80%, white);    /* eyebrows on dark bands */
+  /* Brand — sampled from the client logo (royal blue #052393, navy #02166F) */
+  --color-primary: #052393;
+  --color-primary-rgb: 5, 35, 147;
+  --color-primary-dark: color-mix(in srgb, #052393 78%, black);
+  --color-primary-deep: color-mix(in srgb, #052393 62%, black);
+  --color-secondary: #3557b1;
+  --color-secondary-rgb: 53, 87, 177;
+  --color-accent: #1d5fd1;
+  --color-accent-rgb: 29, 95, 209;
+  --color-accent-dark: color-mix(in srgb, #1d5fd1 55%, black);      /* accent as TEXT on light (≈9:1 on white) */
+  --color-accent-bright: color-mix(in srgb, #1d5fd1 45%, white);    /* eyebrows on dark bands */
 
-  /* Ground and ink — warm, hue-biased neutrals (never pure grey) */
-  --color-paper: #f6f3ec;
-  --color-paper-2: color-mix(in srgb, #f6f3ec 92%, #1f2428 8%);
+  /* Ground and ink — white ground, light grey alternates, navy-slate ink (revision 1, 2026-09-28: blue/white/grey theme) */
+  --color-paper: #ffffff;
+  --color-paper-2: #f1f4f7;
   --color-surface: #ffffff;
-  --color-ink: #1b2320;
-  --color-ink-2: color-mix(in srgb, #1b2320 82%, #f6f3ec);
-  --color-muted: color-mix(in srgb, #1b2320 72%, #f6f3ec);           /* 72% = ≥4.5:1 small text on paper (was 58%, failed WCAG AA at 3.6:1) */
-  --color-line: color-mix(in srgb, #1b2320 14%, #f6f3ec);
-  --color-dark: #14181a;
-  --color-dark-alt: color-mix(in srgb, #14181a 80%, #1f2428);
+  --color-ink: #0f1c36;
+  --color-ink-2: color-mix(in srgb, #0f1c36 84%, #ffffff);
+  --color-muted: color-mix(in srgb, #0f1c36 74%, #ffffff);           /* ≥4.5:1 small text on white and #f1f4f7 */
+  --color-line: color-mix(in srgb, #1f3a6b 16%, #ffffff);
+  --color-dark: #03165e;
+  --color-dark-alt: color-mix(in srgb, #03165e 70%, #052393);
 
   /* Legacy aliases (v6 pages + prompts) */
   --color-white: #ffffff; --color-black: #111111;
@@ -85,7 +85,7 @@
   --font-size-5xl: var(--fs-h1); --font-size-6xl: var(--fs-h1);
   /* Page-level aliases (blog/city/faq compositions) */
   --fs-h4: clamp(1rem, .95rem + .3vw, 1.15rem); --fs-h5: 1rem; --fs-sm: var(--fs-small); --font-size-h3: var(--fs-h3);
-  --color-ink-1: var(--color-ink); --color-paper-3: color-mix(in srgb, #f6f3ec 86%, #1f2428 14%);
+  --color-ink-1: var(--color-ink); --color-paper-3: #e6ebf1;
 
   /* Layout */
   --measure: 62ch; --content-width: 62ch;
@@ -165,7 +165,7 @@ section, .section { position: relative; padding-block: var(--section-pad); overf
 .section-divider, .section-divider--top, .section-divider--bottom { position: relative; }
 
 /* === Depth layer: dark bands carry grain + brushed gradient === */
-.on-dark, .texture-grain, .stats-band, .closing-cta, .reviews-section { position: relative; isolation: isolate; overflow: clip; color: #edf0ea; background: linear-gradient(115deg, var(--color-dark) 0%, var(--color-dark-alt) 55%, var(--color-primary-deep) 130%); }
+.on-dark, .texture-grain, .stats-band, .closing-cta, .reviews-section { position: relative; isolation: isolate; overflow: clip; color: #eef3fb; background: linear-gradient(115deg, var(--color-dark) 0%, var(--color-dark-alt) 55%, var(--color-primary-deep) 130%); }
 .on-dark h1, .on-dark h2, .on-dark h3, .texture-grain h1, .texture-grain h2, .texture-grain h3, .stats-band h2, .closing-cta h2, .reviews-section h2 { color: #fff; }
 .on-dark p, .texture-grain p, .closing-cta p, .reviews-section p { color: rgba(255,255,255,.82); }
 .grain, .grain-layer { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .5; mix-blend-mode: overlay; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); }
@@ -181,7 +181,7 @@ section, .section { position: relative; padding-block: var(--section-pad); overf
 .btn:active { transform: translateY(1px); }
 .btn-primary { background: var(--color-primary); color: #fff; box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--color-primary) 70%, transparent); }
 .btn-primary:hover { background: var(--color-primary-dark); transform: translateY(-1px); }
-.btn-accent, .btn-nav-cta { background: var(--color-accent); color: var(--color-ink); }
+.btn-accent, .btn-nav-cta { background: var(--color-accent); color: #fff; }
 .btn-accent:hover, .btn-nav-cta:hover { background: var(--color-accent-dark); color: #fff; }
 .btn-secondary, .btn-outline, .btn-ghost { background: transparent; color: var(--color-ink); border-color: var(--color-line); }
 .btn-secondary:hover, .btn-outline:hover, .btn-ghost:hover { border-color: var(--color-ink); }
@@ -218,6 +218,8 @@ section, .section { position: relative; padding-block: var(--section-pad); overf
 .site-logo img, .navbar-logo img { height: 96px; width: auto; max-width: 260px; object-fit: contain; transition: height .25s var(--ease); }
 .site-header.scrolled .site-logo img, .site-header.scrolled .navbar-logo img { height: 80px; }
 .site-logo img.logo--wordmark { height: 120px; } .site-logo img.logo--square { height: 88px; }
+.site-logo img.logo--combo { height: 46px; max-width: none; } .site-header.scrolled .site-logo img.logo--combo { height: 40px; } /* client combination logo (revision 1) */
+@media (max-width: 1000px) { .site-logo img.logo--combo, .site-header.scrolled .site-logo img.logo--combo { height: 38px; } }
 .logo-text { display: flex; flex-direction: column; gap: .15rem; }
 .logo-mark { font-family: var(--font-heading); font-weight: 800; font-size: 1.1rem; line-height: 1; color: var(--color-ink); letter-spacing: -.01em; }
 .logo-tagline { font-family: var(--font-accent); font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--color-muted); line-height: 1; }

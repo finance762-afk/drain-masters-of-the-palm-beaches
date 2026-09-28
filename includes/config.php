@@ -153,13 +153,16 @@ $acceptsSms      = false;   // integrations.accepts_sms is null → treat as not
 $googleAnalyticsId = 'G-XXXXXXXXXX';   // placeholder — replaced post-launch
 
 /* ---- Brand colors ----------------------------------------------------- */
-// No logo/colors extracted in intake (logo null). Plumbing-appropriate palette;
-// Phase 2 finalizes and applies these as :root overrides in head.php.
+// Revision 1 (2026-09-28): blue / white / light-grey theme sampled from the client logo.
+// The live values are the :root tokens in assets/css/framework.css + includes/critical.css.
 $colors = [
-    'primary'      => '#0C5A9E',   // water blue
-    'primary_dark' => '#083E6E',
-    'secondary'    => '#123B5E',   // deep navy
-    'accent'       => '#E8871E',   // amber — high-contrast CTA
+    'primary'      => '#052393',   // royal blue sampled from the client logo
+    'primary_dark' => '#02166F',   // logo navy
+    'secondary'    => '#3557B1',   // logo mid blue
+    'accent'       => '#1D5FD1',   // bright blue — buttons/links (white text 5.8:1)
+    'background'   => '#FFFFFF',
+    'background_alt' => '#F1F4F7', // light grey sections and cards
+    'text'         => '#0F1C36',   // navy slate
 ];
 
 /* ---- Business facts --------------------------------------------------- */
@@ -170,7 +173,7 @@ $yearsInBusiness = 3;
 $formAction      = 'https://db.pageone.cloud/functions/v1/leads/drain-masters-of-the-palm-beaches';
 
 /* ---- CSS cache-bust (SINGLE source — never set per page) -------------- */
-$cssVersion      = '1';
+$cssVersion      = '2';
 
 /* ---- Helper functions ------------------------------------------------- */
 require_once __DIR__ . '/functions.php';
