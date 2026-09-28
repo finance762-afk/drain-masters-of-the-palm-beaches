@@ -6,10 +6,10 @@
         <div class="navbar-inner container">
             <!-- Logo -->
             <a href="/" class="site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> Home">
-                <span class="logo-text">
-                    <strong class="logo-mark">Drain Masters</strong>
-                    <span class="logo-tagline">of the Palm Beaches</span>
-                </span>
+                <picture>
+                    <source type="image/webp" srcset="/assets/images/dm-brand-mark-v2.webp">
+                    <img class="logo--combo" src="/assets/images/dm-brand-mark-v2.png" alt="<?php echo htmlspecialchars($siteName); ?>" width="687" height="120">
+                </picture>
             </a>
 
             <!-- Desktop Navigation Links -->

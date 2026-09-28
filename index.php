@@ -12,11 +12,13 @@ $metaDescription = 'Locally owned Palm Springs, FL plumber for drain cleaning, s
 $pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/';
 
-/* Allocated homepage hero (deal_assets role=hero) — NOT $photoLibrary[0] */
-$heroImage  = 'owner-img_8976';
+/* Hero backdrop = the client's own logo (revision 1, 2026-09-28: Luis asked for his logo
+   as the backdrop of the first screen). Cut from his 28 Sep upload, phone/email/licence line
+   cropped off, background knocked out to transparency. */
+$heroImage  = 'dm-brand-hero-v2';
 $heroPreload = [
-    'srcset' => '/assets/images/' . $heroImage . '-480.avif 480w, /assets/images/' . $heroImage . '-960.avif 960w',
-    'sizes'  => '100vw',
+    'srcset' => '/assets/images/' . $heroImage . '-480.avif 480w, /assets/images/' . $heroImage . '-960.avif 960w, /assets/images/' . $heroImage . '-1600.avif 1600w',
+    'sizes'  => '(max-width: 900px) 100vw, 1180px',
 ];
 
 /* FAQs (from research_brief) — drive both the visible list and FAQPage schema */
@@ -84,9 +86,38 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- Page-specific composition (tokens only) -->
 <style>
-  .home-hero .hero-rating { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--color-white); margin-top: var(--space-xs); }
+  /* Hero: the client's logo is the backdrop of the first screen (revision 1).
+     White-to-light-grey ground, logo large behind the content, a white wash keeps
+     the H1/answer/form on a ≥4.5:1 ground; a blue rule ties it to the brand. */
+  .home-hero.hero--logo { --logo-strength: .55; padding-block: calc(var(--nav-height) + var(--space-xl)) var(--space-2xl); background: linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-2) 100%); color: var(--color-ink); border-bottom: 4px solid var(--color-primary); }
+  .home-hero .hero-logo-backdrop { position: absolute; inset: var(--nav-height) 0 0 0; z-index: -2; display: grid; place-items: center; padding: var(--space-lg) clamp(1rem, 3vw, 2.5rem); pointer-events: none; }
+  .home-hero .hero-logo-backdrop picture { display: block; width: min(1320px, 100%); }
+  .home-hero .hero-logo-backdrop img { width: 100%; height: auto; opacity: var(--logo-strength); filter: saturate(1.1); }
+  .home-hero .hero-logo-wash { position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      linear-gradient(90deg, color-mix(in srgb, var(--color-paper) 35%, transparent) 0%, transparent 60%),
+      radial-gradient(40% 55% at 100% 0%, color-mix(in srgb, var(--color-accent) 14%, transparent), transparent 70%); }
+  .home-hero .hero-text { background: color-mix(in srgb, var(--color-paper) 74%, transparent); -webkit-backdrop-filter: blur(6px) saturate(1.1); backdrop-filter: blur(6px) saturate(1.1); border: 1px solid color-mix(in srgb, var(--color-paper) 60%, var(--color-line)); border-radius: var(--radius-lg); padding: var(--space-lg) var(--space-xl); box-shadow: var(--shadow); max-width: 38rem; gap: var(--space-md); }
+  .home-hero .hero-title { color: var(--color-ink); }
+  .home-hero .hero-title .text-accent, .home-hero .eyebrow { color: var(--color-primary); }
+  .home-hero .hero-answer { color: var(--color-ink); font-weight: 500; }
+  .home-hero .link-call { color: var(--color-primary); font-size: var(--font-size-lg); }
+  .home-hero .hero-chips li { background: color-mix(in srgb, var(--color-surface) 90%, transparent); }
+  .home-hero .hero-form-card { background: var(--color-surface); border-top: 4px solid var(--color-primary); }
+  .home-hero .hero-rating { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--color-ink); margin: 0; }
   .home-hero .hero-rating .stars { display: inline-flex; gap: var(--space-1); color: var(--color-star); }
-  .home-hero .hero-rating strong { color: var(--color-white); }
+  .home-hero .hero-rating strong { color: var(--color-ink); }
+  /* Phone/tablet: no room behind the copy, so the logo leads the first screen at full
+     strength as the hero's visual anchor, then the copy follows on the same ground. */
+  @media (max-width: 900px) {
+    .home-hero.hero--logo { --logo-strength: 1; padding-top: calc(var(--nav-height) + var(--space-sm)); }
+    .home-hero .hero-logo-backdrop { position: relative; inset: auto; z-index: 0; padding: 0 clamp(1rem, 4vw, 2.5rem) var(--space-md); }
+    .home-hero .hero-logo-backdrop picture { width: min(520px, 100%); }
+    .home-hero .hero-logo-backdrop img { filter: none; }
+    .home-hero .hero-logo-wash { background: radial-gradient(70% 40% at 50% 0%, color-mix(in srgb, var(--color-accent) 12%, transparent), transparent 70%); }
+    .home-hero .eyebrow { display: none; }
+    .home-hero .hero-text { background: none; -webkit-backdrop-filter: none; backdrop-filter: none; border: 0; padding: 0; box-shadow: none; }
+  }
 
   .home-intro .intro-points { list-style: none; margin: var(--space-md) 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm) var(--space-lg); }
   .home-intro .intro-points li { display: flex; gap: var(--space-xs); align-items: flex-start; font-size: var(--font-size-sm); color: var(--color-ink-2); }
@@ -123,12 +154,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </style>
 
 <!-- ============ HERO (bold-industrial: full-bleed photo) ============ -->
-<section class="hero hero--photo home-hero" aria-label="Introduction">
-    <div class="hero-bg">
-        <?php echo renderPicture($heroImage, 'Drain Masters of the Palm Beaches plumber on a job site in Palm Springs, Florida', 1600, 1000, '100vw', ['eager' => true]); ?>
+<section class="hero hero--logo home-hero" aria-label="Introduction">
+    <div class="hero-logo-backdrop">
+        <picture>
+            <source type="image/avif" srcset="/assets/images/<?php echo $heroImage; ?>-480.avif 480w, /assets/images/<?php echo $heroImage; ?>-960.avif 960w, /assets/images/<?php echo $heroImage; ?>-1600.avif 1600w" sizes="(max-width: 900px) 100vw, 1180px">
+            <img src="/assets/images/<?php echo $heroImage; ?>.png" srcset="/assets/images/<?php echo $heroImage; ?>-480.webp 480w, /assets/images/<?php echo $heroImage; ?>-960.webp 960w, /assets/images/<?php echo $heroImage; ?>-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 1180px" alt="Drain Masters of the Palm Beaches logo &mdash; Your Plumbing Service Experts" width="1451" height="578" loading="eager" fetchpriority="high">
+        </picture>
     </div>
-    <div class="hero-overlay"></div>
-    <span class="grain" aria-hidden="true"></span>
+    <div class="hero-logo-wash" aria-hidden="true"></div>
     <div class="container">
         <div class="hero-grid hero-grid--form">
             <div class="hero-text">
