@@ -150,7 +150,7 @@ $reviewRequestUrl = 'https://search.google.com/local/writereview?placeid=ChIJ7x2
 $acceptsSms      = false;   // integrations.accepts_sms is null → treat as not accepted
 
 /* ---- Analytics -------------------------------------------------------- */
-$googleAnalyticsId = 'G-XXXXXXXXXX';   // placeholder — replaced post-launch
+$googleAnalyticsId = 'G-BGMPP040CE';   // placeholder — replaced post-launch
 
 /* ---- Brand colors ----------------------------------------------------- */
 // Revision 1 (2026-09-28): blue / white / light-grey theme sampled from the client logo.
