@@ -6,10 +6,10 @@
 
     <?php
     // Compute canonical URL from request URI
-    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-    $host = $_SERVER['HTTP_HOST'] ?? $domain;
+    // Always the production origin ($siteUrl = https://$domain), never the request's scheme/host: http://, www.
+    // and CDN/preview hosts must all point Google at the one live URL. A page that set $canonicalUrl keeps it.
     $uri = $_SERVER['REQUEST_URI'] ?? '/';
-    $canonicalUrl = $protocol . '://' . $host . strtok($uri, '?');
+    if (empty($canonicalUrl)) $canonicalUrl = $siteUrl . strtok($uri, '?');
 
     // Build page title
     $pageTitle = isset($pageTitle) ? $pageTitle : "$siteName | $primaryKeyword | {$address['city']}, {$address['state']}";
