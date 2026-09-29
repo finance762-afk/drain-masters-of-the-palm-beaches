@@ -104,7 +104,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <ul>
             <li>We do <strong>NOT</strong> sell personal information.</li>
             <li><strong>Service providers:</strong> Google Analytics (analytics), our hosting provider, and Page One Insights, LLC (our web design partner — receives copies of contact form submissions for lead-tracking purposes).</li>
-            <li><strong>Insurance carriers:</strong> when working on insurance restoration projects, with your explicit consent.</li>
             <li><strong>Subcontractors and material suppliers:</strong> as necessary to complete your project.</li>
             <li><strong>Legal compliance:</strong> if required by <?php echo $address['state']; ?> or federal law.</li>
             <li><strong>Business transfers:</strong> in the event of a merger, acquisition, or sale of business assets.</li>
@@ -158,10 +157,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             Address: <?php echo $address['street']; ?>, <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?>
             <?php endif; ?>
         </p>
-
-        <div class="legal-disclaimer">
-            This Privacy Policy is provided as a general template. We recommend reviewing this document with a licensed <?php echo $address['state']; ?> attorney before publication to ensure compliance with current state and federal privacy laws.
-        </div>
 
     </article>
 

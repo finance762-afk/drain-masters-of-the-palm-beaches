@@ -114,10 +114,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <?php endif; ?>
         </p>
 
-        <div class="legal-disclaimer">
-            This document is provided as a general template. We recommend reviewing with a licensed <?php echo $address['state']; ?> attorney before publication.
-        </div>
-
     </article>
 
 </main>

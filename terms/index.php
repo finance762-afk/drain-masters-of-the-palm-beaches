@@ -125,7 +125,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li>Progress payments at milestones where applicable</li>
             <li>Final balance due upon project completion</li>
         </ul>
-        <p>We accept check, electronic transfer, and financing through approved third-party providers. Past-due balances may accrue interest as permitted by <?php echo $address['state']; ?> law.</p>
+        <p>Past-due balances may accrue interest as permitted by <?php echo $address['state']; ?> law.</p>
 
         <h2>7. Cancellation</h2>
         <p>Cancellation terms are specified in your contract. Generally:</p>
@@ -135,22 +135,19 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li><strong>Cancellation after work begins:</strong> payment due for work completed plus materials</li>
         </ul>
 
-        <h2>8. Insurance Claim Work</h2>
-        <p>For insurance restoration projects, payment terms are typically structured around your insurance carrier's payment schedule. We do NOT serve as a public adjuster or legal representative. We provide repair estimates and complete approved repairs only. Negotiation of claim values and policy interpretation is the homeowner's responsibility.</p>
-
-        <h2>9. Limitation of Liability</h2>
+        <h2>8. Limitation of Liability</h2>
         <p>To the maximum extent permitted by <?php echo $address['state']; ?> law, <?php echo htmlspecialchars($siteName); ?>'s total liability for any claim related to the Site or our services shall not exceed the amount you paid for the specific service giving rise to the claim. We are not liable for indirect, incidental, special, or consequential damages.</p>
 
-        <h2>10. Intellectual Property</h2>
+        <h2>9. Intellectual Property</h2>
         <p>All content on this Site — text, graphics, photographs, logos — is owned by <?php echo htmlspecialchars($siteName); ?> or used with permission, and is protected by copyright. You may not reproduce, distribute, or create derivative works without written permission.</p>
 
-        <h2>11. Governing Law and Disputes</h2>
+        <h2>10. Governing Law and Disputes</h2>
         <p>These Terms are governed by the laws of the State of <?php echo $address['state']; ?> without regard to conflict-of-laws principles. Any disputes shall be resolved in the state or federal courts located in <?php echo $address['city']; ?>, <?php echo $address['state']; ?>.</p>
 
-        <h2>12. Changes to These Terms</h2>
+        <h2>11. Changes to These Terms</h2>
         <p>We may update these Terms at any time. The "Last Updated" date will reflect the most recent version. Continued use of the Site after updates constitutes acceptance of revised Terms.</p>
 
-        <h2>13. Contact Us</h2>
+        <h2>12. Contact Us</h2>
         <p>
             <strong><?php echo htmlspecialchars($siteName); ?></strong><br>
             Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a><br>
@@ -159,10 +156,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             Address: <?php echo $address['street']; ?>, <?php echo $address['city']; ?>, <?php echo $address['state']; ?> <?php echo $address['zip']; ?>
             <?php endif; ?>
         </p>
-
-        <div class="legal-disclaimer">
-            This document is provided as a general template. We recommend reviewing with a licensed <?php echo $address['state']; ?> attorney before publication.
-        </div>
 
     </article>
 
