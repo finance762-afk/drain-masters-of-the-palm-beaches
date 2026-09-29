@@ -30,4 +30,4 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemaps
-Sitemap: https://preview-drain-masters-of-the-palm-beaches.pageone.cloud/sitemap.xml
+Sitemap: https://drainmasterspb.com/sitemap.xml

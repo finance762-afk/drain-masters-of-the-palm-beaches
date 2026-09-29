@@ -29,6 +29,14 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
     </url>
     <?php endforeach; ?>
 
+    <!-- Services Overview -->
+    <url>
+        <loc><?php echo $siteUrl; ?>/services/</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Service Areas Overview -->
     <url>
         <loc><?php echo $siteUrl; ?>/service-areas/</loc>

@@ -29,7 +29,7 @@ $businessHours   = '';   // not supplied in intake
 
 /* ---- Domain / URLs ---------------------------------------------------- */
 // build-plan.json has no production_domain → default to the preview host.
-$domain          = 'drain-masters-of-the-palm-beaches.pageone.cloud';
+$domain          = 'drainmasterspb.com';
 $siteUrl         = 'https://' . $domain;   // always a valid absolute URL
 // NOTE: $canonicalUrl is NOT set here — head.php computes it per page from the request URI.
 
