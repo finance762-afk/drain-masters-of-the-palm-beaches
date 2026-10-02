@@ -139,6 +139,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .home-plans .plans-teaser-prices .label { font-weight: 600; }
   @media (max-width: 900px) { .home-plans .plans-teaser { grid-template-columns: 1fr; gap: var(--space-xl); } }
 
+  .home-reviews { background: var(--color-paper-2); }
   .home-services .services-cta { display: flex; justify-content: center; margin-top: var(--space-2xl); }
 
   .home-cta .cta-copy { display: grid; gap: var(--space-sm); }
@@ -415,6 +416,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- ============ GOOGLE REVIEWS (Page One reviews feed — real reviews, refreshed nightly) ============ -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/google-reviews.php';
+$homeReviews = p1_google_reviews($slug, ['heading' => 'What Palm Beach County customers say on Google']);
+if ($homeReviews !== ''): ?>
+<section class="section home-reviews" aria-label="Google reviews">
+    <div class="container">
+        <?php echo $homeReviews; ?>
+    </div>
+</section>
+<?php endif; ?>
 
 <!-- ============ MID-PAGE CTA BANNER (dark) ============ -->
 <section class="cta-banner texture-grain edge-curve-top home-cta" aria-label="Emergency call to action">
