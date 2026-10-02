@@ -127,17 +127,58 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .home-intro .intro-points svg { color: var(--color-accent-dark); flex: 0 0 auto; }
   @media (max-width: 560px) { .home-intro .intro-points { grid-template-columns: 1fr; } }
 
-  .home-plans .plans-teaser { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--space-2xl); align-items: center; }
-  .home-plans .plans-teaser-copy { display: grid; gap: var(--space-md); justify-items: start; }
-  .home-plans .plans-teaser-copy p { margin: 0; color: var(--color-ink-2); }
-  .home-plans .plans-teaser-prices { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-sm); }
-  .home-plans .plans-teaser-prices a { display: grid; grid-template-columns: 6.5rem 1fr; align-items: center; gap: var(--space-md); padding: var(--space-md) var(--space-lg); border: 1px solid var(--color-line); border-left: 4px solid var(--color-primary); border-radius: var(--radius-lg); background: var(--color-card-tint-1); color: var(--color-ink); text-decoration: none; transition: var(--transition); }
-  .home-plans .plans-teaser-prices li:nth-child(2) a { background: var(--color-card-tint-2); }
-  .home-plans .plans-teaser-prices li:nth-child(3) a { background: var(--color-card-tint-3); }
-  .home-plans .plans-teaser-prices a:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-  .home-plans .plans-teaser-prices .amount { font-family: var(--font-heading); font-weight: 800; font-size: var(--fs-h2); color: var(--color-primary); line-height: 1; font-variant-numeric: tabular-nums; }
-  .home-plans .plans-teaser-prices .label { font-weight: 600; }
-  @media (max-width: 900px) { .home-plans .plans-teaser { grid-template-columns: 1fr; gap: var(--space-xl); } }
+  /* Maintenance plans band (revision 3): member card, three plan cards that lift on hover,
+     and the member savings in big numbers. */
+  .home-plans { padding-block: var(--space-4xl) var(--space-3xl); }
+  .home-plans .plans-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: var(--space-2xl); align-items: center; }
+  .home-plans .plans-head-copy { display: grid; gap: var(--space-md); }
+  .home-plans .plans-head-copy h2 { color: var(--color-white); }
+  .home-plans .plans-head-copy p { margin: 0; color: color-mix(in srgb, var(--color-white) 86%, transparent); max-width: 58ch; }
+  .home-plans .member-card { justify-self: center; width: min(360px, 100%); aspect-ratio: 1.586; display: grid; align-content: space-between; justify-items: start; gap: var(--space-xs); padding: var(--space-lg); border-radius: var(--radius-lg); color: var(--color-ink); background: linear-gradient(160deg, var(--color-white) 0%, var(--color-white) 52%, color-mix(in srgb, var(--color-accent) 30%, var(--color-white)) 100%); border: 1px solid color-mix(in srgb, var(--color-white) 70%, transparent); box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--color-black) 70%, transparent), 0 0 0 6px color-mix(in srgb, var(--color-white) 8%, transparent); transform: rotate(-5deg); transition: transform .5s cubic-bezier(.2, .8, .2, 1); }
+  .home-plans .plans-head:hover .member-card { transform: rotate(-1deg) translateY(-6px); }
+  .home-plans .member-card img { width: 78%; height: auto; filter: none; }
+  .home-plans .member-card-title { font-family: var(--font-accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: var(--font-size-sm); color: var(--color-primary); }
+  .home-plans .member-card-line { font-size: var(--font-size-sm); color: var(--color-ink-2); }
+  .home-plans .member-card-phone { justify-self: end; font-family: var(--font-heading); font-weight: 800; color: var(--color-primary); font-variant-numeric: tabular-nums; }
+
+  .home-plans .plan-cards { list-style: none; margin: var(--space-2xl) 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-lg); align-items: stretch; }
+  .home-plans .plan-cards li { display: grid; }
+  .home-plans .plan-card { position: relative; display: grid; grid-template-rows: auto auto auto 1fr auto; gap: var(--space-sm); padding: var(--space-xl) var(--space-lg) var(--space-lg); border-radius: var(--radius-lg); background: var(--color-surface); color: var(--color-ink); text-decoration: none; border: 1px solid color-mix(in srgb, var(--color-white) 30%, transparent); box-shadow: var(--shadow); overflow: hidden; transition: transform .35s cubic-bezier(.2, .8, .2, 1), box-shadow .35s ease; }
+  .home-plans .plan-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-bright)); transform: scaleX(.18); transform-origin: left; transition: transform .45s cubic-bezier(.2, .8, .2, 1); }
+  .home-plans .plan-card::after { content: ""; position: absolute; right: calc(var(--space-2xl) * -1); bottom: calc(var(--space-2xl) * -1); width: 11rem; height: 11rem; border-radius: 50%; background: color-mix(in srgb, var(--color-accent) 10%, transparent); transform: scale(.6); opacity: 0; transition: transform .5s ease, opacity .5s ease; pointer-events: none; }
+  .home-plans .plan-card:hover, .home-plans .plan-card:focus-visible { transform: translateY(-10px); box-shadow: 0 34px 60px -26px color-mix(in srgb, var(--color-black) 75%, transparent), 0 0 0 2px var(--color-accent-bright); }
+  .home-plans .plan-card:hover::before, .home-plans .plan-card:focus-visible::before { transform: scaleX(1); }
+  .home-plans .plan-card:hover::after, .home-plans .plan-card:focus-visible::after { transform: scale(1); opacity: 1; }
+  .home-plans .plan-card--featured { background: linear-gradient(180deg, var(--color-card-tint-3) 0%, var(--color-surface) 45%); box-shadow: var(--shadow-lg), 0 0 0 2px var(--color-accent-bright); }
+  .home-plans .plan-card--featured::before { transform: scaleX(1); }
+  .home-plans .plan-card-badge { position: absolute; top: var(--space-md); right: var(--space-md); background: var(--color-primary); color: var(--color-white); font-family: var(--font-accent); font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: var(--space-1) var(--space-sm); border-radius: 999px; }
+  .home-plans .plan-card-for { font-family: var(--font-accent); font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent-dark); }
+  .home-plans .plan-card-name { font-family: var(--font-heading); font-weight: 800; font-size: var(--fs-h3); line-height: 1.2; color: var(--color-ink); }
+  .home-plans .plan-card-price { display: flex; align-items: baseline; gap: var(--space-xs); }
+  .home-plans .plan-card-price .amount { font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.8rem, 4.5vw, 3.6rem); line-height: 1; color: var(--color-primary); font-variant-numeric: tabular-nums; transition: transform .35s ease; transform-origin: left bottom; }
+  .home-plans .plan-card:hover .plan-card-price .amount { transform: scale(1.06); }
+  .home-plans .plan-card-price .per { font-weight: 600; color: var(--color-ink-2); }
+  .home-plans .plan-card-perks { display: grid; gap: var(--space-xs); align-content: start; padding-top: var(--space-md); border-top: 1px solid var(--color-line); }
+  .home-plans .plan-card-perks > span { display: grid; grid-template-columns: auto 1fr; gap: var(--space-xs); align-items: start; font-size: var(--font-size-sm); line-height: 1.45; color: var(--color-ink); }
+  .home-plans .plan-card-perks svg { width: 18px; height: 18px; color: var(--color-accent); margin-top: var(--space-1); }
+  .home-plans .plan-card-cta { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: var(--space-xs); margin-top: var(--space-sm); font-weight: 700; color: var(--color-primary); }
+  .home-plans .plan-card-cta svg { transition: transform .3s ease; }
+  .home-plans .plan-card:hover .plan-card-cta svg { transform: translateX(6px); }
+
+  .home-plans .plan-savings { margin-top: var(--space-2xl); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: var(--space-xl); align-items: center; padding: var(--space-lg) var(--space-xl); border-radius: var(--radius-lg); background: color-mix(in srgb, var(--color-white) 7%, transparent); border: 1px solid color-mix(in srgb, var(--color-white) 18%, transparent); }
+  .home-plans .plan-savings .big { display: block; font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.2rem, 3.6vw, 3rem); line-height: 1; color: var(--color-accent-bright); font-variant-numeric: tabular-nums; }
+  .home-plans .plan-savings .big small { font-size: .5em; font-weight: 800; }
+  .home-plans .plan-savings .label { display: block; margin-top: var(--space-xs); font-size: var(--font-size-sm); color: color-mix(in srgb, var(--color-white) 86%, transparent); }
+  .home-plans .plan-condo { margin: var(--space-lg) 0 0; text-align: center; font-size: var(--font-size-sm); color: color-mix(in srgb, var(--color-white) 80%, transparent); }
+  .home-plans .plan-condo a { color: var(--color-white); font-weight: 600; }
+  @media (max-width: 900px) {
+    .home-plans { padding-block: var(--space-3xl) var(--space-2xl); }
+    .home-plans .plans-head { grid-template-columns: 1fr; gap: var(--space-xl); }
+    .home-plans .member-card { width: min(300px, 86%); transform: rotate(-3deg); }
+    .home-plans .plan-cards { grid-template-columns: 1fr; }
+    .home-plans .plan-savings { grid-template-columns: 1fr; gap: var(--space-lg); padding: var(--space-lg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .home-plans .plan-card, .home-plans .member-card, .home-plans .plan-card::before, .home-plans .plan-card::after { transition: none; } }
 
   .home-reviews { background: var(--color-paper-2); }
   .home-services .services-cta { display: flex; justify-content: center; margin-top: var(--space-2xl); }
@@ -346,22 +387,57 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
 </section>
 
-<!-- ============ MAINTENANCE PLANS TEASER ============ -->
-<section class="section section--light home-plans" aria-label="Plumbing maintenance plans">
+<!-- ============ MAINTENANCE PLANS (member card + plan cards + member savings) ============ -->
+<?php
+$homePlanCards = [
+    ['name' => 'Standard Home Plan', 'price' => 30, 'for' => 'For homes', 'href' => '/maintenance-plans/#home-plans', 'perks' => ['Yearly home plumbing inspection', 'Water heater flush at no charge', '10% off every service call']],
+    ['name' => 'Premium Home Plan', 'price' => 50, 'for' => 'For homes', 'badge' => 'Most complete', 'href' => '/maintenance-plans/#home-plans', 'perks' => ['Priority scheduling', 'Every fixture checked, leaking P-traps replaced', '20% off every service call']],
+    ['name' => 'Restaurant & Commercial Plan', 'price' => 70, 'for' => 'For businesses', 'href' => '/maintenance-plans/#business-plans', 'perks' => ['Monthly preventative visit', 'Drains degreased, sinks and toilets cleared', '20% off service calls between visits']],
+];
+?>
+<section class="home-plans on-dark texture-grain edge-wave-top" aria-label="Plumbing maintenance plans">
+    <span class="grain-layer" aria-hidden="true"></span>
     <div class="container">
-        <div class="plans-teaser">
-            <div class="plans-teaser-copy">
-                <span class="eyebrow">Maintenance Plans</span>
-                <h2>Plumbing maintenance plans from <span class="text-accent">$30 a month</span></h2>
-                <p>Drain Masters of the Palm Beaches offers monthly maintenance plans for homes, restaurants, commercial buildings and condo communities. Home plans include a yearly inspection, a water heater flush and no trip charge, and every plan takes 10% to 20% off service calls.</p>
-                <a class="btn btn-primary btn-lg" href="/maintenance-plans/">See the plans</a>
+        <div class="plans-head">
+            <div class="plans-head-copy">
+                <span class="eyebrow-label">Maintenance Plans</span>
+                <h2>How much is a plumbing maintenance plan? <span class="text-accent">From $30 a month</span></h2>
+                <p>Drain Masters of the Palm Beaches looks after your plumbing all year for a flat monthly price: scheduled inspections, a member rate on every service call, and a plumber who already knows your property when something breaks.</p>
             </div>
-            <ul class="plans-teaser-prices">
-                <li><a href="/maintenance-plans/#home-plans"><span class="amount">$30</span><span class="label">Standard Home Plan, per month</span></a></li>
-                <li><a href="/maintenance-plans/#home-plans"><span class="amount">$50</span><span class="label">Premium Home Plan, per month</span></a></li>
-                <li><a href="/maintenance-plans/#business-plans"><span class="amount">$70</span><span class="label">Restaurant &amp; Commercial Plan, per month</span></a></li>
-            </ul>
+            <div class="member-card" aria-hidden="true">
+                <img src="/assets/images/logo-hero-v2-480.webp" alt="" width="480" height="191" loading="lazy" decoding="async">
+                <span class="member-card-title">Maintenance Plan Member</span>
+                <span class="member-card-line">Priority &middot; Savings &middot; Peace of mind</span>
+                <span class="member-card-phone"><?php echo $phone; ?></span>
+            </div>
         </div>
+
+        <ul class="plan-cards" data-p1-dynamic>
+            <?php foreach ($homePlanCards as $homePlan): ?>
+            <li>
+                <a class="plan-card<?php echo !empty($homePlan['badge']) ? ' plan-card--featured' : ''; ?>" href="<?php echo $homePlan['href']; ?>">
+                    <?php if (!empty($homePlan['badge'])): ?><span class="plan-card-badge"><?php echo htmlspecialchars($homePlan['badge']); ?></span><?php endif; ?>
+                    <span class="plan-card-for"><?php echo htmlspecialchars($homePlan['for']); ?></span>
+                    <span class="plan-card-name"><?php echo htmlspecialchars($homePlan['name']); ?></span>
+                    <span class="plan-card-price"><span class="amount">$<?php echo (int) $homePlan['price']; ?></span><span class="per">per month</span></span>
+                    <span class="plan-card-perks">
+                        <?php foreach ($homePlan['perks'] as $homePerk): ?>
+                        <span><?php echo $icons['check']; ?><?php echo htmlspecialchars($homePerk); ?></span>
+                        <?php endforeach; ?>
+                    </span>
+                    <span class="plan-card-cta">See what's included <svg aria-hidden="true" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                </a>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+
+        <div class="plan-savings">
+            <div><span class="big">$0</span><span class="label">Trip charge on both home plans</span></div>
+            <div><span class="big">20%<small> off</small></span><span class="label">Every service call on Premium and commercial plans</span></div>
+            <div><span class="big">$350</span><span class="label">Restaurant hydro jetting for members, normally about $800</span></div>
+            <a class="btn btn-accent btn-lg" href="/maintenance-plans/">Compare all plans</a>
+        </div>
+        <p class="plan-condo">Managing a condo or HOA? <a href="/maintenance-plans/#condo-plans">See the preventative maintenance program for communities</a>.</p>
     </div>
 </section>
 
