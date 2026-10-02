@@ -12,13 +12,14 @@ $metaDescription = 'Locally owned Palm Springs, FL plumber for drain cleaning, s
 $pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/';
 
-/* Hero backdrop = the client's own logo (revision 1, 2026-09-28: Luis asked for his logo
-   as the backdrop of the first screen). Cut from his 28 Sep upload, phone/email/licence line
-   cropped off, background knocked out to transparency. */
-$heroImage  = 'logo-hero-v2';
+/* Hero visual = the client's own service truck (revision 2, 2026-10-02: Luis sent a 10 s clip
+   of the truck on the waterfront). The still (first frame) is the LCP image on every screen;
+   the loop is attached after window load on desktop only. Replaces the revision-1 logo backdrop
+   (the truck carries the same lettering). */
+$heroImage  = 'hero-truck-v1';
 $heroPreload = [
     'srcset' => '/assets/images/' . $heroImage . '-480.avif 480w, /assets/images/' . $heroImage . '-960.avif 960w, /assets/images/' . $heroImage . '-1600.avif 1600w',
-    'sizes'  => '(max-width: 900px) 100vw, 1180px',
+    'sizes'  => '(min-width: 1500px) 1500px, 100vw',
 ];
 
 /* FAQs (from research_brief) — drive both the visible list and FAQPage schema */
@@ -85,18 +86,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- Page-specific composition (tokens only) -->
 <style>
-  /* Hero: the client's logo is the backdrop of the first screen (revision 1).
-     White-to-light-grey ground, logo large behind the content, a white wash keeps
-     the H1/answer/form on a ≥4.5:1 ground; a blue rule ties it to the brand. */
-  .home-hero.hero--logo { --logo-strength: .55; padding-block: calc(var(--nav-height) + var(--space-xl)) var(--space-2xl); background: linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-2) 100%); color: var(--color-ink); border-bottom: 4px solid var(--color-primary); }
-  .home-hero .hero-logo-backdrop { position: absolute; inset: var(--nav-height) 0 0 0; z-index: -2; display: grid; place-items: center; padding: var(--space-lg) clamp(1rem, 3vw, 2.5rem); pointer-events: none; }
-  .home-hero .hero-logo-backdrop picture { display: block; width: min(1320px, 100%); }
-  .home-hero .hero-logo-backdrop img { width: 100%; height: auto; opacity: var(--logo-strength); filter: saturate(1.1); }
-  .home-hero .hero-logo-wash { position: absolute; inset: 0; z-index: -1; pointer-events: none;
-    background:
-      linear-gradient(90deg, color-mix(in srgb, var(--color-paper) 35%, transparent) 0%, transparent 60%),
-      radial-gradient(40% 55% at 100% 0%, color-mix(in srgb, var(--color-accent) 14%, transparent), transparent 70%); }
-  .home-hero .hero-text { background: color-mix(in srgb, var(--color-paper) 74%, transparent); -webkit-backdrop-filter: blur(6px) saturate(1.1); backdrop-filter: blur(6px) saturate(1.1); border: 1px solid color-mix(in srgb, var(--color-paper) 60%, var(--color-line)); border-radius: var(--radius-lg); padding: var(--space-lg) var(--space-xl); box-shadow: var(--shadow); max-width: 38rem; gap: var(--space-md); }
+  /* Hero: the client's truck runs as a band across the top of the first screen (revision 2).
+     The band is never covered: the copy card and the form start at its lower edge, over the
+     road, so the truck lettering and phone number stay readable. */
+  .home-hero.hero--truck { padding-block: var(--nav-height) var(--space-2xl); background: linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-2) 100%); color: var(--color-ink); border-bottom: 4px solid var(--color-primary); }
+  .home-hero .hero-truck { position: relative; width: min(1500px, 100%); margin-inline: auto; aspect-ratio: 16 / 5; overflow: hidden; }
+  .home-hero .hero-truck picture { display: block; position: absolute; inset: 0; }
+  .home-hero .hero-truck img, .home-hero .hero-truck video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
+  .home-hero .hero-truck video { filter: var(--photo-grade); opacity: 0; transition: opacity .6s ease; }
+  .home-hero .hero-truck video.is-playing { opacity: 1; }
+  .home-hero .hero-truck::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 86%, var(--color-paper) 100%); }
+  .home-hero .hero-truck-toggle { position: absolute; top: var(--space-sm); right: var(--space-sm); z-index: 2; display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid var(--color-line); background: color-mix(in srgb, var(--color-paper) 82%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); color: var(--color-ink); cursor: pointer; }
+  .home-hero .hero-truck-toggle[hidden] { display: none; }
+  .home-hero .hero-truck-toggle .icon-play, .home-hero .hero-truck-toggle[aria-pressed="true"] .icon-pause { display: none; }
+  .home-hero .hero-truck-toggle[aria-pressed="true"] .icon-play { display: block; }
+  @media (min-width: 1500px) { .home-hero .hero-truck { -webkit-mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent); mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent); } .home-hero .hero-truck-toggle { right: 9%; } }
+  .home-hero .hero-grid { position: relative; z-index: 1; margin-top: calc(var(--space-xl) * -1); align-items: start; }
+  .home-hero .hero-text { background: color-mix(in srgb, var(--color-paper) 92%, transparent); -webkit-backdrop-filter: blur(6px) saturate(1.1); backdrop-filter: blur(6px) saturate(1.1); border: 1px solid color-mix(in srgb, var(--color-paper) 60%, var(--color-line)); border-radius: var(--radius-lg); padding: var(--space-lg) var(--space-xl); box-shadow: var(--shadow); max-width: 38rem; gap: var(--space-md); }
   .home-hero .hero-title { color: var(--color-ink); }
   .home-hero .hero-title .text-accent, .home-hero .eyebrow { color: var(--color-primary); }
   .home-hero .hero-answer { color: var(--color-ink); font-weight: 500; }
@@ -106,14 +112,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .home-hero .hero-rating { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--color-ink); margin: 0; }
   .home-hero .hero-rating .stars { display: inline-flex; gap: var(--space-1); color: var(--color-star); }
   .home-hero .hero-rating strong { color: var(--color-ink); }
-  /* Phone/tablet: no room behind the copy, so the logo leads the first screen at full
-     strength as the hero's visual anchor, then the copy follows on the same ground. */
+  /* Phone/tablet: the still shows the whole truck above the copy; no video is loaded. */
   @media (max-width: 900px) {
-    .home-hero.hero--logo { --logo-strength: 1; padding-top: calc(var(--nav-height) + var(--space-sm)); }
-    .home-hero .hero-logo-backdrop { position: relative; inset: auto; z-index: 0; padding: 0 clamp(1rem, 4vw, 2.5rem) var(--space-md); }
-    .home-hero .hero-logo-backdrop picture { width: min(520px, 100%); }
-    .home-hero .hero-logo-backdrop img { filter: none; }
-    .home-hero .hero-logo-wash { background: radial-gradient(70% 40% at 50% 0%, color-mix(in srgb, var(--color-accent) 12%, transparent), transparent 70%); }
+    .home-hero .hero-truck { aspect-ratio: 1600 / 625; }
+    .home-hero .hero-truck::after { background: none; }
+    .home-hero .hero-truck video, .home-hero .hero-truck-toggle { display: none; }
+    .home-hero .hero-grid { margin-top: var(--space-md); }
     .home-hero .eyebrow { display: none; }
     .home-hero .hero-text { background: none; -webkit-backdrop-filter: none; backdrop-filter: none; border: 0; padding: 0; box-shadow: none; }
   }
@@ -152,15 +156,45 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   @media (max-width: 768px) { .blog-featured-card { grid-template-columns: 1fr; } .blog-featured-image-link { min-height: 220px; } }
 </style>
 
-<!-- ============ HERO (bold-industrial: full-bleed photo) ============ -->
-<section class="hero hero--logo home-hero" aria-label="Introduction">
-    <div class="hero-logo-backdrop">
+<!-- ============ HERO (bold-industrial: client truck band, video on desktop) ============ -->
+<section class="hero hero--truck home-hero" aria-label="Introduction">
+    <div class="hero-truck">
         <picture>
-            <source type="image/avif" srcset="/assets/images/<?php echo $heroImage; ?>-480.avif 480w, /assets/images/<?php echo $heroImage; ?>-960.avif 960w, /assets/images/<?php echo $heroImage; ?>-1600.avif 1600w" sizes="(max-width: 900px) 100vw, 1180px">
-            <img src="/assets/images/<?php echo $heroImage; ?>.png" srcset="/assets/images/<?php echo $heroImage; ?>-480.webp 480w, /assets/images/<?php echo $heroImage; ?>-960.webp 960w, /assets/images/<?php echo $heroImage; ?>-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 1180px" alt="Drain Masters of the Palm Beaches logo &mdash; Your Plumbing Service Experts" width="1451" height="578" loading="eager" fetchpriority="high">
+            <source type="image/avif" srcset="/assets/images/<?php echo $heroImage; ?>-480.avif 480w, /assets/images/<?php echo $heroImage; ?>-960.avif 960w, /assets/images/<?php echo $heroImage; ?>-1600.avif 1600w" sizes="(min-width: 1500px) 1500px, 100vw">
+            <img src="/assets/images/<?php echo $heroImage; ?>.jpg" srcset="/assets/images/<?php echo $heroImage; ?>-480.webp 480w, /assets/images/<?php echo $heroImage; ?>-960.webp 960w, /assets/images/<?php echo $heroImage; ?>-1600.webp 1600w" sizes="(min-width: 1500px) 1500px, 100vw" alt="Drain Masters of the Palm Beaches service truck parked by the water under palm trees" width="1600" height="625" loading="eager" fetchpriority="high">
         </picture>
+        <video muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1" width="1600" height="626" data-webm="/assets/video/<?php echo $heroImage; ?>.webm" data-mp4="/assets/video/<?php echo $heroImage; ?>.mp4"></video>
+        <button type="button" class="hero-truck-toggle" aria-label="Pause background video" aria-pressed="false" hidden>
+            <svg class="icon-pause" aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/></svg>
+            <svg class="icon-play" aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>
+        </button>
     </div>
-    <div class="hero-logo-wash" aria-hidden="true"></div>
+    <script>
+    /* Truck loop: desktop only, after window load, skipped for reduced-motion / data-saver. */
+    (function () {
+        var band = document.querySelector('.hero-truck'); if (!band) return;
+        var v = band.querySelector('video'), btn = band.querySelector('.hero-truck-toggle');
+        var ok = window.matchMedia('(min-width: 901px)').matches
+            && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+            && !(navigator.connection && navigator.connection.saveData);
+        if (!v || !ok) return;
+        function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        function start() {
+            [['webm', 'video/webm'], ['mp4', 'video/mp4']].forEach(function (f) {
+                var s = document.createElement('source'); s.src = v.getAttribute('data-' + f[0]); s.type = f[1]; v.appendChild(s);
+            });
+            v.addEventListener('playing', function () { v.classList.add('is-playing'); btn.hidden = false; }, { once: true });
+            v.load(); play();
+        }
+        btn.addEventListener('click', function () {
+            var pausing = !v.paused;
+            if (pausing) v.pause(); else play();
+            btn.setAttribute('aria-pressed', pausing ? 'true' : 'false');
+            btn.setAttribute('aria-label', pausing ? 'Play background video' : 'Pause background video');
+        });
+        if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
+    })();
+    </script>
     <div class="container">
         <div class="hero-grid hero-grid--form">
             <div class="hero-text">
