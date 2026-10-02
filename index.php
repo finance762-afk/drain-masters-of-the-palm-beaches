@@ -117,7 +117,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     .home-hero .hero-truck { aspect-ratio: 1600 / 625; }
     .home-hero .hero-truck::after { background: none; }
     .home-hero .hero-truck video, .home-hero .hero-truck-toggle { display: none; }
-    .home-hero .hero-grid { margin-top: var(--space-md); }
+    .home-hero .hero-grid { margin-top: var(--space-sm); }
     .home-hero .eyebrow { display: none; }
     .home-hero .hero-text { background: none; -webkit-backdrop-filter: none; backdrop-filter: none; border: 0; padding: 0; box-shadow: none; }
   }
@@ -126,6 +126,48 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .home-intro .intro-points li { display: flex; gap: var(--space-xs); align-items: flex-start; font-size: var(--font-size-sm); color: var(--color-ink-2); }
   .home-intro .intro-points svg { color: var(--color-accent-dark); flex: 0 0 auto; }
   @media (max-width: 560px) { .home-intro .intro-points { grid-template-columns: 1fr; } }
+
+  /* Promo strip above the truck band */
+  .home-hero .hero-promo { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-xs) var(--space-sm); padding: var(--space-xs) var(--space-md); background: var(--color-dark); color: var(--color-white); font-size: var(--font-size-sm); font-weight: 600; text-decoration: none; text-align: center; }
+  .home-hero .hero-promo-tag { font-family: var(--font-accent); font-size: var(--fs-eyebrow); letter-spacing: .12em; text-transform: uppercase; background: var(--color-accent); color: var(--color-white); padding: var(--space-1) var(--space-xs); border-radius: 999px; }
+  .home-hero .hero-promo-go { display: inline-flex; align-items: center; gap: var(--space-1); color: var(--color-accent-bright); text-decoration: underline; text-underline-offset: 3px; }
+  .home-hero .hero-promo-go svg { transition: transform .3s ease; }
+  .home-hero .hero-promo-short { display: none; }
+  @media (max-width: 700px) { .home-hero .hero-promo { flex-wrap: nowrap; padding: var(--space-1) var(--space-sm); } .home-hero .hero-promo-long, .home-hero .hero-promo-tag { display: none; } .home-hero .hero-promo-short { display: inline; } }
+  .home-hero .hero-promo:hover .hero-promo-go svg { transform: translateX(4px); }
+
+  /* Problem picker */
+  .home-picker { background: var(--color-surface); }
+  .home-picker .picker { margin-top: var(--space-2xl); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: var(--space-xl); align-items: start; padding: var(--space-lg); border: 1px solid var(--color-line); border-radius: var(--radius-lg); background: var(--color-paper-2); }
+  .home-picker .picker-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-xs); }
+  .home-picker .picker-option { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: var(--space-sm); min-height: 48px; padding: var(--space-sm) var(--space-md); border-radius: var(--radius); border: 1px solid var(--color-line); background: var(--color-surface); color: var(--color-ink); font-weight: 600; text-decoration: none; transition: transform .25s ease, border-color .25s ease, background-color .25s ease, box-shadow .25s ease; }
+  .home-picker .picker-option svg { width: 20px; height: 20px; color: var(--color-accent); transition: color .25s ease; }
+  .home-picker .picker-option:hover { transform: translateX(6px); border-color: var(--color-accent); box-shadow: var(--shadow-sm); }
+  .home-picker .picker-option.is-active { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-white); box-shadow: var(--shadow); }
+  .home-picker .picker-option.is-active svg { color: var(--color-white); }
+  .home-picker .picker-panels { position: sticky; top: calc(var(--nav-height) + var(--space-md)); }
+  .home-picker .picker-panel { display: grid; gap: var(--space-md); padding: var(--space-xl); border-radius: var(--radius-lg); background: var(--color-surface); border: 1px solid var(--color-line); border-top: 4px solid var(--color-primary); box-shadow: var(--shadow); }
+  .home-picker .picker.is-enhanced .picker-panel { display: none; }
+  .home-picker .picker.is-enhanced .picker-panel.is-active { display: grid; animation: picker-in .35s ease both; }
+  .home-picker .picker:not(.is-enhanced) .picker-panel + .picker-panel { margin-top: var(--space-md); }
+  @keyframes picker-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .home-picker .picker-kicker { font-family: var(--font-accent); font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent-dark); }
+  .home-picker .picker-panel h3 { font-size: var(--fs-h2); margin: 0; }
+  .home-picker .picker-first { margin: 0; font-size: var(--fs-lead); line-height: 1.5; color: var(--color-ink); font-weight: 500; }
+  .home-picker .picker-desc { margin: 0; color: var(--color-ink-2); }
+  .home-picker .picker-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md) var(--space-lg); }
+  .home-picker .picker-proof { list-style: none; margin: 0; padding: var(--space-md) 0 0; border-top: 1px dashed var(--color-line); display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); font-size: var(--font-size-sm); color: var(--color-ink-2); }
+  .home-picker .picker-proof li { display: inline-flex; align-items: center; gap: var(--space-xs); }
+  .home-picker .picker-proof svg { width: 16px; height: 16px; color: var(--color-accent); }
+  @media (max-width: 900px) {
+    .home-picker .picker { grid-template-columns: 1fr; padding: var(--space-md); }
+    .home-picker .picker-list { grid-template-columns: 1fr 1fr; }
+    .home-picker .picker-option { grid-template-columns: 1fr; justify-items: start; gap: var(--space-1); font-size: var(--font-size-sm); }
+    .home-picker .picker-option:hover { transform: none; }
+    .home-picker .picker-panels { position: static; scroll-margin-top: calc(var(--nav-height) + var(--space-md)); }
+    .home-picker .picker-panel { padding: var(--space-lg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .home-picker .picker.is-enhanced .picker-panel.is-active { animation: none; } }
 
   /* Maintenance plans band (revision 3): member card, three plan cards that lift on hover,
      and the member savings in big numbers. */
@@ -212,6 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- ============ HERO (bold-industrial: client truck band, video on desktop) ============ -->
 <section class="hero hero--truck home-hero" aria-label="Introduction">
+    <a class="hero-promo" href="/maintenance-plans/"><span class="hero-promo-tag">New</span> <span class="hero-promo-long">Free water heater flush with a home maintenance plan, from $30 a month</span><span class="hero-promo-short">Free water heater flush with a home plan</span> <span class="hero-promo-go"><span class="hero-promo-long">See the plans </span><svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
     <div class="hero-truck">
         <picture>
             <source type="image/avif" srcset="/assets/images/<?php echo $heroImage; ?>-480.avif 480w, /assets/images/<?php echo $heroImage; ?>-960.avif 960w, /assets/images/<?php echo $heroImage; ?>-1600.avif 1600w" sizes="(min-width: 1500px) 1500px, 100vw">
@@ -318,6 +361,74 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- ============ PROBLEM PICKER (pick the symptom, see the service) ============ -->
+<?php
+/* Symptom → service. Every panel points at a real service page; copy states what Drain Masters does, no prices. */
+$homeProblems = [
+    ['label' => 'Drain backing up or slow', 'icon' => 'droplets', 'slug' => 'drain-cleaning',                        'first' => 'We clear the blockage with a cable machine, then check the line so the same clog does not come straight back.'],
+    ['label' => 'No hot water',             'icon' => 'flame',    'slug' => 'water-heater-installation-repair',      'first' => 'We test the heater, tell you whether a repair will do it or the unit is done, and price both before any work starts.'],
+    ['label' => 'Leak or water stain',      'icon' => 'search',   'slug' => 'leak-detection-slab-leak-repair',       'first' => 'We locate the leak electronically first, so the repair is one small opening and not a torn-up floor or wall.'],
+    ['label' => 'Water bill jumped',        'icon' => 'search',   'slug' => 'leak-detection-slab-leak-repair',       'first' => 'A bill that climbs when nothing changed usually means a hidden leak. We find it before it damages the slab.'],
+    ['label' => 'Sewer smell or backup',    'icon' => 'wrench',   'slug' => 'sewer-line-repair-replacement',         'first' => 'We run a camera down the line to see whether it is roots, a break or a belly, and show you the footage.'],
+    ['label' => 'Toilet running or clogged','icon' => 'droplets', 'slug' => 'toilet-faucet-repair-and-installation', 'first' => 'We stop the running, clear the clog, or set a new toilet if the old one is past repair.'],
+    ['label' => 'Disposal jammed',          'icon' => 'hammer',   'slug' => 'garbage-disposal-repair',               'first' => 'We free or replace a jammed, leaking or dead disposal and get the kitchen sink draining again.'],
+    ['label' => 'Grease clogs keep returning','icon' => 'waves',  'slug' => 'hydro-jetting',                         'first' => 'Snaking pokes a hole through grease. Hydro jetting scours the whole pipe wall, which is why the clog stays gone.'],
+    ['label' => 'Burst pipe or emergency',  'icon' => 'clock',    'slug' => 'emergency-plumbing',                    'first' => 'Shut the water off at the main if you can and call. We run same-day and after-hours emergency service.'],
+];
+$homeSvcBySlug = array_column($services, null, 'slug');
+?>
+<section class="section home-picker" aria-label="Find the right plumbing service">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Start Here</span>
+            <h2>What plumbing problem are you <span class="text-accent">dealing with right now?</span></h2>
+            <p class="section-answer">Pick the closest match and Drain Masters of the Palm Beaches will show you what we do about it. Not sure? Call <a href="tel:<?php echo formatPhone($phone); ?>"><?php echo $phone; ?></a> and describe what you are seeing.</p>
+        </div>
+        <div class="picker" data-picker>
+            <ul class="picker-list" data-p1-dynamic>
+                <?php foreach ($homeProblems as $homeI => $homeProb): ?>
+                <li><a class="picker-option<?php echo $homeI === 0 ? ' is-active' : ''; ?>" href="/services/<?php echo $homeProb['slug']; ?>/" data-picker-target="picker-panel-<?php echo $homeI; ?>"><?php echo $icons[$homeProb['icon']]; ?><span><?php echo htmlspecialchars($homeProb['label']); ?></span></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <div class="picker-panels" aria-live="polite" data-p1-dynamic>
+                <?php foreach ($homeProblems as $homeI => $homeProb): $homeSvc = $homeSvcBySlug[$homeProb['slug']]; ?>
+                <article class="picker-panel<?php echo $homeI === 0 ? ' is-active' : ''; ?>" id="picker-panel-<?php echo $homeI; ?>">
+                    <span class="picker-kicker"><?php echo htmlspecialchars($homeProb['label']); ?></span>
+                    <h3><?php echo htmlspecialchars($homeSvc['name']); ?></h3>
+                    <p class="picker-first"><?php echo htmlspecialchars($homeProb['first']); ?></p>
+                    <p class="picker-desc"><?php echo htmlspecialchars($homeSvc['description']); ?></p>
+                    <div class="picker-actions">
+                        <a class="btn btn-primary btn-lg" href="/services/<?php echo $homeProb['slug']; ?>/">See <?php echo htmlspecialchars($homeSvc['name']); ?></a>
+                        <a class="link-call" href="tel:<?php echo formatPhone($phone); ?>"><?php echo $icons['phone']; ?> Call <?php echo $phone; ?></a>
+                    </div>
+                    <ul class="picker-proof">
+                        <li><?php echo $icons['check']; ?> Free estimate before work starts</li>
+                        <li><?php echo $icons['check']; ?> Same-day and after-hours service</li>
+                        <li><?php echo $icons['check']; ?> 5.0 from 6 Google reviews</li>
+                    </ul>
+                </article>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+/* Problem picker: the options are real links to the service pages; with JS they switch the panel in place. */
+(function () {
+    var root = document.querySelector('[data-picker]'); if (!root) return;
+    root.classList.add('is-enhanced');
+    var opts = root.querySelectorAll('.picker-option'), panels = root.querySelectorAll('.picker-panel');
+    opts.forEach(function (o) {
+        o.addEventListener('click', function (e) {
+            e.preventDefault();
+            opts.forEach(function (x) { x.classList.toggle('is-active', x === o); x.setAttribute('aria-pressed', x === o ? 'true' : 'false'); });
+            panels.forEach(function (pn) { pn.classList.toggle('is-active', pn.id === o.getAttribute('data-picker-target')); });
+            if (window.matchMedia('(max-width: 900px)').matches) root.querySelector('.picker-panels').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    });
+})();
+</script>
 
 <!-- ============ INTRO / WHY US (split with photo) ============ -->
 <section class="section section--light home-intro" aria-label="Why Drain Masters">

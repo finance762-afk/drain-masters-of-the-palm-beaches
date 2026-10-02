@@ -180,6 +180,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .mp-jump a { display: inline-flex; align-items: center; padding: var(--space-xs) var(--space-md); border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-white) 35%, transparent); color: var(--color-white); font-weight: 600; font-size: var(--font-size-sm); text-decoration: none; transition: var(--transition); }
   .mp-jump a:hover { background: var(--color-white); color: var(--color-dark); }
 
+  .mp-hero-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: var(--space-2xl); align-items: center; }
+  .mp-member-card { justify-self: center; width: min(380px, 100%); aspect-ratio: 1.586; display: grid; align-content: space-between; justify-items: start; gap: var(--space-xs); padding: var(--space-lg); border-radius: var(--radius-lg); color: var(--color-ink); background: linear-gradient(160deg, var(--color-white) 0%, var(--color-white) 52%, color-mix(in srgb, var(--color-accent) 30%, var(--color-white)) 100%); box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--color-black) 70%, transparent), 0 0 0 6px color-mix(in srgb, var(--color-white) 8%, transparent); transform: rotate(-5deg); transition: transform .5s cubic-bezier(.2, .8, .2, 1); }
+  .mp-member-card:hover { transform: rotate(-1deg) translateY(-6px); }
+  .mp-member-card img { width: 78%; height: auto; filter: none; }
+  .mp-member-card-title { font-family: var(--font-accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: var(--font-size-sm); color: var(--color-primary); }
+  .mp-member-card-line { font-size: var(--font-size-sm); color: var(--color-ink-2); }
+  .mp-member-card-phone { justify-self: end; font-family: var(--font-heading); font-weight: 800; color: var(--color-primary); font-variant-numeric: tabular-nums; }
+  .mp-numbers { padding-block: var(--space-xl); border-top: 1px solid color-mix(in srgb, var(--color-white) 14%, transparent); }
+  .mp-numbers-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-xl); }
+  .mp-numbers .big { display: block; font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.2rem, 3.6vw, 3rem); line-height: 1; color: var(--color-accent-bright); font-variant-numeric: tabular-nums; }
+  .mp-numbers .big small { font-size: .5em; font-weight: 800; }
+  .mp-numbers .label { display: block; margin-top: var(--space-xs); font-size: var(--font-size-sm); color: color-mix(in srgb, var(--color-white) 86%, transparent); }
+  .mp-plan { transition: transform .35s cubic-bezier(.2, .8, .2, 1), box-shadow .35s ease; }
+  .mp-plan:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+  @media (max-width: 900px) { .mp-hero-grid { grid-template-columns: 1fr; gap: var(--space-xl); } .mp-member-card { width: min(300px, 86%); transform: rotate(-3deg); } .mp-numbers-row { grid-template-columns: 1fr 1fr; gap: var(--space-lg); } }
+  @media (prefers-reduced-motion: reduce) { .mp-plan, .mp-member-card { transition: none; } }
+
   .mp-plans { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); gap: var(--space-xl); align-items: start; margin-top: var(--space-2xl); }
   .mp-plan { position: relative; background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-lg); padding: var(--space-xl); box-shadow: var(--shadow-sm); display: grid; gap: var(--space-md); }
   .mp-plan--featured { border: 2px solid var(--color-primary); box-shadow: var(--shadow-lg); background: linear-gradient(180deg, var(--color-card-tint-1) 0%, var(--color-surface) 38%); }
@@ -275,7 +292,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <!-- Hero -->
     <section class="hero hero--interior">
-        <div class="container">
+        <div class="container mp-hero-grid">
             <div class="hero-copy">
                 <span class="eyebrow">Maintenance Plans</span>
                 <h1>Plumbing Maintenance Plans in Palm Beach County</h1>
@@ -285,6 +302,24 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <li><a href="#business-plans">Restaurants &amp; commercial</a></li>
                     <li><a href="#condo-plans">Condos &amp; HOAs</a></li>
                 </ul>
+            </div>
+            <div class="mp-member-card">
+                <img src="/assets/images/logo-hero-v2-480.webp" alt="Drain Masters of the Palm Beaches maintenance plan member card" width="480" height="191" loading="eager" decoding="async">
+                <span class="mp-member-card-title">Maintenance Plan Member</span>
+                <span class="mp-member-card-line">Priority &middot; Savings &middot; Peace of mind</span>
+                <span class="mp-member-card-phone"><?php echo $phone; ?></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member savings in numbers -->
+    <section class="mp-numbers on-dark" aria-label="Member savings">
+        <div class="container">
+            <div class="mp-numbers-row">
+                <div><span class="big">$0</span><span class="label">Trip charge on both home plans</span></div>
+                <div><span class="big">20%<small> off</small></span><span class="label">Every service call on Premium and commercial plans</span></div>
+                <div><span class="big">$350</span><span class="label">Restaurant hydro jetting for members, normally about $800</span></div>
+                <div><span class="big">$0</span><span class="label">Water heater flush on both home plans</span></div>
             </div>
         </div>
     </section>
