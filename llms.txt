@@ -137,6 +137,7 @@ Our team understands these local factors and tailors solutions to Palm Beach Cou
 - Home: /
 - Services: /services/ (13 service pages under /services/<service>/)
 - Service Areas: /service-areas/ (8 city pages under /service-areas/<city>/)
+- Maintenance Plans: /maintenance-plans/ (home plans $30 and $50 per month, restaurant and commercial plan $70 per month, condo and HOA program by quote)
 - About: /about/
 - FAQ: /faq/
 - Blog: /blog/

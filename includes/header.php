@@ -53,6 +53,7 @@
                     </ul>
                 </li>
 
+                <li><a href="/maintenance-plans/" <?php if (isActivePage('maintenance-plans')) echo 'aria-current="page"'; ?>>Plans</a></li>
                 <li><a href="/about/" <?php if (isActivePage('about')) echo 'aria-current="page"'; ?>>About</a></li>
                 <li><a href="/blog/" <?php if (isActivePage('blog')) echo 'aria-current="page"'; ?>>Blog</a></li>
                 <li><a href="/faq/" <?php if (isActivePage('faq')) echo 'aria-current="page"'; ?>>FAQ</a></li>
@@ -113,6 +114,7 @@
             </li>
             <?php endforeach; ?>
 
+            <li><a href="/maintenance-plans/">Maintenance Plans</a></li>
             <li><a href="/about/">About</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/faq/">FAQ</a></li>

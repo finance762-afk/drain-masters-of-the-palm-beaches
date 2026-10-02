@@ -127,6 +127,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   .home-intro .intro-points svg { color: var(--color-accent-dark); flex: 0 0 auto; }
   @media (max-width: 560px) { .home-intro .intro-points { grid-template-columns: 1fr; } }
 
+  .home-plans .plans-teaser { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--space-2xl); align-items: center; }
+  .home-plans .plans-teaser-copy { display: grid; gap: var(--space-md); justify-items: start; }
+  .home-plans .plans-teaser-copy p { margin: 0; color: var(--color-ink-2); }
+  .home-plans .plans-teaser-prices { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-sm); }
+  .home-plans .plans-teaser-prices a { display: grid; grid-template-columns: 6.5rem 1fr; align-items: center; gap: var(--space-md); padding: var(--space-md) var(--space-lg); border: 1px solid var(--color-line); border-left: 4px solid var(--color-primary); border-radius: var(--radius-lg); background: var(--color-card-tint-1); color: var(--color-ink); text-decoration: none; transition: var(--transition); }
+  .home-plans .plans-teaser-prices li:nth-child(2) a { background: var(--color-card-tint-2); }
+  .home-plans .plans-teaser-prices li:nth-child(3) a { background: var(--color-card-tint-3); }
+  .home-plans .plans-teaser-prices a:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+  .home-plans .plans-teaser-prices .amount { font-family: var(--font-heading); font-weight: 800; font-size: var(--fs-h2); color: var(--color-primary); line-height: 1; font-variant-numeric: tabular-nums; }
+  .home-plans .plans-teaser-prices .label { font-weight: 600; }
+  @media (max-width: 900px) { .home-plans .plans-teaser { grid-template-columns: 1fr; gap: var(--space-xl); } }
+
   .home-services .services-cta { display: flex; justify-content: center; margin-top: var(--space-2xl); }
 
   .home-cta .cta-copy { display: grid; gap: var(--space-sm); }
@@ -329,6 +341,25 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="services-cta">
             <a href="/services/" class="btn btn-secondary btn-lg">View All <?php echo count($services); ?> Services <?php echo $icons['badge-check']; ?></a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ MAINTENANCE PLANS TEASER ============ -->
+<section class="section section--light home-plans" aria-label="Plumbing maintenance plans">
+    <div class="container">
+        <div class="plans-teaser">
+            <div class="plans-teaser-copy">
+                <span class="eyebrow">Maintenance Plans</span>
+                <h2>Plumbing maintenance plans from <span class="text-accent">$30 a month</span></h2>
+                <p>Drain Masters of the Palm Beaches offers monthly maintenance plans for homes, restaurants, commercial buildings and condo communities. Home plans include a yearly inspection, a water heater flush and no trip charge, and every plan takes 10% to 20% off service calls.</p>
+                <a class="btn btn-primary btn-lg" href="/maintenance-plans/">See the plans</a>
+            </div>
+            <ul class="plans-teaser-prices">
+                <li><a href="/maintenance-plans/#home-plans"><span class="amount">$30</span><span class="label">Standard Home Plan, per month</span></a></li>
+                <li><a href="/maintenance-plans/#home-plans"><span class="amount">$50</span><span class="label">Premium Home Plan, per month</span></a></li>
+                <li><a href="/maintenance-plans/#business-plans"><span class="amount">$70</span><span class="label">Restaurant &amp; Commercial Plan, per month</span></a></li>
+            </ul>
         </div>
     </div>
 </section>

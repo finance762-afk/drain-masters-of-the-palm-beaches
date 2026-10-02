@@ -173,7 +173,7 @@ $yearsInBusiness = 3;
 $formAction      = 'https://db.pageone.cloud/functions/v1/leads/drain-masters-of-the-palm-beaches';
 
 /* ---- CSS cache-bust (SINGLE source — never set per page) -------------- */
-$cssVersion      = '2';
+$cssVersion      = '4';
 
 /* ---- Photo library (revision 1, 2026-09-28) ---------------------------
  * Every client photo on the site, with alt text that describes what is

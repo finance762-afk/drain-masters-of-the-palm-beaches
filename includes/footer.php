@@ -135,6 +135,8 @@
     <div class="footer-legal-row">
         <div class="container">
             <nav aria-label="Legal">
+                <a href="/maintenance-plans/">Maintenance Plans</a>
+                <span class="footer-legal-divider">|</span>
                 <a href="/faq/">FAQ</a>
                 <span class="footer-legal-divider">|</span>
                 <a href="/privacy-policy/">Privacy Policy</a>

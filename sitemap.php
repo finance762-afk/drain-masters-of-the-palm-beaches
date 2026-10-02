@@ -89,6 +89,14 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
     <?php endforeach; ?>
     <?php endif; ?>
 
+    <!-- Maintenance Plans -->
+    <url>
+        <loc><?php echo $siteUrl; ?>/maintenance-plans/</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- FAQ -->
     <url>
         <loc><?php echo $siteUrl; ?>/faq/</loc>
