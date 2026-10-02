@@ -11,7 +11,7 @@
  *     echo p1_google_reviews($slug);                       // defaults
  *     echo p1_google_reviews($slug, ['limit' => 6]);       // options below
  *
- * Options: limit (1-30, default 12) · min_rating (1-5, default 4) · replies (bool, show the
+ * Options: limit (1-30, default 12) · min_rating (4 or 5, default 4: sites never show reviews under 4 stars) · replies (bool, show the
  * owner's reply, default false) · heading (string, default "What customers say on Google";
  * '' = no heading) · heading_tag (default h2) · ttl (cache seconds, default 21600).
  *
@@ -31,7 +31,7 @@ if (!function_exists('p1_google_reviews_data')) {
         $slug = strtolower(preg_replace('/[^a-z0-9-]/i', '', (string) $slug));
         if ($slug === '') return null;
         $limit = max(1, min(30, (int) $limit));
-        $minRating = max(1, min(5, (int) $minRating));
+        $minRating = max(4, min(5, (int) $minRating));
 
         $cacheFile = rtrim(sys_get_temp_dir(), '/') . '/p1-reviews-' . md5($slug . '|' . $limit . '|' . $minRating) . '.json';
         $cached = null;
