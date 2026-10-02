@@ -404,8 +404,8 @@ $homePlanCards = [
                 <h2>How much is a plumbing maintenance plan? <span class="text-accent">From $30 a month</span></h2>
                 <p>Drain Masters of the Palm Beaches looks after your plumbing all year for a flat monthly price: scheduled inspections, a member rate on every service call, and a plumber who already knows your property when something breaks.</p>
             </div>
-            <div class="member-card" aria-hidden="true">
-                <img src="/assets/images/logo-hero-v2-480.webp" alt="" width="480" height="191" loading="lazy" decoding="async">
+            <div class="member-card">
+                <img src="/assets/images/logo-hero-v2-480.webp" alt="Drain Masters of the Palm Beaches maintenance plan member card" width="480" height="191" loading="lazy" decoding="async">
                 <span class="member-card-title">Maintenance Plan Member</span>
                 <span class="member-card-line">Priority &middot; Savings &middot; Peace of mind</span>
                 <span class="member-card-phone"><?php echo $phone; ?></span>
